@@ -1,0 +1,28 @@
+list p=18f452
+include "p18f452.inc"
+
+SZAMOL equ 0x0060
+
+
+
+ORG 0X0000
+clrf SZAMOL
+GOTO START
+
+START
+
+btfsc PORTB,0,0
+goto START
+figyel
+btfss PORTB,0,0
+goto szamol
+goto figyel
+szamol
+INCF SZAMOL,1,0
+goto START
+
+
+vege
+	nop
+	bra vege
+	end

@@ -1,0 +1,3 @@
+Beugró: áramgerendátor, mennyi a rövidzárás és a szakadás ellenállása, párhuzamosan kapcsolt R1 és R2 Rab mikor max ha R1 állandó, egyutas egyenirányító puffer kondival idõfv é mekkora az uki csúcs
+Szokásosak a kifejtõsek; növ mos fet rajzjele felépítés karakterisztikák felhasználása, FC kapcsolás és jellemzõi felhasználása paraméterei, Re és Ce hatásai és Ce nélkül mi van
+Nagyfeladat; FE erõsítõ , nem invertáló mûveleti erõsítõ SR meg R1számítás meg hogy torzít-e

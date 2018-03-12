@@ -1,0 +1,16 @@
+\select@language {magyar} \contentsline {section}{\numberline {1}K\IeC {\'e}rd\IeC {\'e}sek kidolgoz\IeC {\'a}sa}{2}
+\select@language {magyar} \contentsline {subsection}{\numberline {1.1}Adja meg a sz\IeC {\'a}m\IeC {\'\i }t\IeC {\'o}g\IeC {\'e}p h\IeC {\'a}l\IeC {\'o}zat fogalm\IeC {\'a}t!}{2}
+\select@language {magyar} \contentsline {subsection}{\numberline {1.2}Adja meg a protokoll fogalm\IeC {\'a}t!}{3}
+\select@language {magyar} \contentsline {subsection}{\numberline {1.3}Milyen jellemz\IeC {\H o}i vannak a szinkron \IeC {\'a}tvitelnek?}{4}
+\select@language {magyar} \contentsline {subsection}{\numberline {1.4}Milyen jellemz\IeC {\H o}i vannak az aszinkron \IeC {\'a}tvitelnek?}{4}
+\select@language {magyar} \contentsline {subsection}{\numberline {1.5} Mi a jellemz\IeC {\H o}je a k\IeC {\"o}vetkez\IeC {\H o} \IeC {\'a}tviteli m\IeC {\'o}doknak: simplex, half duplex, full duplex?}{4}
+\select@language {magyar} \contentsline {subsection}{\numberline {1.6}Ismertesse a csillag, a busz \IeC {\'e}s a gy\IeC {\H u}r\IeC {\H u} topol\IeC {\'o}gia jellemz\IeC {\H o}it!}{5}
+\select@language {magyar} \contentsline {subsection}{\numberline {1.7}Mi az adat\IeC {\'a}tviteli sebess\IeC {\'e}g definici\IeC {\'o}ja \IeC {\'e}s a m\IeC {\'e}rt\IeC {\'e}kegys\IeC {\'e}ge?}{7}
+\select@language {magyar} \contentsline {subsection}{\numberline {1.8}Hogyan lehet a sz\IeC {\'a}m\IeC {\'\i }t\IeC {\'o}g\IeC {\'e}p h\IeC {\'a}l\IeC {\'o}zatokat csoportos\IeC {\'\i }tani ter\IeC {\"u}leti elhelyezked\IeC {\'e}s szerint?}{7}
+\select@language {magyar} \contentsline {subsection}{\numberline {1.9}Hogyan m\IeC {\H u}k\IeC {\"o}dik a switch?}{8}
+\select@language {magyar} \contentsline {subsection}{\numberline {1.10}Hogyan m\IeC {\H u}k\IeC {\"o}dik a hub?}{8}
+\select@language {magyar} \contentsline {subsection}{\numberline {1.11}Hogyan m\IeC {\H u}k\IeC {\"o}dik a router?}{9}
+\select@language {magyar} \contentsline {subsection}{\numberline {1.12}Hogyan m\IeC {\H u}k\IeC {\"o}dik a gateway?}{10}
+\select@language {magyar} \contentsline {subsection}{\numberline {1.13}Milyen jellemz\IeC {\H o}i vannak az OSI modellnek?}{10}
+\select@language {magyar} \contentsline {subsection}{\numberline {1.14}Mi a jellemz\IeC {\H o}je a fizikai r\IeC {\'e}tegnek?}{14}
+\select@language {magyar} \contentsline {subsection}{\numberline {1.15}Mi a jellemz\IeC {\H o}je az adatkapcsolati r\IeC {\'e}tegnek?}{16}

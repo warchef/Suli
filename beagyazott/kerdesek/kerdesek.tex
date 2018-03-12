@@ -1,0 +1,188 @@
+\documentclass[12pt, a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[magyar]{babel}
+
+\begin{document}
+
+\title{Beágyazott rendszerek}
+\author{Koncz István Márton}
+\date{\today}
+\maketitle
+\newpage
+
+\section{Kérdések kidolgozása}
+\subsection{Adja meg a számítógép hálózat fogalmát!}
+A számítógép-hálózat egy olyan speciális rendszer, amely a számítógépek egymás közötti kommunikációját biztosítja. A számítógép-hálózat lehet fix (kábelalapú, állandó) vagy ideiglenes (mint például a modemen vagy null modemen keresztüli kapcsolat). A vezeték nélküli internet általában vagy a cellás (mobil) szolgáltatásra vagy a wifi megoldásra épül.\\
+A számítógépes hálózatoknál használt technológiáknak két típusa van: az adatszórásos hálózatok és a pont-pont hálózatok.
+\begin{enumerate}
+\item
+Adatszóró hálózatok\\
+Az adatszórásos hálózatok (broadcasting) egyetlen kommunikációs csatornával rendelkeznek, amelyet a hálózatra csatlakozó összes gép közösen használ. Ez a gyakorlatban azt jelenti, ha a gazdagép (host) egy rövid üzenetet küld, akkor azt a hálózat összes gépe megkapja. Ezeket a rövid üzeneteket a használt protokolltól függően csomagnak (packet), keretnek (frame) vagy cellának (cell) nevezik. A feladót és a címzettet a rövid üzeneten belüli címmezőben lehet azonosítani. Ha egy gazdagép kap egy ilyen üzenetet, akkor megnézi a címmezőt. Ha az üzenet nem neki szól, akkor nem tesz vele semmit, ellenkező esetben viszont feldolgozza. Az adatszóró rendszerek általában lehetővé teszik, hogy a címmező speciális beállításával az adott üzenetet minden gép megkapja és feldolgozza, ez az adatszóró (broadcasting) működési mód. Egyes rendszerek megengedik, hogy a hálózati gépek egy bizonyos csoportja kapja csak meg az üzenetet. Ez az üzemmód a többesküldés (multicasting). A gazdagépek „előfizethetnek” bizonyos címcsoportokra, de akár az összes címcsoportra is. Azok, akik nem „fizettek elő” egy címcsoportra, azok hiába kapják meg az üzenetet, az számukra olyan, mintha nem nekik szólna. A multicasting mód használata esetében a címmező n bitjéből 1-et fenntartunk az üzemmód jelzésére, n-1 bit pedig a csoport(ok) címzésére használható.
+\item
+Pont-pont hálózatok\\
+A pont-pont hálózatok (point-to-point network) sok olyan kapcsolatból állnak, amelyek géppárokat kötnek össze. Ez azt jelenti, hogy egy üzenet továbbítása egy, esetleg több csomóponton keresztül történik, és lehetséges, hogy egynél több lehetséges úton is eljuthat egy üzenet a céljához. Ezekben a hálózatokban az útvonal optimális megválasztása alapvető fontosságú. Ezt a hálózati technológiát nevezik még egyesküldésnek (unicasting) is.
+\end{enumerate}
+\subsection{Adja meg a protokoll fogalmát!}
+Az informatikában a protokoll egy egyezmény, vagy szabvány, amely leírja, hogy a hálózat résztvevői miképp tudnak egymással kommunikálni. Ez többnyire a kapcsolat felvételét, kommunikációt, adat továbbítást jelent. Gyakorlati szempontból a protokoll azt mondja meg, hogy milyen sorrendben milyen protokoll-üzeneteket küldhetnek egymásnak a csomópontok, illetve az üzenetek pontos felépítését, az abban szereplő adatok jelentését is megadja.
+\\\\
+Tervezési szempontjai
+\begin{enumerate}
+\item
+Hatékonyság\\
+Egy protokoll hatékonynak számít, ha jól gazdálkodik az erőforrásokkal, például egy vezeték nélküli protokoll adatokkal tömi teli a számára rendelkezésre bocsátott frekvenciatartományt. Többnyire valójában azt értjük hatékonyságon, hogy az adott körülmények között a legnagyobb sávszélességet, legkisebb késleltetést stb. biztosíthassuk, miközben a vezérlő protokollok által generált "nem hasznos" forgalom a lehető legkevesebb legyen. A hatékonyság elérésének több módja van. Egy hagyományos telefonos kapcsolat kb. 3.4kHz-nyi frekvenciatartományt biztosít. Jelenleg a legfejlettebb kódolási technikákkal ebből 51-54 kbps-et ki is tudunk használni (64kbps az elméleti maximum!), korábban ennek csak töredékére (28.8, 14.4kbps) volt mód. Másik példa a hatékonyságra az Ethernet ütközés-elkerülési megoldása (lásd ISO 802.3).
+\item
+Megbízhatóság\\
+Alapvető elvárás, hogy a hálózati forgalom ne szakadjon meg. Ezt például különböző hibaérzékelő és -javító mechanizmusokkal szoktuk biztosítani. Fontos az is, hogy ha a hálózati körülmények nem ideálisak, azt ne a hálózat teljes összeomlása, hanem legfeljebb a teljesítmény arányos csökkentése kövesse.
+\item
+Skálázhatóság\\
+Ez a fogalom azt takarja, hogy a hálózatnak nem csak néhány számítógépre, de akár egy világméretű hálózatra is jól kell működnie (gyakori gond, hogy egy központi szerver irányítja a kommunikációt, és ott szűk keresztmetszet alakul ki, ha bővítenénk a hálózatot). Jól skálázható protokollra példa a DNS, amely egy elosztott rendszer protokollja. Rosszul skálázhatónak számít a kis hálózatokra kifejlesztett NetBEUI.
+\end{enumerate}
+\subsection{Milyen jellemzői vannak a szinkron átvitelnek?}
+Szinkron átvitelről akkor beszélünk, ha az adatátvitel meghatározott ütemben történik.Ez az időzítő jel (szinkron jel) segítségével lehet elérni. Ilyenkor a kommunikáló gépek mindegyike az adott ritmusban adja, veszi, illetve értelmezi az adatokat. Ha a két gépnek nincs küldendő adata, a bájtok küldése akkor sem áll le: olyan adatot (szinkronkarakter) küldenek egymásnak, amellyel a szinkront tartják fent.(Itt mutatkozik a különbség a szinkron-aszinkron között.) A vevő oldal veszi a szinkronkaraktereket, de azokat nem továbbítja a processzorhoz, hanem mintegy lenyeli őket. A szinkronizáláshoz nyilván olyan bájtot érdemes választani, amely az adatok közt nem fordulhat elő. Éppen ezért nincs előírás a szinkronkarakterre, az adó és a vevő a kommunikáció kezdetén megegyeznek, hogy mit tekintenek szinkronkarakternek.
+\subsection{Milyen jellemzői vannak az aszinkron átvitelnek?}
+Olyan adatátviteli mód, amikor a két kommunikáló fél nem használ külön időzítő jelet, ellentétben a szinkron átvitellel. Éppen ezért szükséges az átvitt adatok közé olyan információ elhelyezése, amely megmondja a vevőnek, hogy hol kezdődnek az adatok. Ezt a problémát a stopbitekkel oldják meg: minden karakter (8 bit) elé és mögé egy-egy bitet ragasztanak, melyek miatt egy karakter átviteléhez ezért 10 bit szükséges.
+\subsection{ Mi a jellemzője a következő átviteli módoknak: simplex, half duplex, full duplex?}
+Azokat az összeköttetéseket, amelyeket egyidejűleg két irányba is lehet használni, mint egy kétsávos utat, duplex (full-duplex) adatkapcsolatoknak hívjuk. Egy telefonrendszer általában full-duplex, mert mind a hívó, mind a hívott egyszerre is beszélhet. Ezzel szemben, ha ugyanúgy bármelyik irányba, de egyszerre csak egyfelé lehet használni, mint egy egyvágányú vasútvonalat, fél-duplex (half-duplex) adatkapcsolatnak nevezzük, a két adatátviteli irány azonos időben szimultán nem használható. A harmadik csoport pedig a szimplex adatkapcsolat, amely csak egy irányba teszi lehetővé az adatforgalmat, hasonlóan az egyirányú utcához. Ilyen pl. a TV, kereskedelmi rádió, GPS, Teletext, stb...
+\subsection{Ismertesse a csillag, a busz és a gyűrű topológia jellemzőit!}
+\begin{enumerate}
+\item
+Csillag\\
+A legelső topológiák közé tartozik, mivel ezáltal könnyen megoldható volt a korai időkben az általánosan elterjedt központosított vezérlés. A csillag topológia esetén a munkaállomások közvetlenül tartanak kapcsolatot a szerverrel, így a központi erőforrások gyorsan és egyszerűen elérhetők. Ha nincs szükség folyamatos adatátvitelre, akkor a csomagkapcsolt eljárást alkalmazzák, különben pedig a klasszikus vonalkapcsolást. Ha az egyik számítógép kapcsolatba akar lépni a hálózat egy másik számítógépével, akkor a központi vezérlő létrehozza az összeköttetést, vagy legalábbis kijelöli a másik berendezés elérési útvonalát, s miután ez megtörtént, elkezdődhet a kommunikáció. Az összeköttetést követően az információcsere úgy bonyolódik le, mintha közvetlen kapcsolatban állna egymással a két számítógép. Ekkor a központi vezérlőnek már nincs feladata, tehát mintegy közvetítőként működik. Ezt a központi vezérlő berendezést nevezik HUB-nak. A szakirodalom a hálózat egyes számítógépeit csatlakozási pontnak, angol kifejezéssel node-nak nevezi. A csillag topológia esetén az adatcsomagok az egyes csatlakozási pontoktól a központi hub felé haladnak. A központi hub az adatcsomagokat rendeltetési helyük felé továbbítja. Egy hub-ot használó rendszerben nincs közvetlen összeköttetés a számítógépek között, hanem az összes számítógép a hub-on keresztül kapcsolódik egymáshoz. Minden node egyetlen kábelen csatlakozik a hub-hoz. Mivel mindegyik gép külön kábelen csatlakozik a hub-hoz, ezért meglehetősen sok hálózati kábelre van szükség, ami adott esetben drágává teheti a telepítést. A csillag topológiához használhatunk árnyékolatlan csavart érpárú huzalt (UTP) vagy árnyékolt csavart érpárú huzalt (STP). (ld. Vezetékes átviteli közegek) A csillag elrendezés egy összetettebb változata a hópehely (snowflake) topológia, amely nagyobb kiterjedésű hálózatok esetén több csillag topográfiájú hálózat kapcsolatát biztosítja úgy, hogy a hálózatok közé egy közös csomópontot, egy újabb központi vezérlőt iktat, ami lehetővé teszi két különböző hálózatban levő gép összeköttetését. A csillag topológia legfőbb előnye az, hogy ha megszakad a kapcsolat a hub és bármelyik számítógép között, az nem befolyásolja a hálózat többi csomópontját, mert minden node-nak megvan a saját összeköttetése a hub-bal. A topológia hátránya az, hogy a központ meghibásodásával az egész hálózat működésképtelenné válik. Másik hátránya, hogy ha az egyik gép üzen a másiknak, előbb a központi gép kapja meg a csomagot, majd azt a célállomásnak továbbítja. Emiatt a központi gép gyakran túlterhelt. Strukturált kábelezéssel csökkenthető a központi gép és a hálózati szegmensek leterheltsége.
+\item
+Gyűrű\\
+Minden állomás, beleértve a szervert is, két szomszédos állomással áll közvetlen kapcsolatban. Az összeköttetés körkörös, folyamatos gyűrű (megszakítás nélküli, de szükségszerűen kört képező), ebből következően a hálózatnak nincs végcsatlakozása. Bármely pontról elindulva végül visszatérünk a kiindulóponthoz, hiszen az adat csak egy irányban halad. 
+Az üzeneteket a gépek mindig a szomszédjuknak adják át, s ha az nem a szomszédnak szólt, akkor az is továbbítja. Addig vándorol az üzenet gépről gépre, amíg el nem érkezik a címzetthez. Mindegyik csomópont veszi az adatjelet, elemzi az adatokat, és ha az üzenet másik gép részére szól, akkor az adatokat a gyűrű mentén a következő géphez továbbítja. Az adatfeldolgozás cím alapján történik, azaz csak a címzett dolgozza fel az adatot, a többiek csak továbbítják.
+
+A csillag topológiától eltérően a gyűrű topológia folyamatos útvonalat igényel a hálózat összes számítógépe között. A gyűrű bármely részén fellépő meghibásodás hatására a teljes adatátvitel leáll. A hálózattervezők a meghibásodások ellen néha tartalék útvonalak kialakításával védekeznek. Ezenkívül hátránya még az is, hogy az adat a hálózat minden számítógépén keresztülhalad, és a felhasználók illetéktelenül is hozzájuthatnak az adatokhoz.
+
+A gyűrű alakú topológia esetén a hálózati kommunikáció lehet csomagkapcsolt és vezérjel elve alapján működő. Ezen az elven működik a vezérjeles gyűrű (Token Ring), amit egy későbbi fejezetben fogok részletesen ismertetni. Mégis hogy ne lebegjen üresen a levegőben ez a fogalom, egy-két szóval ismertetem a lényegét. Itt egy vezérjel kering körbe a vonalon, és csak az a gép küldhet üzenetet, amelynél éppen a vezérjel van. A küldő gép csak az üzenetküldés után továbbítja a vezérjelet.
+\item
+Sín(busz)
+A sín topológia valószínűleg a legegyszerűbb hálózati elrendezés. Ez az elrendezés egyetlen, busznak nevezett átviteli közeget használ. A buszon lévő mindegyik számítógépnek egyedi címe van, ez azonosítja a hálózaton.
+
+Egy busz topológiájú hálózat esetén a számítógépeket az esetek többségében koaxiális kábellel csatlakoztatják Nem egyetlen hosszú kábel, hanem sok rövid szakaszból áll, amelyeket T-csatlakozók segítségével kötnek össze. Ezenkívül a T-csatlakozók lehetővé teszik a kábel leágazását, hogy más számítógépek is csatlakozhassanak a hálózathoz. Egy speciális hardverelemet kell használni a kábel mindkét végének lezárásához, hogy ne verődjön vissza a buszon végighaladó jel, azaz ne jelenjen meg ismételt adatként. Ahogy az adat végighalad a buszon, mindegyik számítógép megvizsgálja, hogy eldöntse, melyik számítógépnek szól az üzenet. Az adat vizsgálata után a számítógép vagy fogadja az adatot, vagy figyelmen kívül hagyja, ha az nem neki szól.
+
+A busz topológiával az a probléma, hogy ha a buszkábel bárhol megszakad, a szakadás egyik oldalán lévő számítógépek nem csak az összeköttetést veszítik el a másik oldalon lévőkkel, hanem a szakadás következtében mindkét oldalon megszűnik a lezárás. A lezárás megszűnésének hatására a jel visszaverődik és meghamisítja a buszon lévő adatokat.
+
+Ha úgy döntünk, hogy busz topológiájú hálózatot alakítunk ki, akkor korlátozott a buszhoz köthető gépek száma. Ez amiatt van, mert ahogy a jel a kábelen halad, egyre inkább gyengébb lesz. Ezt azzal magyarázhatjuk, hogy minden egyes hoszt felfűzésével a T-dugók illesztésénél kábelszakadások keletkeznek. Ha sok hosztot fűzzük fel egy szegmensre, akkor sok szakadás keletkezik, ezáltal megnő az ellenállás és gyengébb lesz a jel. Ez okból kifolyólag, ha több számítógépet csatlakoztatnunk a hálózathoz, akkor használnunk kell egy jelerősítőnek (repeater) nevezett speciális hálózati eszközt, amely a busz mentén meghatározott helyeken felerősíti a jeleket. Előnye az egyszerűsége és olcsósága, hátránya viszont, hogy érzékeny a kábelhibákra.
+\subsection{Mi az adatátviteli sebesség definiciója és a mértékegysége?}
+Időegység alatt átvitt bitek száma. Mértékegysége a $bit/s$.\\Az átvitelt jellemezhetjük a felhasznált jel értékében $1 s$ alatt bekövetkezett változások számával is, amit baud-nak nevezünk.\\
+$1 baud = \log_2 P$, ahol $P$ a kódolásban használt jelszintek száma.
+\end{enumerate}
+\subsection{Hogyan lehet a számítógép hálózatokat csoportosítani területi elhelyezkedés szerint?}
+\begin{enumerate}
+\item
+1m - PAN (Personal Area Network)
+\item
+10m - 1km - LAN (Local Area Network)
+\item
+10km - MAN - (Metropolitan Area Network)
+\item
+100km - 1000km - WAN (Wide Area Network)
+\item
+10000km - GAN (Global Area Network) 
+\end{enumerate}
+\subsection{Hogyan működik a switch?}
+Az adatátviteli kapcsoló vagy switch egy aktív számítógépes hálózati eszköz, amely a rá csatlakoztatott eszközök között adatáramlást valósít meg. Többnyire az OSI-modell adatkapcsolati rétegében (2. réteg, esetleg magasabb rétegekben) dolgozik. Magyar jelentése: vált, kapcsol. A fizikai rétegbeli feladatokat ellátó hubokkal szemben az Ethernet switchek adatkapcsolati rétegben megvalósított funkciókra is támaszkodnak. A MAC címek vizsgálatával képesek közvetlenül a célnak megfelelő portra továbbítani az adott keretet; tekinthetők gyors működésű, többportos hálózati hídnak is. Portok között tehát nem fordul elő ütközés (mindegyikük külön ütközési tartományt alkot), ebből adódóan azok saját sávszélességgel gazdálkodhatnak, nem kell megosztaniuk azt a többiekkel. A broadcast és multicast kereteket természetesen a switchek is floodolják az összes többi portjukra. Egy switch képes full-duplex működésre is, míg egy hub csak half-duplex kapcsolatokat tud kezelni. Különbség még, hogy a switchek egy ASIC (Application-Specific Integrated Circuit) nevű hardver elem segítségével jelentős sebességeket érhetnek el, míg a HUB nem más mint jelmásoló, ismétlő. A fontos funkciók közé tartozik még a hálózati hurkok elkerülésének megoldása, illetve a VLAN-ok kezelése.\\
+Alapvető feladata:csomagokban található MAC címek megállapítása, MAC címek és portok összerendelése (kapcsoló-tábla felépítése), a kapcsoló-tábla alapján a címzésnek megfelelő port-port összekapcsolása, adatok ütközésének elkerülése, adatok ideiglenes tárolása
+\\
+A programozható switchek további feladatokat is elláthatnak:
+Shortest Path Bridging (IEEE 802.1aq), virtuális magánhálózat kezelése, a végpontokra kötött eszközök MAC cím szerinti azonosítása,a végpontok prioritásának meghatározása, a végpontokhoz tartozó sávszélesség korlátozása,a végpontok használatának időbeli korlátozása
+\subsection{Hogyan működik a hub?}
+A hub, a számítógépes hálózatok egy hardvereleme, amely fizikailag összefogja a hálózati kapcsolatokat. Másképpen szólva a hub a hálózati szegmensek egy csoportját egy hálózati szegmensbe vonja össze, egyetlen ütközési tartományként láttatja a hálózat számára. Leegyszerűsítve: az egyik csatlakozóján érkező adatokat továbbítja az összes többi csatlakozója felé. Ez passzívan megy végbe, anélkül, hogy ténylegesen változtatna a rajta áthaladó adatforgalmon.\\
+A hubok között 2 alaptípust különböztetünk meg:
+\begin{enumerate}
+\item
+aktív hub: az állomások összefogásán kívül a jeleket is újragenerálja, erősíti, tehát ebben a formában valójában egy többportos repeater
+\item
+passzív hub: csupán fizikai összekötő pontként szolgál, nem módosítja vagy figyeli a rajta keresztülhaladó forgalmat.
+\end{enumerate}
+A legelterjedtebbek a 8, 16, 24 portos eszközök, de találkozhatunk kisebb, 4 portossal is. A passzív hubok elektromos tápellátást nem igényelnek. Az intelligens hubok aktív hubként üzemelnek, mikroprocesszorral és hibakereső képességekkel rendelkeznek.
+\subsection{Hogyan működik a router?}
+Az útválasztó vagy router a számítógép-hálózatokban egy útválasztást végző eszköz, amelynek a feladata a különböző – például egy otthoni vagy irodai hálózat és az internet, vagy egyes országok közötti hálózatok, vagy vállalaton belüli hálózatok – összekapcsolása, az azok közötti adatforgalom irányítása.A számítógépes hálózatok működésének leírására több elméleti modell is létezik, az általánosan elterjedt OSI (Open Systems Interconnection) modell réteges struktúrájában a router a harmadik – hálózati – rétegben helyezkedik el. Útvonalválasztási döntéseinek alapját az ezen rétegbeli – általában IP – címek adják.\\Működése\\
+A számítógépes hálózatok forgalma különböző típusú adatcsomagokban zajlik. Ezen csomagok utaznak a feladótól a címzettig, akár több eszközön is keresztül, például az Internet esetében. Útjuk során minden érintett eszköznek ismernie kell, hogy merre továbbítsa a fogadott csomagot, hogy az eljusson a címzettig, és döntéseket kell hoznia, amennyiben például több útvonal is ismert. A routerek végzik ezen csomagok megfelelő irányba való továbbítását, és végzik ezen döntéseket. A mai routerek nagy része az IP protokoll-alapú hálózatok forgalmát irányítják, de több más protokoll kezelésére is alkalmasak lehetnek. IP protokoll esetén egymás és a hálózatok azonosítására a harmadik rétegbeli IP-címet alkalmazzák.\\Típusai\\
+\begin{enumerate}
+\item
+Szolgáltatói (ISP – Internet Service Provider):\\ Az Internetre csatlakozást mindig valamilyen szolgáltatón keresztül lehet megvalósítani. A szolgáltatók által üzemeltetett hálózatokat és a szolgáltatókat magukat is routerek kötik össze, általában ezeket a hálózatokat nevezhetjük az Internet gerincének.
+\item
+Vállalati, nagyvállalati:\\ A cégek és vállalkozások mai alapvető követelménye, hogy az internetre csatlakozzanak. Ehhez is routereket használnak, azonban nagyobb vállalatok esetében szükséges lehet a hálózat tagolása, akár logikailag adminisztratív szempontból, akár fizikailag elhatárolódott, országos vagy akár kontinens méretű kiterjedés esetén. Ebben az esetben a külön egységek külön helyi hálózatokkal (LAN) rendelkeznek, melyeket routerekkel lehet összekötni, így lehetővé téve a kommunikációt közöttük.
+\item
+SOHO (Small Office, Home Office), Otthoni Irodai (kisvállalati):\\Kisebb cégek illetve otthoni felhasználók Internetre való csatlakozásához használatosak ezen routerek, melyek teljesítménye is ennek megfelelően jóval kisebb. Alapvető feladatuk a belső, saját hálózat Internetre való csatlakoztatása. Egy 2013-as vizsgálat szerint a SOHO routerek nagy részének biztonsága hagy kívánnivalót maga után. A helyi hálózat felől mind a 13 vizsgált készülék feltörhető volt.
+\end{enumerate}
+\subsection{Hogyan működik a gateway?}
+\subsection{Milyen jellemzői vannak az OSI modellnek?}
+Az Open Systems Interconnection Reference Model, magyarul a Nyílt rendszerek összekapcsolása referenciamodellje (OSI-modell vagy OSI-referenciamodell) egy rétegekbe szervezett rendszer absztrakt leírása, amely a számítógépek kommunikációjához szükséges hálózati protokollt határozza meg, s amelyet az Open Systems Interconnection javaslatban foglalt össze. A leírást gyakran az OSI hétrétegű modellje néven is emlegetik. Az OSI modellje a különböző protokollok által nyújtott funkciókat egymásra épülő rétegekbe sorolja. Minden réteg csak és kizárólag az alsóbb rétegek által nyújtott funkciókra támaszkodhat, és az általa megvalósított funkciókat pedig csak felette lévő réteg számára nyújthatja. A rendszert, amelyben a protokollok viselkedését az egymásra épülő rétegek valósítják meg, gyakran nevezik 'protokoll veremnek' vagy 'veremnek'. A protokoll verem mind hardver szinten, mind pedig szoftveresen is megvalósítható, vagy a két megoldás keverékeként is. Tipikusan csak az alsóbb rétegek azok, amelyeket hardver szinten (is) megvalósítanak, míg a felsőbb rétegek szoftveresen kerülnek megvalósításra.
+
+
+ 
+
+
+ Az Osi rétegei, adatáramlás
+Ez az OSI modell alapvetően meghatározó volt a számítástechnika és hálózatokkal foglalkozó ipar számára. A legfontosabb eredmény az volt, hogy olyan specifikációkat határoztak meg, amelyek pontosan leírták, hogyan léphet egy réteg kapcsolatba egy másik réteggel. Ez azt jelenti a gyakorlatban, hogy egy gyártó által írt réteg programja együtt tud működni egy másik gyártó által készített programmal (feltéve, hogy az előírásokat mindketten pontosan betartották). Az említett specifikációkat a TCP/IP közösség a Requests for Comments vagy „RFC”-k néven ismeri. Az OSI közösségben használt szabványokat itt lehet megtalálni: ISO szabványok.
+
+Az OSI referencia modellje, a hét réteg hierarchikus rendszere meghatározza a két számítógép közötti kommunikáció feltételeit. A modellt az International Organization for Standardization az ISO 7498-1 számú szabványában írta le. A cél az volt, hogy megengedje a hálózati együttműködést különböző gyártók különböző termékei között, különböző platformok alkalmazása esetén, anélkül, hogy lényeges lenne, melyik elemet ki gyártotta, illetve készítette. Az 1970-es évek végéig az ISO az OSI modellt javasolta, mint hálózati szabványt.
+
+Természetesen, időközben a TCP/IP is terjedni kezdett. A TCP/IP az ARPANET alapjául szolgált, és innen fejlődött ki az Internet. (A legfontosabb különbségeket a TCP/IP és az ARPANET között, lásd RFC 871.)
+
+Ma a teljes OSI modell egy részhalmazát használják csak. Széles körben elterjedt nézet, hogy a specifikáció túlzottan bonyolult, és a teljes modell megvalósítása nagyon időigényes lenne, ennek ellenére nagyon sokan támogatják a teljes modell megvalósítását.
+
+Másik oldalról, többen úgy érzik, hogy az ISO alapú hálózati fejlesztéseket mielőbb be kellene fejezni, mert így komoly károk előzhetők meg.
+\begin{enumerate}
+\item
+Fizikai réteg – Physical Layer az 1. szint:\\
+A fizikai réteg feladata a bitek kommunikációs csatornára való juttatása. Ez a réteg határoz meg minden, az eszközökkel kapcsolatos fizikai és elektromos specifikációt, beleértve az érintkezők kiosztását, a használatos feszültség szinteket és a kábel specifikációkat. A szinten "Hub"-ok, "repeater"-ek és "hálózati adapterek" számítanak a kezelt berendezések közé. A fizikai réteg által megvalósított fő funkciók:
+felépíteni és lezárni egy csatlakozást egy kommunikációs médiummal.
+részt venni egy folyamatban, amelyben a kommunikációs erőforrások több felhasználó közötti hatékony megosztása történik. Például, kapcsolat szétosztás és adatáramlás vezérlés.
+moduláció, vagy a digitális adatok olyan átalakítása, konverziója, jelátalakítása, ami biztosítja, hogy a felhasználó adatait a megfelelő kommunikációs csatorna továbbítani tudja. A jeleket vagy fizikai kábelen – réz vagy optikai szál, például – vagy rádiós kapcsolaton keresztül kell továbbítani.
+
+Paralell SCSI buszok is használhatók ezen a szinten. A számos Ethernet szabvány is ehhez a réteghez tartozik; az Ethernetnek ezzel a réteggel és az adatkapcsolati réteggel is együtt kell működnie. Hasonlóan együtt kell tudni működnie a helyi hálózatokkal is, mint például a Token ring, FDDI, és az IEEE 802.11.
+\item
+Adatkapcsolati réteg – Data-Link Layer a 2. szint:\\
+A adatkapcsolati réteg biztosítja azokat a funkciókat és eljárásokat, amelyek lehetővé teszik az adatok átvitelét két hálózati elem között. Jelzi, illetve lehetőség szerint korrigálja a fizikai szinten történt hibákat is. A használt egyszerű címzési séma fizikai szintű, azaz a használt címek fizikai címek (MAC címek) amelyeket a gyártó fixen állított be hálózati kártya szinten. Megjegyzés: A legismertebb példa itt is az Ethernet. Egyéb példák: ismert adatkapcsolati protokoll a HDLC és az ADCCP a pont-pont vagy csomag-kapcsolt hálózatoknál és az Aloha a helyi hálozatoknál. Az IEEE 802 szerinti helyi hálózatokon, és néhány nem-IEEE 802 hálózatnál, mint például az FDDI, ez a réteg használja a Media Access Control (MAC) réteget és az IEEE 802.2 Logical Link Control (LLC) réteget is.
+
+Ez az a réteg, ahol a bridge-ek és switch-ek működnek. Ha helyi hálózat felé kell a kapcsolatot kiépíteni, akkor kapcsolódást csak a helyi hálózati csomópontokkal kell létrehozni, a pontos részleteket a „2.5 réteg” írja le.Ez a réteg valójában nem része az eredeti OSI modellnek. A „2.5 réteg” kifejezés jelzi, hogy a kategóriába tartozó protokollok a 2-es és 3-as réteghez egyaránt kapcsolhatók. Ilyenek például a Multiprotocol Label Switching (MPLS) műveletek az adatcsomagokkal (2. réteg) illetve az IP protokoll címzése (3. réteg) amely speciális jelzéseket használ az útvonalirányítás során
+\item
+Hálózati réteg – Network layer a 3. szint:\\
+A hálózati réteg biztosítja a változó hosszúságú adat sorozatoknak a küldőtől a címzetthez való továbbításához szükséges funkciókat és eljárásokat, úgy, hogy az adatok továbbítása a szolgáltatási minőség függvényében akár egy vagy több hálózaton keresztül is történhet. A hálózati réteg biztosítja a hálózati útvonalválasztást, az adatáramlás ellenőrzést, az adatok szegmentálását/deszegmentálását, és főként a hiba ellenőrzési funkciókat. Az útvonalválasztók (router-ek) ezen a szinten működnek a hálózatban – adatküldés a bővített hálózaton keresztül, és az internet lehetőségeinek kihasználása (itt dolgoznak a 3. réteg (vagy IP) switch-ek). Itt már logikai címzési sémát használ a modell – az értékeket a hálózat karbantartója (hálózati mérnök) adja meg egy hierarchikus szervezésű címzési séma használatával. A legismertebb példa a 3. rétegen az Internet Protocol (IP).
+\item
+Szállítási réteg – Transport layer a 4. szint:\\
+A szállítási réteg biztosítja, hogy a felhasználók közötti adatátvitel transzparens legyen. A réteg biztosítja, és ellenőrzi egy adott kapcsolat megbízhatóságát. Néhány protokoll kapcsolat orientált. Ez azt jelenti, hogy a réteg nyomonköveti az adatcsomagokat, és hiba esetén gondoskodik a csomag vagy csomagok újraküldéséről. A legismertebb 4. szintű protokoll a TCP.
+\item
+Viszony réteg – Session layer az 5. szint:\\
+A viszony réteg a végfelhasználói alkalmazások közötti dialógus menedzselésére alkalmas mechanizmust valósít meg. A megvalósított mechanizmus lehet duplex vagy félduplex, és megvalósítható ellenőrzési pontok kijelölési, késleltetések beállítási, befejezési, illetve újraindítási eljárások.
+ (A mai OSI modellben a Viszonylati réteg a Szállítási rétegbe lett integrálva.)
+ \item
+ Megjelenítési réteg – Presentation layer a 6. szint:\\
+ A megjelenítési réteg biztosítja az alkalmazási réteg számára, hogy az adatok a végfelhasználó rendszerének megfelelő formában álljon rendelkezésre. MIME visszakódolás, adattömörítés, titkosítás, és egyszerűbb adatkezelések történnek ebben a rétegben. Példák: egy EBCDIC-kódolású szöveges fájl ASCII-kódú szövegfájllá konvertálása, vagy objektum és más adatstruktúra sorossá alakítása és XML formába alakítása vagy ebből a formából visszaalakítása valamilyen soros formába.
+ A mai OSI modellben az Adatmegjelenítési réteg az Alkalmazási rétegbe lett integrálva. (A mai OSI ezért valójában 5 rétegű mivel a régi 7 rétegű modell 5. rétege a 4. illetve a 6. rétege a 7. rétegbe integrálódott.)
+ \item
+ Alkalmazási réteg – Application layer a 7. szint:\\
+ Az alkalmazási réteg szolgáltatásai támogatják a szoftver alkalmazások közötti kommunikációt, és az alsóbb szintű hálózati szolgáltatások képesek értelmezni alkalmazásoktól jövő igényeket, illetve, az alkalmazások képesek a hálózaton küldött adatok igényenkénti értelmezésére. Az alkalmazási réteg protokolljain keresztül az alkalmazások képesek egyeztetni formátumról, további eljárásról, biztonsági, szinkronizálási vagy egyéb hálózati igényekről. A legismertebb alkalmazási réteg szintű protokollok a HTTP, az SMTP, az FTP és a Telnet.
+ \subsection{Mi a jellemzője a fizikai rétegnek?}
+ A fizikai réteg a számítógép-hálózatok hétrétegű OSI modelljében az első, avagy legalsó réteg. Implementációját gyakran PHY-vel jelölik.
+
+Ez a legalsó réteg, amely a fizikai közeggel foglalkozik, azzal, hogy hogyan kell az elektromos jeleket a számítógép-hálózat kábeleire ültetni. Biztosítania kell, hogy a kábelre kiküldött 1 bitet a vevő oldal is 1-nek lássa, és ne 0-nak. Mi a feltétele, és hogyan lehet megvalósítani a lehető legminimálisabb háttérzajt stb. Az összes, internetet alkotó hálózat lényegében csak a fizikai rétegeiken keresztül kommunikál egymással. A hálózatok forgalma bármilyen fizikai közegen továbbítható, ennek mikéntjét írja le a fizikai réteg, és annak protokolljai.
+
+A fizikai réteg felelős a bináris adatok átviteléért. Ennek érdekében a fizikai átviteli közeg valamely tulajdonságát megváltoztatja. A vevő ezt a változást érzékelve képes abból az eredeti adatokat visszaállítani. Az átviteli közeg többféle lehet, ennek megfelelőek lesznek azok a jellemzők, amelyeket az adatátvitel céljából meg lehet változtatni.
+
+A számítógép hálózatokban az adatátvitel a számítógépek között kialakított összeköttetéseken valósul meg. Az információ továbbítása történhet digitális és analóg jelekkel egyaránt. Az analóg jelek esetében valamilyen periodikus jel amplitúdója, a frekvenciája, vagy a fázisszöge hordozza az információt. A digitális átvitelnél a jel egy négyszögjel, aminek az amplitúdója csak a két megadott értéket veheti fel. A szintek közötti váltás csak megadott időpontokban következhet be és elvileg végtelen gyorsan történik. Az információt az amplitúdók és a hozzájuk tartozó időpontok hordozzák.
+\\Átviteli módok\\
+Az analóg átvitel esetében a leglényegesebb jellemző a sávszélesség, ami a közegen átvihető jel maximális és minimális frekvenciájának a különbsége és a mértékegysége Hz.
+
+A digitális hálózatok esetében a sebesség jellemzésére az időegység alatt továbbított bitek számát használjuk (bitsebesség), melynek jellemző mértékegysége a bit/s. Találkozhatunk még a Baud mértékegységgel is, ami az egy másodperc alatt átküldött vonali kódok számát jelenti. (Ez a használt vonali kódolástól függően lehet a bitsebességnél kisebb vagy nagyobb érték).
+
+A kialakított összeköttetésekről elmondható, hogy a kiépítésükhöz nagy anyagi befektetésre van szükség. Sajnos az is igaz, hogy az esetek többségében ezek a a közegek nincsenek teljesen kihasználva. Ebből az következik, hogy valamilyen módon optimalizálni kellene az átviteli közegek kialakítását. Erre több módszert is kialakítottak, ezeket tekintjük át a továbbiakban.
+
+A hosztok, pontosabban a hálózati kapcsolóelemek és végpontok között vonalak valósítják meg a tényleges kapcsolatot. Abban az esetben, ha adatátvitel folyik, akkor a két "beszélgető" állomás kisajátítja a vonalat. Elképzelhető, hogy a hosszú kapcsolódási idő alatt alig van adatforgalom. Felismerték ezt a tényt és megoldásként a vonalakat több, kisebb kapacitású csatornákra osztják. Mindegyik csatorna önálló adatátvitelre alkalmas, tehát az átviteli idő alatt a két kapcsolódó hoszt között vonalként viselkedik. A fizikai vonalakon több ilyen csatorna alakítható ki, amivel a kapcsolatok száma növekszik, pénzbe pedig nem kerül. A vonalak megosztásának három, a gyakorlatban alkalmazott eljárása van.
+
+Az első megoldás szerint a fizikai közeget speciális eszközökkel megosztják több egység között. Ezt a műveletet multiplexelésnek nevezik. A multiplexelés során a vonalat meghatározott, rögzített módszer szerint osztjuk fel. Minden bemeneti csatornához tartozik a túloldalon egy kimeneti csatorna is. A vevő oldalon biztosítani kell, hogy az érkező információkat a címzett vegye. Azt a műveletet, amely ezt biztosítja, demultiplexelésnek nevezik. A gyakorlati megvalósítás alapján beszélhetünk frekvencia- és időosztásos multiplexelésről. A frekvenciaosztásos multiplexelés bonyolultnak tűnő, ámde meglehetősen egyszerű vonalmegosztási módszer. Analóg átvitelben használják. Azon a felismerésen alapul, hogy a ténylegesen átvitelre kerülő analóg jelek viszonylag kis frekvenciatartományba esnek. Mivel a vonal sávszélessége ennél jelentősen nagyobb, több ilyen tartomány vihető át egyszerre rajta. Azt kell megoldani, hogy ezek a tartományok egymástól jól elkülöníthetők legyenek. Az analóg jelek esetében megvalósítható az, hogy a kisfrekvenciás jelek ráültethetők egy nagyobb frekvenciájú jelre. A vevőoldalon ezt a jelet kivéve az eredeti analóg jelsorozat rendelkezésre áll. Azt a jelet, amelyre az információt hordozó analóg jeleket rákeverik, vivőjelnek, vagy vivőfrekvenciának nevezik. Az adó oldalon a csatornák jeleit ráültetik egy-egy vivőfrekvenciára (modulálják). Ezeket összegzik, majd a jelek összegét átviszik a vevő oldalra. Ott a jeleket szűrőkkel szétválasztják, majd egy második szűrés során a hasznos jel alól kiszedik a vivőjelet. A módszer használatánál ügyelni kell, hogy az egyes vivőfrekvenciák között megfelelő szélességű frekvenciarés maradjon. Ez azért fontos, mert ha a hasznos jelek frekvenciatartománya összeér, akkor azokat nem lehet már szétválasztani. Figyelembe kell venni azt is, a vevő oldalon elhelyezett szűrők pontossága (meredeksége) véges, tehát a nagyon közeli csatornákat már nem tudják korrektül szétválasztani. A harmadik ok, hogy a vezetéken minden esetben rárakódnak a hasznos jelre zavarjelek. Ez azt eredményezheti, hogy a frekvenciatartomány elmászik valamelyik irányba, ekkor pedig már átlóghat a következő csatornába.
+
+A TCP/IP hálózat fizikai szintje azonos az ISO/OSI modell fizikai szintjével. Ez a réteg gondoskodik a hálózati eszközzel, mint például a modemmel, az Ethernet- vagy ISDN-kártyával való kapcsolatról. Elvégzi az adatok hardveren keresztüli továbbítását a hálózat felé. Feladatának elvégzése során becsomagolja a felsőbb szintek által szállított, a hálózatnak szánt adatokat a fizikai hálózatnak megfelelő címek "csomagolópapírjába". Ez a réteg teljesen rejtve marad a felhasználók elől.
+
+Feladata: bitek továbbítása a csatornán.
+\subsection{Mi a jellemzője az adatkapcsolati rétegnek?}
+
+\end{enumerate}
+\tableofcontents
+\end{document}

@@ -1,0 +1,20 @@
+A fejezet célja: a mûveleti erõsítõk alkalmazástechnikája témához kapcsolódva a komparátorként mûködtetett mûveleti erõsítõk ismertetése.
+
+Fejezet tartalma:
+
+Neminvertáló komparátor. Invertáló komparátor. Invertáló hiszterézises komparátor. Neminvertáló hiszterézises komparátor.
+
+Kulcsszavak: referenciafeszültség, feszültség-idõfüggvény, hiszterézis, zavarjel, komparálási szint, Uf, felsõ billenési szint, Ua, alsó billenési szint, hiszterézistávolság, transzfer karakterisztika.
+
+ Komparátorok Tananyag
+Jegyzet
+
+ Feladatok Tananyag
+Gyakorlás céljára
+
+ Feladatok megoldása Tananyag
+Önellenõrzés céljára
+
+ Komparátorok Tananyag
+Áramkörök mûködésének szemléltetése TINA áramkör analizáló programmal
+

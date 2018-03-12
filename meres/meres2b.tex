@@ -1,0 +1,270 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[magyar]{babel}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\begin{document}
+\title{Méréstechnika laboratórium 2/b jegyzőkönyv}
+\author{Koncz István Márton}
+\date{\today}
+\maketitle
+\newpage
+\section{16. sz. laboratóriumi mérés}
+	\subsection{A mérés célja}
+	Egyes nem-villamos fizikai jellemzők (erő, nyomaték, nyomás, mechanikai feszültség)
+mérésére alkalmas nyúlásmérő bélyeg fontosabb statikus méréstechnikai jellemzőinek
+megállapítása. Egy adott feladatra való alkalmazás megismerése. A mérést “zavaró” jellemzők közül a hőmérsékletváltozás hatásának, mértékének megállapítása, vizsgálata.
+	\subsection{Mérési feladatok}
+	A mérésben egy befogott rugólap átellenes oldalára ragasztott mérőbélyegekkel állapíthatjuk
+meg a lapban keletkező mechanikai feszültség értékét. A rugólap hajlítását csavarorsóval
+hozzuk létre.
+A hajlítás mértékét - az elmozdulást ($\Delta f$) 1/100 mm-es mérőórával mérjük.
+A csavarorsó tengelyében ható F erő L (43 mm) hosszúságú karon végzi a hajlítást, a rugólap
+keresztmetszeti méretei: h (1,2 mm) * b (10 mm.)
+		\subsubsection{Elmozdulás (hajlítás) - ellenállásváltozás karakterisztika felvétele és kiértékelése}
+		A 6. sz. mérőpanelon a felső kivezetések a húzott, az alsók a nyomott bélyeghez csatlakoznak.
+Mérje meg mindkét bélyeg ellenállását a rugólap terheletlen és maximális kitérése között 0,5
+mm-enként. A mért adatokat foglalja táblázatba és ábrázolja eltolt koordináta rendszerben mm papíron! (Az eltolás mértéke a bélyegek előfeszítés nélküli alap ellenállása.)
+Állapítsa meg a húzott és a nyomott bélyegek linearitási és hiszterézis hibáját!$$$$A linearitási hiba megállapítása:$$h_{lin}=\frac{H_{max}}{X_kMT}*100 \%$$Mért adatok húzott bélyeg esetén:$$$$\begin{tabular}{|c|c|c|c|c|c|c|c|}
+\hline 
+l[mm] & 0 & 0,5 & 1 & 1,5 & 2 & 2,5 & 3 \\ 
+\hline 
+R[$\Omega$] & 354,41 & 354,52 & 354,62 & 354,69 & 354,70 & 354,88 & 354,97 \\ 
+\hline 
+\end{tabular} $$$$
+Mért adatok húzott bélyeg esetén (visszafelé):$$$$\begin{tabular}{|c|c|c|c|c|c|c|c|}
+\hline 
+l[mm] & 3 & 2,5 & 2 & 1,5 & 1 & 0,5 & 0 \\ 
+\hline 
+R[$\Omega$] & 354,97 & 354,88 & 354,79 & 354,72 & 354,63 & 354,56 & 354,48 \\ 
+\hline 
+\end{tabular}$$$$
+Mért adatok nyomott bélyeg esetén:$$$$\begin{tabular}{|c|c|c|c|c|c|c|c|}
+\hline 
+l[mm] & 0 & 0,5 & 1 & 1,5 & 2 & 2,5 & 3 \\ 
+\hline 
+R[$\Omega$] & 343,64 & 343,53 & 343,43 & 343,34 & 343,24 & 343,14 & 343,04 \\ 
+\hline 
+\end{tabular} $$$$ A számolás és az ábra az 1. számú mellékletben található meg.
+	\subsubsection{Nyúlásmérő bélyeges negyedhíd vizsgálata!}
+	Mérje meg a híd kimeneti feszültségét a rugólap terheletlen és maximális kitérése között 0,5 mm-enként. A hídban történő mérést is mindkét bélyeggel (húzott és nyomott) külön-külön végezze el! (Nekünk csak a húzott bélyeggel kellett.)
+Az egyik bélyegnél az elmozdulás csökkentésekor (“visszafelé”) is vegye fel az adatokat!
+A hídban lévő R ellenállások értéke: 360 $\pm 1\%$.
+Foglalja a mért adatokat táblázatba és rajzolja meg a hídkapcsolás Uki-
+(elhajlítás) karakterisztikáját! (Mivel a híd nincsen kinullázva az
+ábrázolást eltolt koordináta rendszerben végezze. Az eltolás mértéke a híd
+alapállapotban mért kimeneti feszültsége legyen.)
+Állapítsa meg a kapcsolás átalakítási tényezőjét!$$$$
+Mért adatok húzott bélyeg esetén:$$U_0 = 25,16 mV$$
+\begin{tabular}{|c|c|c|c|c|c|c|c|}
+\hline 
+l[mm] & 0 & 0,5 & 1 & 1,5 & 2 & 2,5 & 3 \\ 
+\hline 
+$\Delta U$[$mV$] & 0 & -0,35 & -0,69 & -1,01 & -1,33 & -1,63 & -1,96 \\ 
+\hline 
+\end{tabular} $$$$
+Mért adatok húzott bélyeg esetén (visszafelé):$$$$
+\begin{tabular}{|c|c|c|c|c|c|c|c|}
+\hline 
+l[mm] & 3 & 2,5 & 2 & 1,5 & 1 & 0,5 & 0 \\ 
+\hline 
+$\Delta U$[$mV$] & -1,96 & -1,60 & -1,27 & -0,95 & -0,63 & -0,32 & 0 \\ 
+\hline 
+\end{tabular} $$$$
+A számolás és az ábra az 2. számú mellékletben található meg.
+	\subsubsection{Nyúlásmérő bélyeges félhíd vizsgálata!}
+	Mérje meg a híd kimeneti feszültségét a rugólap terheletlen és maximális kitérése között 0,5 mm-enként. Foglalja a mért adatokat táblázatba és rajzolja meg a hídkapcsolás Uki- (elhajlítás) karakterisztikáját! (A karakterisztikát az előző ábrába rajzolja bele!)
+Értékelje a kapcsolás érzékenységét a negyedhídhoz képest!
+$$$$
+Mért adatok húzott bélyeg esetén:$$U_0 = 42 mV$$
+\begin{tabular}{|c|c|c|c|c|c|c|c|}
+\hline 
+l[mm] & 0 & 0,5 & 1 & 1,5 & 2 & 2,5 & 3 \\ 
+\hline 
+$\Delta U$[$mV$] & 0 & 0,8 & 1,6 & 2,2 & 3,0 & 3,7 & 4,5 \\ 
+\hline 
+\end{tabular} $$$$ Az ábra az 2. számú mellékletben található meg.
+	\subsubsection{A hőmérsékleti hatás vizsgálata!}
+	A rugólap terhelését állítsa be a maximális 3 mm-re.
+Mérje meg a húzott és a nyomott mérőbélyeg ellenállását.
+A mérőpanelba épített hőfokszabályzós fűtőtest segítségével a mérőbélyegek tere (és így a
+mérőbélyegek hőmérséklete) kb. 44 $^{\circ}C$-ra beállítható, így a hőmérsékleti hatások
+vizsgálhatók.
+Kapcsoljon 12 V feszültséget a FŰTÉS feliratú pontra!
+Mintegy 15 perc múlva beáll a termikus egyensúly. Ilyenkor a tér hőmérséklete kb. 44$^{\circ}C$.
+A hőmérsékletváltozás hatására megváltozik a mérőbélyeg ellenállása.
+A tér hőmérsékletének elérését a fűtő áram értékének lecsökkenése jelzi.
+A tér felfűtött állapotában ismét mérje meg a húzott és a nyomott mérőbélyeg ellenállását!
+Az ellenállás mérést kétféle „polaritással” végezze el! Értékelje a kapott értékeket!
+$$$$Húzott bélyeg:$$$$\begin{tabular}{|c|c|c|}
+\hline 
+• & Fűtés nélkül & Fűtve \\ 
+\hline 
+Polaritás helyesen & 354,44 $\Omega$ & 353,82 $\Omega$ \\ 
+\hline 
+Ellentétesen & 354,44 $\Omega$ & 355,97 $\Omega$ \\ 
+\hline 
+\end{tabular} 
+$$$$Fűtve 1$\%$ különbség van, ha ellentétes polaritással kötjük be a bélyeget.
+
+	\section{17. sz. laboratóriumi mérés}
+	\subsection{A mérés célja}
+	A digitális oszcilloszkóp kezelésének többlet funkcióinak
+elsajátítása, a kapott mérési eredmények kiértékeléséhez
+szükséges szemlélet kialakítása.
+	\subsection{Mérési feladatok}
+	\subsubsection{Kurzoros mérések}
+	Végezzen kurzoros méréseket szinuszos jel frekvenciájának
+és amplitúdójának, illetve négyszögjel felfutási idejének
+megállapításához, hasonlítsa össze mérési eredményeit az
+azonos jelalakon elvégzett automatikus mérések
+eredményeivel. (Javasolt jelalakok: 1kHz-es, 1V amplitúdójú
+szinuszjel, 1V DC ofszettel, 10kHz-es 1V amplitúdójú
+négyszögjel, 100mV DC ofszettel.) Mindenképpen térjen ki a
+jelek effektív értékének automatikus mérésére, a kapott
+eredményeket hasonlítsa össze a kurzoros mérések alapján
+számított értékekkel!$$\begin{tabular}{|c|c|c|}
+\hline 
+Jelalak & Szinusz & Négyszög \\ 
+\hline 
+ Amplitúdó (kurzor) & 2 V & 2 V \\ 
+\hline 
+Amplitúdó (automatikus) & 2,03 V & 2 V \\ 
+\hline 
+ Felfutási idő (kurzor) & 1 ms & 79,6 ns \\ 
+\hline 
+Felfutási idő (automatikus) & 1 ms & 81 ns \\ 
+\hline 
+\end{tabular} $$ 
+ \subsubsection{Adatgyűjtési mód}
+ 	Vizsgálja a függvénygenerátoron a legnagyobb beállítható
+frekvenciájú négyszögjel egy periódusát, majd csak a felfutó
+élét a három adatgyűjtési üzemmódban! Rajzolja le a látott
+jelalakokat! $$$$ Az ábra a 3. számú mellékletben található meg.
+	\subsubsection{Bemeneti komparátor működési feltételeinek, működési idejének vizsgálata}
+	A LEVEL potencióméterrel a komparálási szintet állítja a SENSE
+potencióméterrel pedig a hiszterézis nagyságát.
+Adjon az 3. mérőpanelre +5V tápfeszültséget. Állítson be a
+függvénygenerátoron 2V csúcsértékű 1kHz frekvenciájú háromszögjelet 0V
+egyenfeszültségű összetevővel, a jelet csatlakoztassa a mérőpanel CH1
+bemenetére! Kétcsatornás oszcilloszkóp egyik bemenetére a CH1 jelét, másik bemenetére
+a KOMP1 komparátor kimeneti jelét csatlakoztatva mérje meg a
+következőket: $$$$
+	Milyen határok közt tudja állítani a komparálási szintet a LEVEL
+potenciométerrel? A SENSE potencióméter a jobb oldali végállásában
+legyen! $$0<x<1,12 V$$
+	Mekkora a maximálisan beállítható hiszterézis a SENSE potencióméterrel?
+	$$min -> \Delta t 200 \mu s$$
+	$$max -> \Delta t 240 \mu s$$
+	Az oszcilloszkóp XY üzemmódjának segítségével rajzolja le a
+hiszterézises komparátor $U_{ki}-U_{be}$ karakterisztikáját! A SENSE
+potencióméter a bal míg a LEVEL potencióméter a jobboldali
+végállásban legyen.$$$$ Az ábra a 4. számú mellékletben található meg.
+\subsubsection{Komparátor késleltetési idejének vizsgálata}
+	Az előbbi kapcsolást felhasználva adjon a CH1 bemenetre 100 kHz-es
+négyszögjelet. A négyszög-jel negatív csúcsértéke 0 V, pozitív csúcsértéke 3
+V legyen.
+Mérje meg a komparátor késleltetési idejét a négyszögjel fel- és lefutó éléhez
+képest! $$fel -> \Delta t 400 ns$$
+		$$le -> \Delta t 920 ns$$
+	\section{18. sz. laboratóriumi mérés}
+	\subsection{A mérés célja}
+	Az ipari méréstechnikában a leggyakoribb mérendő jellemző a
+hőmérséklet.
+Hőmérséklet mérésére széles hőmérséklet tartományban
+fémalapú mérőellenállásokat, kisebb hőmérsékleti tartomány, de
+nagy érzékenységi igény esetén a félvezető alapúakat
+(termisztorok) alkalmaznak. Egyre elterjedtebbek az analóg vagy
+digitális kimeneti jellel rendelkező hőmérséklet mérő chippek is.
+Nagyobb hőmérsékletek mérésekor (0 – 1600 $^{\circ}C$) hőelemeket
+használnak. Jelen mérésben az említett hőmérséklet érzékelők legfontosabb
+tulajdonságaival ismerkedünk meg.
+	\subsection{Mérési feladatok}
+\subsubsection{Önmelegedés vizsgálata}
+Mérje meg a Therm 0 termisztor ellenállását a HM8012-es típusú
+digitális multiméterrel az alábbi táblázatban megadott
+méréshatárokban.
+Mint az alábbi táblázatból is látja a DMM az ellenállásmérő
+üzemmód esetén a különböző méréshatárokban más és más
+áramot hajt át a mérendő ellenálláson.
+A különböző méréshatárok beállítása után várja meg a termikus
+egyensúly beállását (nem változik tovább a mért ellenállás kb. 2
+perc). A 10 $\mu A$-es mérőáram esetén a mérés kezdetén mért értéket
+tekintse alap értéknek. Számítsa ki, hogy a különböző mérőáramok a termikus egyensúly
+beállta után mekkora relatív hibát okoznak!$$$$Mért értékek:$$$$\begin{tabular}{|c|c|c|c|c|c|}
+\hline 
+Méréshatár & Mérőáram & R (mérés kezdetén) & R (termikus egyensúly beállta után) & $\Delta R$ & $h \%$ \\ 
+\hline 
+500 $k\Omega$ (L4) & 10 $\mu A$ & 11,44 $k\Omega$ & 11,31 $k\Omega$ & 120 $\Omega$ & • \\ 
+\hline 
+50 $k\Omega$ (L3) & 100 $\mu A$ & 11,44 $k\Omega$ & 11,18 $k\Omega$ & 260 $\Omega$ & • \\ 
+\hline 
+5 $k\Omega$ (L2) & 1 mA & 11,44 $k\Omega$ & Offline & - & - \\ 
+\hline 
+\end{tabular} 
+\subsubsection{Hőmérséklet jelleggörbék felvétele}
+A mérendő objektum egy 6x6x1cm-es alumínium tömb, melynek
+a hátlapjára (6x6cm) egy 47 $\Omega$-os 25 W-os fűtőellenállást
+helyeztünk el.
+Az érzékelők a tömb felső szélén vannak elhelyezve. Ezzel az
+elrendezéssel próbáljuk meg biztosítani, hogy minden érzékelő
+közel azonos hőmérsékletet mérjen.
+Az alumínium tömb tetején a 6x1 cm-es felületen van 4 féle
+érzékelő rögzítve, ezek kivezetéseit találják meg a mérőpanel
+előlapján.
+A mérőpanel tápfeszültség ellátásának egy része fixen bekötött
+(12V és 42V), de az előlapra egy $\pm$15 V-os tápfeszültséget kell
+csatlakoztatni.
+A hőmérséklet változtatását a beépített kapcsoló változtatásával
+tudják elérni.
+A maximális hőmérséklet biztonsági okokból kb 50 $^{\circ}C$
+A mérést a hőmérséklet beállító kapcsoló minden állásában
+végezze el. A hőmérséklet beállítását egy szabályzás végzi. A
+kapcsolóval az alapjelet állítják. A stabil hőmérséklet
+beállításához kb. 3 percre van szükség. A termikus egyensúly
+beállásának elérését a thermisztor ellenállásváltozását figyelve
+tudjuk legegyszerűbben nyomon követni. Amikor a thermisztor
+ellenállása már nem változik (esetleg csak nagyon lassan)
+beálltnak tekinthetjük a termikus egyensúlyt.
+A méréshez használjon két darab HM8012-es, egy TR1667/B és
+két MX-25201-es típusú digitális multimétert.
+Tervezze meg melyik műszerrel érdemes melyik érzékelő kimeneti
+jelét mérni! A panel bal oldalán lévő piros banánhüvelyekre csatlakoztassa az
+egyik HM8012-es multimétert $^{\circ}C$ mérő üzemmódban, a műszer
+által mutatott feszültséget tekintsük a „hiteles” referenica
+hőmérsékletnek!
+$$$$Mért értékek:$$$$\begin{tabular}{|c|c|c|c|c|}
+\hline 
+Referencia hőmérséklet [$^{\circ}C$] & Therm [k$\Omega$] & PT100 [$\Omega$] & Hőelem [mV] & IC [mV] \\ 
+\hline 
+28 & 7,68 & 108,6 & 0,1 & 144 \\ 
+\hline 
+29,1 & 7,32 & 109,2 & 0,2 & 271,19 \\ 
+\hline 
+34,1 & 5,81 & 111,7 & 0,3 & 294,76 \\ 
+\hline 
+36,9 & 5,11 & 113,8 & 0,3 & 311,82 \\ 
+\hline 
+40,1 & 4,43 & 114,9 & 0,3 & 328,73 \\ 
+\hline 
+43 & 3,9 & 115,9 & 0,3 & 346,7 \\ 
+\hline 
+46,4 & 3,35 & 117,2 & 0,3 & 364,11 \\ 
+\hline 
+\end{tabular} $$$$Az ábra az 5. számú mellékletben található meg.
+\subsubsection{A szilárd testek felületén mérhető hőmérséklet eloszlásának vizsgálata}
+A mérendő objektum felfűtés után a kézi tapintófejes
+hőmérsékletmérő műszer segítségével mérje meg az alumínium
+tömb közepén és alsó szélén a hőmérsékletét.
+Adjon magyarázatot a mért hőmérséklet értékekre.$$$$Mért értékek:$$$$\begin{tabular}{|c|c|}
+\hline 
+Középen & Alul \\ 
+\hline 
+38,4 $^{\circ}C$ & 39,5 $^{\circ}C$  \\ 
+\hline 
+\end{tabular} 
+\tableofcontents
+\end{document}

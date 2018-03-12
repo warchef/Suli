@@ -1,0 +1,1068 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6500 64-bit) (preloaded format=pdflatex 2017.12.21)  2 JAN 2018 16:27
+entering extended mode
+**./aut_vizsga.tex
+(aut_vizsga.tex
+LaTeX2e <2017-04-15>
+Babel <3.15> and hyphenation patterns for 75 language(s) loaded.
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\article.cls"
+Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\size11.clo"
+File: size11.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@section=\count80
+\c@subsection=\count81
+\c@subsubsection=\count82
+\c@paragraph=\count83
+\c@subparagraph=\count84
+\c@figure=\count85
+\c@table=\count86
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\ltxmisc\anysize.sty"
+Package: anysize 1994/08/13 1.0 Contributed LaTeX2e package
+
+Package: `anysize' 1.0 <1994/08/13>
+\@Leftmargin=\dimen103
+\@Rightmargin=\dimen104
+\@Topmargin=\dimen105
+\@Bottommargin=\dimen106
+) ("C:\Program Files\MiKTeX 2.9\tex\latex\base\inputenc.sty"
+Package: inputenc 2015/03/17 v1.2c Input encoding file
+\inpenc@prehook=\toks14
+\inpenc@posthook=\toks15
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\utf8.def"
+File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
+Now handling font encoding OML ...
+... no UTF-8 mapping file for font encoding OML
+Now handling font encoding T1 ...
+... processing UTF-8 mapping file for font encoding T1
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\t1enc.dfu"
+File: t1enc.dfu 2017/01/28 v1.1t UTF-8 support for inputenc
+   defining Unicode char U+00A0 (decimal 160)
+   defining Unicode char U+00A1 (decimal 161)
+   defining Unicode char U+00A3 (decimal 163)
+   defining Unicode char U+00AB (decimal 171)
+   defining Unicode char U+00AD (decimal 173)
+   defining Unicode char U+00BB (decimal 187)
+   defining Unicode char U+00BF (decimal 191)
+   defining Unicode char U+00C0 (decimal 192)
+   defining Unicode char U+00C1 (decimal 193)
+   defining Unicode char U+00C2 (decimal 194)
+   defining Unicode char U+00C3 (decimal 195)
+   defining Unicode char U+00C4 (decimal 196)
+   defining Unicode char U+00C5 (decimal 197)
+   defining Unicode char U+00C6 (decimal 198)
+   defining Unicode char U+00C7 (decimal 199)
+   defining Unicode char U+00C8 (decimal 200)
+   defining Unicode char U+00C9 (decimal 201)
+   defining Unicode char U+00CA (decimal 202)
+   defining Unicode char U+00CB (decimal 203)
+   defining Unicode char U+00CC (decimal 204)
+   defining Unicode char U+00CD (decimal 205)
+   defining Unicode char U+00CE (decimal 206)
+   defining Unicode char U+00CF (decimal 207)
+   defining Unicode char U+00D0 (decimal 208)
+   defining Unicode char U+00D1 (decimal 209)
+   defining Unicode char U+00D2 (decimal 210)
+   defining Unicode char U+00D3 (decimal 211)
+   defining Unicode char U+00D4 (decimal 212)
+   defining Unicode char U+00D5 (decimal 213)
+   defining Unicode char U+00D6 (decimal 214)
+   defining Unicode char U+00D8 (decimal 216)
+   defining Unicode char U+00D9 (decimal 217)
+   defining Unicode char U+00DA (decimal 218)
+   defining Unicode char U+00DB (decimal 219)
+   defining Unicode char U+00DC (decimal 220)
+   defining Unicode char U+00DD (decimal 221)
+   defining Unicode char U+00DE (decimal 222)
+   defining Unicode char U+00DF (decimal 223)
+   defining Unicode char U+00E0 (decimal 224)
+   defining Unicode char U+00E1 (decimal 225)
+   defining Unicode char U+00E2 (decimal 226)
+   defining Unicode char U+00E3 (decimal 227)
+   defining Unicode char U+00E4 (decimal 228)
+   defining Unicode char U+00E5 (decimal 229)
+   defining Unicode char U+00E6 (decimal 230)
+   defining Unicode char U+00E7 (decimal 231)
+   defining Unicode char U+00E8 (decimal 232)
+   defining Unicode char U+00E9 (decimal 233)
+   defining Unicode char U+00EA (decimal 234)
+   defining Unicode char U+00EB (decimal 235)
+   defining Unicode char U+00EC (decimal 236)
+   defining Unicode char U+00ED (decimal 237)
+   defining Unicode char U+00EE (decimal 238)
+   defining Unicode char U+00EF (decimal 239)
+   defining Unicode char U+00F0 (decimal 240)
+   defining Unicode char U+00F1 (decimal 241)
+   defining Unicode char U+00F2 (decimal 242)
+   defining Unicode char U+00F3 (decimal 243)
+   defining Unicode char U+00F4 (decimal 244)
+   defining Unicode char U+00F5 (decimal 245)
+   defining Unicode char U+00F6 (decimal 246)
+   defining Unicode char U+00F8 (decimal 248)
+   defining Unicode char U+00F9 (decimal 249)
+   defining Unicode char U+00FA (decimal 250)
+   defining Unicode char U+00FB (decimal 251)
+   defining Unicode char U+00FC (decimal 252)
+   defining Unicode char U+00FD (decimal 253)
+   defining Unicode char U+00FE (decimal 254)
+   defining Unicode char U+00FF (decimal 255)
+   defining Unicode char U+0100 (decimal 256)
+   defining Unicode char U+0101 (decimal 257)
+   defining Unicode char U+0102 (decimal 258)
+   defining Unicode char U+0103 (decimal 259)
+   defining Unicode char U+0104 (decimal 260)
+   defining Unicode char U+0105 (decimal 261)
+   defining Unicode char U+0106 (decimal 262)
+   defining Unicode char U+0107 (decimal 263)
+   defining Unicode char U+0108 (decimal 264)
+   defining Unicode char U+0109 (decimal 265)
+   defining Unicode char U+010A (decimal 266)
+   defining Unicode char U+010B (decimal 267)
+   defining Unicode char U+010C (decimal 268)
+   defining Unicode char U+010D (decimal 269)
+   defining Unicode char U+010E (decimal 270)
+   defining Unicode char U+010F (decimal 271)
+   defining Unicode char U+0110 (decimal 272)
+   defining Unicode char U+0111 (decimal 273)
+   defining Unicode char U+0112 (decimal 274)
+   defining Unicode char U+0113 (decimal 275)
+   defining Unicode char U+0114 (decimal 276)
+   defining Unicode char U+0115 (decimal 277)
+   defining Unicode char U+0116 (decimal 278)
+   defining Unicode char U+0117 (decimal 279)
+   defining Unicode char U+0118 (decimal 280)
+   defining Unicode char U+0119 (decimal 281)
+   defining Unicode char U+011A (decimal 282)
+   defining Unicode char U+011B (decimal 283)
+   defining Unicode char U+011C (decimal 284)
+   defining Unicode char U+011D (decimal 285)
+   defining Unicode char U+011E (decimal 286)
+   defining Unicode char U+011F (decimal 287)
+   defining Unicode char U+0120 (decimal 288)
+   defining Unicode char U+0121 (decimal 289)
+   defining Unicode char U+0122 (decimal 290)
+   defining Unicode char U+0123 (decimal 291)
+   defining Unicode char U+0124 (decimal 292)
+   defining Unicode char U+0125 (decimal 293)
+   defining Unicode char U+0128 (decimal 296)
+   defining Unicode char U+0129 (decimal 297)
+   defining Unicode char U+012A (decimal 298)
+   defining Unicode char U+012B (decimal 299)
+   defining Unicode char U+012C (decimal 300)
+   defining Unicode char U+012D (decimal 301)
+   defining Unicode char U+012E (decimal 302)
+   defining Unicode char U+012F (decimal 303)
+   defining Unicode char U+0130 (decimal 304)
+   defining Unicode char U+0131 (decimal 305)
+   defining Unicode char U+0132 (decimal 306)
+   defining Unicode char U+0133 (decimal 307)
+   defining Unicode char U+0134 (decimal 308)
+   defining Unicode char U+0135 (decimal 309)
+   defining Unicode char U+0136 (decimal 310)
+   defining Unicode char U+0137 (decimal 311)
+   defining Unicode char U+0139 (decimal 313)
+   defining Unicode char U+013A (decimal 314)
+   defining Unicode char U+013B (decimal 315)
+   defining Unicode char U+013C (decimal 316)
+   defining Unicode char U+013D (decimal 317)
+   defining Unicode char U+013E (decimal 318)
+   defining Unicode char U+0141 (decimal 321)
+   defining Unicode char U+0142 (decimal 322)
+   defining Unicode char U+0143 (decimal 323)
+   defining Unicode char U+0144 (decimal 324)
+   defining Unicode char U+0145 (decimal 325)
+   defining Unicode char U+0146 (decimal 326)
+   defining Unicode char U+0147 (decimal 327)
+   defining Unicode char U+0148 (decimal 328)
+   defining Unicode char U+014A (decimal 330)
+   defining Unicode char U+014B (decimal 331)
+   defining Unicode char U+014C (decimal 332)
+   defining Unicode char U+014D (decimal 333)
+   defining Unicode char U+014E (decimal 334)
+   defining Unicode char U+014F (decimal 335)
+   defining Unicode char U+0150 (decimal 336)
+   defining Unicode char U+0151 (decimal 337)
+   defining Unicode char U+0152 (decimal 338)
+   defining Unicode char U+0153 (decimal 339)
+   defining Unicode char U+0154 (decimal 340)
+   defining Unicode char U+0155 (decimal 341)
+   defining Unicode char U+0156 (decimal 342)
+   defining Unicode char U+0157 (decimal 343)
+   defining Unicode char U+0158 (decimal 344)
+   defining Unicode char U+0159 (decimal 345)
+   defining Unicode char U+015A (decimal 346)
+   defining Unicode char U+015B (decimal 347)
+   defining Unicode char U+015C (decimal 348)
+   defining Unicode char U+015D (decimal 349)
+   defining Unicode char U+015E (decimal 350)
+   defining Unicode char U+015F (decimal 351)
+   defining Unicode char U+0160 (decimal 352)
+   defining Unicode char U+0161 (decimal 353)
+   defining Unicode char U+0162 (decimal 354)
+   defining Unicode char U+0163 (decimal 355)
+   defining Unicode char U+0164 (decimal 356)
+   defining Unicode char U+0165 (decimal 357)
+   defining Unicode char U+0168 (decimal 360)
+   defining Unicode char U+0169 (decimal 361)
+   defining Unicode char U+016A (decimal 362)
+   defining Unicode char U+016B (decimal 363)
+   defining Unicode char U+016C (decimal 364)
+   defining Unicode char U+016D (decimal 365)
+   defining Unicode char U+016E (decimal 366)
+   defining Unicode char U+016F (decimal 367)
+   defining Unicode char U+0170 (decimal 368)
+   defining Unicode char U+0171 (decimal 369)
+   defining Unicode char U+0172 (decimal 370)
+   defining Unicode char U+0173 (decimal 371)
+   defining Unicode char U+0174 (decimal 372)
+   defining Unicode char U+0175 (decimal 373)
+   defining Unicode char U+0176 (decimal 374)
+   defining Unicode char U+0177 (decimal 375)
+   defining Unicode char U+0178 (decimal 376)
+   defining Unicode char U+0179 (decimal 377)
+   defining Unicode char U+017A (decimal 378)
+   defining Unicode char U+017B (decimal 379)
+   defining Unicode char U+017C (decimal 380)
+   defining Unicode char U+017D (decimal 381)
+   defining Unicode char U+017E (decimal 382)
+   defining Unicode char U+01CD (decimal 461)
+   defining Unicode char U+01CE (decimal 462)
+   defining Unicode char U+01CF (decimal 463)
+   defining Unicode char U+01D0 (decimal 464)
+   defining Unicode char U+01D1 (decimal 465)
+   defining Unicode char U+01D2 (decimal 466)
+   defining Unicode char U+01D3 (decimal 467)
+   defining Unicode char U+01D4 (decimal 468)
+   defining Unicode char U+01E2 (decimal 482)
+   defining Unicode char U+01E3 (decimal 483)
+   defining Unicode char U+01E6 (decimal 486)
+   defining Unicode char U+01E7 (decimal 487)
+   defining Unicode char U+01E8 (decimal 488)
+   defining Unicode char U+01E9 (decimal 489)
+   defining Unicode char U+01EA (decimal 490)
+   defining Unicode char U+01EB (decimal 491)
+   defining Unicode char U+01F0 (decimal 496)
+   defining Unicode char U+01F4 (decimal 500)
+   defining Unicode char U+01F5 (decimal 501)
+   defining Unicode char U+0218 (decimal 536)
+   defining Unicode char U+0219 (decimal 537)
+   defining Unicode char U+021A (decimal 538)
+   defining Unicode char U+021B (decimal 539)
+   defining Unicode char U+0232 (decimal 562)
+   defining Unicode char U+0233 (decimal 563)
+   defining Unicode char U+1E02 (decimal 7682)
+   defining Unicode char U+1E03 (decimal 7683)
+   defining Unicode char U+200C (decimal 8204)
+   defining Unicode char U+2010 (decimal 8208)
+   defining Unicode char U+2011 (decimal 8209)
+   defining Unicode char U+2012 (decimal 8210)
+   defining Unicode char U+2013 (decimal 8211)
+   defining Unicode char U+2014 (decimal 8212)
+   defining Unicode char U+2015 (decimal 8213)
+   defining Unicode char U+2018 (decimal 8216)
+   defining Unicode char U+2019 (decimal 8217)
+   defining Unicode char U+201A (decimal 8218)
+   defining Unicode char U+201C (decimal 8220)
+   defining Unicode char U+201D (decimal 8221)
+   defining Unicode char U+201E (decimal 8222)
+   defining Unicode char U+2030 (decimal 8240)
+   defining Unicode char U+2031 (decimal 8241)
+   defining Unicode char U+2039 (decimal 8249)
+   defining Unicode char U+203A (decimal 8250)
+   defining Unicode char U+2423 (decimal 9251)
+   defining Unicode char U+1E20 (decimal 7712)
+   defining Unicode char U+1E21 (decimal 7713)
+)
+Now handling font encoding OT1 ...
+... processing UTF-8 mapping file for font encoding OT1
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\ot1enc.dfu"
+File: ot1enc.dfu 2017/01/28 v1.1t UTF-8 support for inputenc
+   defining Unicode char U+00A0 (decimal 160)
+   defining Unicode char U+00A1 (decimal 161)
+   defining Unicode char U+00A3 (decimal 163)
+   defining Unicode char U+00AD (decimal 173)
+   defining Unicode char U+00B8 (decimal 184)
+   defining Unicode char U+00BF (decimal 191)
+   defining Unicode char U+00C5 (decimal 197)
+   defining Unicode char U+00C6 (decimal 198)
+   defining Unicode char U+00D8 (decimal 216)
+   defining Unicode char U+00DF (decimal 223)
+   defining Unicode char U+00E6 (decimal 230)
+   defining Unicode char U+00EC (decimal 236)
+   defining Unicode char U+00ED (decimal 237)
+   defining Unicode char U+00EE (decimal 238)
+   defining Unicode char U+00EF (decimal 239)
+   defining Unicode char U+00F8 (decimal 248)
+   defining Unicode char U+0131 (decimal 305)
+   defining Unicode char U+0141 (decimal 321)
+   defining Unicode char U+0142 (decimal 322)
+   defining Unicode char U+0152 (decimal 338)
+   defining Unicode char U+0153 (decimal 339)
+   defining Unicode char U+0174 (decimal 372)
+   defining Unicode char U+0175 (decimal 373)
+   defining Unicode char U+0176 (decimal 374)
+   defining Unicode char U+0177 (decimal 375)
+   defining Unicode char U+0218 (decimal 536)
+   defining Unicode char U+0219 (decimal 537)
+   defining Unicode char U+021A (decimal 538)
+   defining Unicode char U+021B (decimal 539)
+   defining Unicode char U+2013 (decimal 8211)
+   defining Unicode char U+2014 (decimal 8212)
+   defining Unicode char U+2018 (decimal 8216)
+   defining Unicode char U+2019 (decimal 8217)
+   defining Unicode char U+201C (decimal 8220)
+   defining Unicode char U+201D (decimal 8221)
+)
+Now handling font encoding OMS ...
+... processing UTF-8 mapping file for font encoding OMS
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\omsenc.dfu"
+File: omsenc.dfu 2017/01/28 v1.1t UTF-8 support for inputenc
+   defining Unicode char U+00A7 (decimal 167)
+   defining Unicode char U+00B6 (decimal 182)
+   defining Unicode char U+00B7 (decimal 183)
+   defining Unicode char U+2020 (decimal 8224)
+   defining Unicode char U+2021 (decimal 8225)
+   defining Unicode char U+2022 (decimal 8226)
+)
+Now handling font encoding OMX ...
+... no UTF-8 mapping file for font encoding OMX
+Now handling font encoding U ...
+... no UTF-8 mapping file for font encoding U
+   defining Unicode char U+00A9 (decimal 169)
+   defining Unicode char U+00AA (decimal 170)
+   defining Unicode char U+00AE (decimal 174)
+   defining Unicode char U+00BA (decimal 186)
+   defining Unicode char U+02C6 (decimal 710)
+   defining Unicode char U+02DC (decimal 732)
+   defining Unicode char U+200C (decimal 8204)
+   defining Unicode char U+2026 (decimal 8230)
+   defining Unicode char U+2122 (decimal 8482)
+   defining Unicode char U+2423 (decimal 9251)
+))
+("C:\Program Files\MiKTeX 2.9\tex\generic\babel\babel.sty"
+Package: babel 2017/11/03 3.15 The Babel package
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\babel\switch.def"
+File: switch.def 2017/11/03 3.15 Babel switching mechanism
+)
+*************************************
+* Local config file bblopts.cfg used
+*
+(C:\Users\koncz\AppData\Roaming\MiKTeX\2.9\tex\latex\arabi\bblopts.cfg
+File: bblopts.cfg 2005/09/08 v0.1 add Arabic and Farsi to "declared" options of
+ babel
+)
+(C:\Users\koncz\AppData\Roaming\MiKTeX\2.9\tex\latex\babel-hungarian\magyar.ldf
+Language: magyar 2017/08/30 v1.5c Magyar support from the babel v3.7 system
+("C:\Program Files\MiKTeX 2.9\tex\generic\babel\babel.def"
+File: babel.def 2017/11/03 3.15 Babel common definitions
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\babel\switch.def"
+File: switch.def 2017/11/03 3.15 Babel switching mechanism
+)
+\babel@savecnt=\count87
+\U@D=\dimen107
+)
+Package babel Info: Making ` an active character on input line 2801.
+\c@footnote@add=\count88
+\c@footnote@ch=\count89
+))
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\fontenc.sty"
+Package: fontenc 2017/04/05 v2.0i Standard LaTeX package
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\t1enc.def"
+File: t1enc.def 2017/04/05 v2.0i Standard LaTeX file
+LaTeX Font Info:    Redeclaring font encoding T1 on input line 48.
+))
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsmath.sty"
+Package: amsmath 2017/09/02 v2.17a AMS math features
+\@mathmargin=\skip43
+
+For additional information on amsmath, use the `?' option.
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amstext.sty"
+Package: amstext 2000/06/29 v2.01 AMS text
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsgen.sty"
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks16
+\ex@=\dimen108
+))
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsbsy.sty"
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen109
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsopn.sty"
+Package: amsopn 2016/03/08 v2.02 operator names
+)
+\inf@bad=\count90
+LaTeX Info: Redefining \frac on input line 213.
+\uproot@=\count91
+\leftroot@=\count92
+LaTeX Info: Redefining \overline on input line 375.
+\classnum@=\count93
+\DOTSCASE@=\count94
+LaTeX Info: Redefining \ldots on input line 472.
+LaTeX Info: Redefining \dots on input line 475.
+LaTeX Info: Redefining \cdots on input line 596.
+\Mathstrutbox@=\box26
+\strutbox@=\box27
+\big@size=\dimen110
+LaTeX Font Info:    Redeclaring font encoding OML on input line 712.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 713.
+\macc@depth=\count95
+\c@MaxMatrixCols=\count96
+\dotsspace@=\muskip10
+\c@parentequation=\count97
+\dspbrk@lvl=\count98
+\tag@help=\toks17
+\row@=\count99
+\column@=\count100
+\maxfields@=\count101
+\andhelp@=\toks18
+\eqnshift@=\dimen111
+\alignsep@=\dimen112
+\tagshift@=\dimen113
+\tagwidth@=\dimen114
+\totwidth@=\dimen115
+\lineht@=\dimen116
+\@envbody=\toks19
+\multlinegap=\skip44
+\multlinetaggap=\skip45
+\mathdisplay@stack=\toks20
+LaTeX Info: Redefining \[ on input line 2817.
+LaTeX Info: Redefining \] on input line 2818.
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\amsfonts.sty"
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\amssymb.sty"
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphicx.sty"
+Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\keyval.sty"
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks21
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphics.sty"
+Package: graphics 2017/06/25 v1.2c Standard LaTeX Graphics (DPC,SPQR)
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\trig.sty"
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics-cfg\graphics.cfg"
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 99.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics-def\pdftex.def"
+File: pdftex.def 2017/06/24 v1.0g Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen117
+\Gin@req@width=\dimen118
+)
+(aut_vizsga.aux)
+\openout1 = `aut_vizsga.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+
+(C:\Users\koncz\AppData\Roaming\MiKTeX\2.9\tex\context\base\supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count102
+\scratchdimen=\dimen119
+\scratchbox=\box28
+\nofMPsegments=\count103
+\nofMParguments=\count104
+\everyMPshowfont=\toks22
+\MPscratchCnt=\count105
+\MPscratchDim=\dimen120
+\MPnumerator=\count106
+\makeMPintoPDFobject=\count107
+\everyMPtoPDFconversion=\toks23
+) ("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\epstopdf-base.sty"
+Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\infwarerr.sty"
+Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\grfext.sty"
+Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\kvdefinekeys.sty"
+Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ltxcmds.sty"
+Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
+)))
+("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\kvoptions.sty"
+Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\kvsetkeys.sty"
+Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\etexcmds.sty"
+Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ifluatex.sty"
+Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+)))
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\pdftexcmds.sty"
+Package: pdftexcmds 2017/03/19 v0.25 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ifpdf.sty"
+Package: ifpdf 2017/03/15 v3.2 Provides the ifpdf switch
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+38.
+Package grfext Info: Graphics extension search list:
+(grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 456.
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\article.cls"
+LaTeX Info: Redefining \cal on input line 496.
+LaTeX Info: Redefining \mit on input line 497.
+)
+<1_mikroproc_blokk.png, id=1, 319.1925pt x 222.07968pt>
+File: 1_mikroproc_blokk.png Graphic file (type png)
+<use 1_mikroproc_blokk.png>
+Package pdftex.def Info: 1_mikroproc_blokk.png  used on input line 19. on input
+ line 19.
+Package pdftex.def Info: Requested size: 319.19171pt x 222.07913pt on input lin
+e 19.
+LaTeX Font Info:    Try loading font information for U+msa on input line 27.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 27.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+) [1
+
+
+{C:/Users/koncz/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <./1_mikropr
+oc_blokk.png>]
+<2_folyamati_blokk.png, id=11, 482.55281pt x 155.83218pt>
+File: 2_folyamati_blokk.png Graphic file (type png)
+<use 2_folyamati_blokk.png>
+Package pdftex.def Info: 2_folyamati_blokk.png  used on input line 38. on input
+ line 38.
+Package pdftex.def Info: Requested size: 337.78465pt x 109.08177pt on input lin
+e 38.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 48.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\omscmr.fd"
+File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 48.
+ [2 <./2_folyamati_blokk.png>]
+
+LaTeX Warning: Command \textemdash invalid in math mode on input line 53.
+
+<3_modularis_plc.png, id=18, 482.55281pt x 155.83218pt>
+File: 3_modularis_plc.png Graphic file (type png)
+<use 3_modularis_plc.png>
+Package pdftex.def Info: 3_modularis_plc.png  used on input line 61. on input l
+ine 61.
+Package pdftex.def Info: Requested size: 337.78465pt x 109.08177pt on input lin
+e 61.
+[3 <./3_modularis_plc.png>]
+<4_rack_plc.png, id=24, 452.4403pt x 130.98938pt>
+File: 4_rack_plc.png Graphic file (type png)
+<use 4_rack_plc.png>
+Package pdftex.def Info: 4_rack_plc.png  used on input line 75. on input line 7
+5.
+Package pdftex.def Info: Requested size: 316.70605pt x 91.69193pt on input line
+ 75.
+<5_plc_program_szerk.png, id=25, 313.17pt x 249.18094pt>
+File: 5_plc_program_szerk.png Graphic file (type png)
+<use 5_plc_program_szerk.png>
+Package pdftex.def Info: 5_plc_program_szerk.png  used on input line 88. on inp
+ut line 88.
+Package pdftex.def Info: Requested size: 219.21748pt x 174.42545pt on input lin
+e 88.
+ [4 <./4_rack_plc.png>]
+<6_tasz_futas.png, id=29, 482.55281pt x 169.38281pt>
+File: 6_tasz_futas.png Graphic file (type png)
+<use 6_tasz_futas.png>
+Package pdftex.def Info: 6_tasz_futas.png  used on input line 104. on input lin
+e 104.
+Package pdftex.def Info: Requested size: 337.78465pt x 118.56714pt on input lin
+e 104.
+ [5 <./5_plc_program_szerk.png> <./6_tasz_futas.png>]
+<7_ciklikus_plc.png, id=33, 234.8775pt x 152.06813pt>
+File: 7_ciklikus_plc.png Graphic file (type png)
+<use 7_ciklikus_plc.png>
+Package pdftex.def Info: 7_ciklikus_plc.png  used on input line 118. on input l
+ine 118.
+Package pdftex.def Info: Requested size: 164.41312pt x 106.44695pt on input lin
+e 118.
+
+Underfull \hbox (badness 10000) in paragraph at lines 132--133
+
+ []
+
+[6 <./7_ciklikus_plc.png>]
+<8_fsk.png, id=37, 225.09094pt x 60.225pt>
+File: 8_fsk.png Graphic file (type png)
+<use 8_fsk.png>
+Package pdftex.def Info: 8_fsk.png  used on input line 157. on input line 157.
+Package pdftex.def Info: Requested size: 225.09038pt x 60.22484pt on input line
+ 157.
+ [7]
+<9_negyvez_tav.png, id=44, 286.06876pt x 100.12407pt>
+File: 9_negyvez_tav.png Graphic file (type png)
+<use 9_negyvez_tav.png>
+Package pdftex.def Info: 9_negyvez_tav.png  used on input line 166. on input li
+ne 166.
+Package pdftex.def Info: Requested size: 286.06805pt x 100.12381pt on input lin
+e 166.
+<10_haromvez_tav.png, id=45, 281.55188pt x 100.87688pt>
+File: 10_haromvez_tav.png Graphic file (type png)
+<use 10_haromvez_tav.png>
+Package pdftex.def Info: 10_haromvez_tav.png  used on input line 176. on input 
+line 176.
+Package pdftex.def Info: Requested size: 281.55118pt x 100.87662pt on input lin
+e 176.
+<11_ketvez_tav.png, id=46, 273.27094pt x 131.74219pt>
+File: 11_ketvez_tav.png Graphic file (type png)
+<use 11_ketvez_tav.png>
+Package pdftex.def Info: 11_ketvez_tav.png  used on input line 183. on input li
+ne 183.
+Package pdftex.def Info: Requested size: 273.27025pt x 131.74185pt on input lin
+e 183.
+
+Underfull \hbox (badness 10000) in paragraph at lines 169--190
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 169--190
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 169--190
+
+ []
+
+[8 <./8_fsk.png> <./9_negyvez_tav.png>] [9 <./10_haromvez_tav.png> <./11_ketvez
+_tav.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 227--229
+
+ []
+
+[10]
+<12_osszegzo_blokk_ele.png, id=56, 466.74374pt x 112.16907pt>
+File: 12_osszegzo_blokk_ele.png Graphic file (type png)
+<use 12_osszegzo_blokk_ele.png>
+Package pdftex.def Info: 12_osszegzo_blokk_ele.png  used on input line 252. on 
+input line 252.
+Package pdftex.def Info: Requested size: 466.7426pt x 112.16878pt on input line
+ 252.
+<13_osszegzo_blokk_moge.png, id=57, 462.97969pt x 107.65219pt>
+File: 13_osszegzo_blokk_moge.png Graphic file (type png)
+<use 13_osszegzo_blokk_moge.png>
+Package pdftex.def Info: 13_osszegzo_blokk_moge.png  used on input line 257. on
+ input line 257.
+Package pdftex.def Info: Requested size: 462.97855pt x 107.65192pt on input lin
+e 257.
+<14_osszegzo_blokk_megcserel.png, id=58, 457.71pt x 100.87688pt>
+File: 14_osszegzo_blokk_megcserel.png Graphic file (type png)
+<use 14_osszegzo_blokk_megcserel.png>
+Package pdftex.def Info: 14_osszegzo_blokk_megcserel.png  used on input line 26
+2. on input line 262.
+Package pdftex.def Info: Requested size: 457.7089pt x 100.87662pt on input line
+ 262.
+<15_elagazas_blokk_megcserel.png, id=59, 451.6875pt x 104.64093pt>
+File: 15_elagazas_blokk_megcserel.png Graphic file (type png)
+<use 15_elagazas_blokk_megcserel.png>
+Package pdftex.def Info: 15_elagazas_blokk_megcserel.png  used on input line 26
+7. on input line 267.
+Package pdftex.def Info: Requested size: 451.68639pt x 104.64066pt on input lin
+e 267.
+<16_elagazas_blokk_moge.png, id=60, 478.03593pt x 109.91063pt>
+File: 16_elagazas_blokk_moge.png Graphic file (type png)
+<use 16_elagazas_blokk_moge.png>
+Package pdftex.def Info: 16_elagazas_blokk_moge.png  used on input line 272. on
+ input line 272.
+Package pdftex.def Info: Requested size: 478.03476pt x 109.91034pt on input lin
+e 272.
+<17_elagazas_blokk_ele.png, id=61, 482.55281pt x 101.62968pt>
+File: 17_elagazas_blokk_ele.png Graphic file (type png)
+<use 17_elagazas_blokk_ele.png>
+Package pdftex.def Info: 17_elagazas_blokk_ele.png  used on input line 277. on 
+input line 277.
+Package pdftex.def Info: Requested size: 482.55162pt x 101.62943pt on input lin
+e 277.
+ [11 <./12_osszegzo_blokk_ele.png>] [12 <./13_osszegzo_blokk_moge.png> <./14_os
+szegzo_blokk_megcserel.png> <./15_elagazas_blokk_megcserel.png> <./16_elagazas_
+blokk_moge.png> <./17_elagazas_blokk_ele.png>]
+<18_vezerles_hatas.png, id=76, 505.13719pt x 233.37187pt>
+File: 18_vezerles_hatas.png Graphic file (type png)
+<use 18_vezerles_hatas.png>
+Package pdftex.def Info: 18_vezerles_hatas.png  used on input line 286. on inpu
+t line 286.
+Package pdftex.def Info: Requested size: 505.13596pt x 233.37129pt on input lin
+e 286.
+<19_letra_jeloles.png, id=77, 368.87813pt x 185.19188pt>
+File: 19_letra_jeloles.png Graphic file (type png)
+<use 19_letra_jeloles.png>
+Package pdftex.def Info: 19_letra_jeloles.png  used on input line 306. on input
+ line 306.
+Package pdftex.def Info: Requested size: 295.10289pt x 148.15369pt on input lin
+e 306.
+
+Underfull \hbox (badness 10000) in paragraph at lines 297--364
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 297--364
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 297--364
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 297--364
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 297--364
+
+ []
+
+[13 <./18_vezerles_hatas.png>]
+<20_szabalyozas_blokk.png, id=83, 507.39563pt x 289.08pt>
+File: 20_szabalyozas_blokk.png Graphic file (type png)
+<use 20_szabalyozas_blokk.png>
+Package pdftex.def Info: 20_szabalyozas_blokk.png  used on input line 368. on i
+nput line 368.
+Package pdftex.def Info: Requested size: 405.91705pt x 231.2643pt on input line
+ 368.
+ [14 <./19_letra_jeloles.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 372--379
+
+ []
+
+[15 <./20_szabalyozas_blokk.png>]
+<21_szabalyozas_blokk_II.png, id=92, 321.45094pt x 143.03438pt>
+File: 21_szabalyozas_blokk_II.png Graphic file (type png)
+<use 21_szabalyozas_blokk_II.png>
+Package pdftex.def Info: 21_szabalyozas_blokk_II.png  used on input line 427. o
+n input line 427.
+Package pdftex.def Info: Requested size: 321.45015pt x 143.03401pt on input lin
+e 427.
+<22_szabalyozas_blokk_merev_vcs.png, id=93, 299.61937pt x 130.23656pt>
+File: 22_szabalyozas_blokk_merev_vcs.png Graphic file (type png)
+<use 22_szabalyozas_blokk_merev_vcs.png>
+Package pdftex.def Info: 22_szabalyozas_blokk_merev_vcs.png  used on input line
+ 437. on input line 437.
+Package pdftex.def Info: Requested size: 299.61864pt x 130.23624pt on input lin
+e 437.
+
+Underfull \hbox (badness 10000) in paragraph at lines 423--446
+
+ []
+
+[16 <./21_szabalyozas_blokk_II.png> <./22_szabalyozas_blokk_merev_vcs.png>]
+<23_szabalyozas_stat.png, id=99, 248.42813pt x 127.97812pt>
+File: 23_szabalyozas_stat.png Graphic file (type png)
+<use 23_szabalyozas_stat.png>
+Package pdftex.def Info: 23_szabalyozas_stat.png  used on input line 457. on in
+put line 457.
+Package pdftex.def Info: Requested size: 248.42752pt x 127.9778pt on input line
+ 457.
+<24_szabalyozas_karak.png, id=100, 220.57407pt x 212.29312pt>
+File: 24_szabalyozas_karak.png Graphic file (type png)
+<use 24_szabalyozas_karak.png>
+Package pdftex.def Info: 24_szabalyozas_karak.png  used on input line 466. on i
+nput line 466.
+Package pdftex.def Info: Requested size: 220.57352pt x 212.2926pt on input line
+ 466.
+
+Underfull \hbox (badness 10000) in paragraph at lines 470--530
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 470--530
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 470--530
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 470--530
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 470--530
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 470--530
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 470--530
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 470--530
+
+ []
+
+[17 <./23_szabalyozas_stat.png> <./24_szabalyozas_karak.png>] [18] [19]
+<25_p_tag_bode.png, id=114, 408.02437pt x 286.82156pt>
+File: 25_p_tag_bode.png Graphic file (type png)
+<use 25_p_tag_bode.png>
+Package pdftex.def Info: 25_p_tag_bode.png  used on input line 590. on input li
+ne 590.
+Package pdftex.def Info: Requested size: 408.02338pt x 286.82085pt on input lin
+e 590.
+<26_p_tag_atmenet.png, id=115, 422.32782pt x 277.035pt>
+File: 26_p_tag_atmenet.png Graphic file (type png)
+<use 26_p_tag_atmenet.png>
+Package pdftex.def Info: 26_p_tag_atmenet.png  used on input line 595. on input
+ line 595.
+Package pdftex.def Info: Requested size: 422.32678pt x 277.03432pt on input lin
+e 595.
+
+[20] [21 <./25_p_tag_bode.png> <./26_p_tag_atmenet.png>]
+<27_i_tag_bode.png, id=123, 408.02437pt x 289.08pt>
+File: 27_i_tag_bode.png Graphic file (type png)
+<use 27_i_tag_bode.png>
+Package pdftex.def Info: 27_i_tag_bode.png  used on input line 605. on input li
+ne 605.
+Package pdftex.def Info: Requested size: 408.02338pt x 289.07928pt on input lin
+e 605.
+<28_i_tag_atmenet.png, id=124, 401.24907pt x 259.7203pt>
+File: 28_i_tag_atmenet.png Graphic file (type png)
+<use 28_i_tag_atmenet.png>
+Package pdftex.def Info: 28_i_tag_atmenet.png  used on input line 610. on input
+ line 610.
+Package pdftex.def Info: Requested size: 401.24808pt x 259.71967pt on input lin
+e 610.
+ [22 <./27_i_tag_bode.png>]
+<29_d_tag_bode.png, id=128, 401.24907pt x 289.08pt>
+File: 29_d_tag_bode.png Graphic file (type png)
+<use 29_d_tag_bode.png>
+Package pdftex.def Info: 29_d_tag_bode.png  used on input line 620. on input li
+ne 620.
+Package pdftex.def Info: Requested size: 401.24808pt x 289.07928pt on input lin
+e 620.
+ [23 <./28_i_tag_atmenet.png>]
+<30_ht1_tag_bode.png, id=132, 401.24907pt x 277.035pt>
+File: 30_ht1_tag_bode.png Graphic file (type png)
+<use 30_ht1_tag_bode.png>
+Package pdftex.def Info: 30_ht1_tag_bode.png  used on input line 629. on input 
+line 629.
+Package pdftex.def Info: Requested size: 401.24808pt x 277.03432pt on input lin
+e 629.
+<31_ht1_tag_atmenet.png, id=133, 401.24907pt x 275.52937pt>
+File: 31_ht1_tag_atmenet.png Graphic file (type png)
+<use 31_ht1_tag_atmenet.png>
+Package pdftex.def Info: 31_ht1_tag_atmenet.png  used on input line 634. on inp
+ut line 634.
+Package pdftex.def Info: Requested size: 401.24808pt x 275.52869pt on input lin
+e 634.
+ [24 <./29_d_tag_bode.png>] [25 <./30_ht1_tag_bode.png> <./31_ht1_tag_atmenet.p
+ng>]
+<32_pt1_tag_bode.png, id=141, 401.24907pt x 266.49562pt>
+File: 32_pt1_tag_bode.png Graphic file (type png)
+<use 32_pt1_tag_bode.png>
+Package pdftex.def Info: 32_pt1_tag_bode.png  used on input line 643. on input 
+line 643.
+Package pdftex.def Info: Requested size: 401.24808pt x 266.49496pt on input lin
+e 643.
+<33_pt1_tag_atmenet.png, id=142, 401.24907pt x 259.7203pt>
+File: 33_pt1_tag_atmenet.png Graphic file (type png)
+<use 33_pt1_tag_atmenet.png>
+Package pdftex.def Info: 33_pt1_tag_atmenet.png  used on input line 648. on inp
+ut line 648.
+Package pdftex.def Info: Requested size: 401.24808pt x 259.71967pt on input lin
+e 648.
+ [26 <./32_pt1_tag_bode.png>]
+<34_pt2_tag_bode.png, id=146, 401.24907pt x 269.50688pt>
+File: 34_pt2_tag_bode.png Graphic file (type png)
+<use 34_pt2_tag_bode.png>
+Package pdftex.def Info: 34_pt2_tag_bode.png  used on input line 657. on input 
+line 657.
+Package pdftex.def Info: Requested size: 401.24808pt x 269.50621pt on input lin
+e 657.
+<35_pt2_tag_atmenet.png, id=147, 401.24907pt x 261.22594pt>
+File: 35_pt2_tag_atmenet.png Graphic file (type png)
+<use 35_pt2_tag_atmenet.png>
+Package pdftex.def Info: 35_pt2_tag_atmenet.png  used on input line 662. on inp
+ut line 662.
+Package pdftex.def Info: Requested size: 401.24808pt x 261.22528pt on input lin
+e 662.
+ [27 <./33_pt1_tag_atmenet.png>] [28 <./34_pt2_tag_bode.png> <./35_pt2_tag_atme
+net.png>]
+<36_soros.png, id=154, 185.19188pt x 42.1575pt>
+File: 36_soros.png Graphic file (type png)
+<use 36_soros.png>
+Package pdftex.def Info: 36_soros.png  used on input line 674. on input line 67
+4.
+Package pdftex.def Info: Requested size: 185.1914pt x 42.15738pt on input line 
+674.
+<37_parhuzamos.png, id=155, 185.94469pt x 93.34875pt>
+File: 37_parhuzamos.png Graphic file (type png)
+<use 37_parhuzamos.png>
+Package pdftex.def Info: 37_parhuzamos.png  used on input line 684. on input li
+ne 684.
+Package pdftex.def Info: Requested size: 185.94421pt x 93.34851pt on input line
+ 684.
+<38_visszacsatolt.png, id=156, 182.18062pt x 85.06781pt>
+File: 38_visszacsatolt.png Graphic file (type png)
+<use 38_visszacsatolt.png>
+Package pdftex.def Info: 38_visszacsatolt.png  used on input line 695. on input
+ line 695.
+Package pdftex.def Info: Requested size: 182.18016pt x 85.0676pt on input line 
+695.
+
+[29 <./36_soros.png> <./37_parhuzamos.png>]
+<39_it1_atmeneti.png, id=162, 532.23843pt x 383.18156pt>
+File: 39_it1_atmeneti.png Graphic file (type png)
+<use 39_it1_atmeneti.png>
+Package pdftex.def Info: 39_it1_atmeneti.png  used on input line 716. on input 
+line 716.
+Package pdftex.def Info: Requested size: 266.11856pt x 191.5903pt on input line
+ 716.
+<40_it1_bode.png, id=163, 322.95656pt x 259.7203pt>
+File: 40_it1_bode.png Graphic file (type png)
+<use 40_it1_bode.png>
+Package pdftex.def Info: 40_it1_bode.png  used on input line 721. on input line
+ 721.
+Package pdftex.def Info: Requested size: 322.95576pt x 259.71967pt on input lin
+e 721.
+
+Underfull \hbox (badness 10000) in paragraph at lines 713--725
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 713--725
+
+ []
+
+[30 <./38_visszacsatolt.png>] [31 <./39_it1_atmeneti.png> <./40_it1_bode.png>]
+<41_hpt1_atmeneti.png, id=172, 322.95656pt x 259.7203pt>
+File: 41_hpt1_atmeneti.png Graphic file (type png)
+<use 41_hpt1_atmeneti.png>
+Package pdftex.def Info: 41_hpt1_atmeneti.png  used on input line 729. on input
+ line 729.
+Package pdftex.def Info: Requested size: 258.36559pt x 207.77652pt on input lin
+e 729.
+<42_hpt1_bode.png, id=173, 322.95656pt x 259.7203pt>
+File: 42_hpt1_bode.png Graphic file (type png)
+<use 42_hpt1_bode.png>
+Package pdftex.def Info: 42_hpt1_bode.png  used on input line 734. on input lin
+e 734.
+Package pdftex.def Info: Requested size: 258.36559pt x 207.77652pt on input lin
+e 734.
+<43_pt3_atmeneti.png, id=174, 322.95656pt x 259.7203pt>
+File: 43_pt3_atmeneti.png Graphic file (type png)
+<use 43_pt3_atmeneti.png>
+Package pdftex.def Info: 43_pt3_atmeneti.png  used on input line 741. on input 
+line 741.
+Package pdftex.def Info: Requested size: 258.36559pt x 207.77652pt on input lin
+e 741.
+<44_pt3_bode.png, id=175, 333.49594pt x 259.7203pt>
+File: 44_pt3_bode.png Graphic file (type png)
+<use 44_pt3_bode.png>
+Package pdftex.def Info: 44_pt3_bode.png  used on input line 746. on input line
+ 746.
+Package pdftex.def Info: Requested size: 266.7971pt x 207.77652pt on input line
+ 746.
+
+(aut_vizsga.toc [32 <./41_hpt1_atmeneti.png> <./42_hpt1_bode.png>] [33 <./43_pt
+3_atmeneti.png> <./44_pt3_bode.png>]
+Overfull \vbox (95.01215pt too high) has occurred while \output is active []
+
+
+[34] [35] [36])
+\tf@toc=\write3
+\openout3 = `aut_vizsga.toc'.
+
+ [37] (aut_vizsga.aux) ) 
+Here is how much of TeX's memory you used:
+ 4535 strings out of 493312
+ 65414 string characters out of 3138898
+ 136306 words of memory out of 3000000
+ 7960 multiletter control sequences out of 15000+200000
+ 17067 words of font info for 55 fonts, out of 3000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 41i,7n,27p,757b,377s stack positions out of 5000i,500n,10000p,200000b,50000s
+ <C:\Users\koncz\AppData\Local\MiKTeX\2.9\fonts\pk\ljfo
+ur\jknappen\ec\dpi600\ecbx1095.pk> <C:\Users\koncz\AppData\Local\MiKTeX\2.9\fon
+ts\pk\ljfour\jknappen\ec\dpi600\ecrm1095.pk> <C:\Users\koncz\AppData\Local\MiKT
+eX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1200.pk> <C:\Users\koncz\AppData\
+Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1440.pk><C:/Program Fil
+es/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTe
+X 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9/fo
+nts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type
+1/public/amsfonts/cm/cmmi6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/
+amsfonts/cm/cmmi8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/
+cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr6.p
+fb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Pro
+gram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Fil
+es/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
+Output written on aut_vizsga.pdf (37 pages, 1101945 bytes).
+PDF statistics:
+ 523 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 221 words of extra memory for PDF output out of 10000 (max. 10000000)
+

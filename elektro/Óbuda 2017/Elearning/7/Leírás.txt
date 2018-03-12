@@ -1,0 +1,18 @@
+A fejezet célja: a térvezérlésû tranzisztorokkal megvalósított erõsítõk mûködésének megismerése, jellemzõinek számítása.
+
+A fejezet tartalma: közös source-ú AC erõsítõ kapcsolás.
+
+Kulcsszavak: alapkapcsolás, csatolókondenzátor, fázishelyzet, feszültség-idõfüggvény, helyettesítõ kép, feszültségerõsítési tényezõ, bemeneti ellenállás, kimeneti ellenállás.
+
+ Térvezérlésû tranzisztoros erõsítõ kapcsolások Tananyag
+Jegyzet
+
+ Feladatok Tananyag
+Gyakorlás céljára
+
+ Feladatok megoldása Tananyag
+Önellenõrzés céljára
+
+ Térvezérlésû tranzisztoros erõsítõ kapcsolások Tananyag
+Áramkörök mûködésének szemléltetése TINA áramkör analizáló programmal
+

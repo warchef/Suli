@@ -1,0 +1,20 @@
+A fejezet célja: elsajátítani a félvezetõk alapját képezõ p-n átmenetek kialakításának és mûködésének elvét.
+
+A fejezet tartalma:
+
+A "p-n" átmenet, áramvezetés félvezetõkben. A dióda szerkezete, karakterisztikája, a munkapont fogalma, beállítása, a dióda dinamikus jellemzõi. Zener dióda szerkezete, mûködése, munkapont beállítása.
+
+Kulcsszavak: n-típusú félvezetõ, p típusú félvezetõ, drift (sodródási) áram, diffúziós áram, pn átmenet, záróréteg, záróirányú igénybevétel, Zener-letörés, lavinasokszorozódás, Vezetõirányú (nyitóirányú) feszültség igénybevétel, anód, katód, karakterisztika, dióda-egyenlet, rétegkapacitás, hõfokfüggés, helyettesítõ kép, munkapont, dinamikus ellenállás, meredekség, Zener dióda.
+
+ Félvezetõk. Diódák Tananyag
+Jegyzet
+
+ Diódák Tananyag
+PPT
+
+ Feladatok Tananyag
+Gyakorlás céljára
+
+ Feladatok megoldása Tananyag
+Önellenõrzés céljára
+

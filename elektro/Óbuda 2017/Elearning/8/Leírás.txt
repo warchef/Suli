@@ -1,0 +1,20 @@
+A fejezet célja: szimmetrikus erõsítõk mûködésének ismertetése.
+
+A fejezet tartalma:
+
+Szimmetrikus bemenetû, aszimmetrikus kimenetû erõsítõk definíciója, vezérlési módok, bemeneti impedanciák, kimeneti impedanciák. A differenciaerõsítõ elve, kapcsolása, fizikai mûködése, tulajdonságai szimmetrikus és közös vezérlés esetén. A közösjelelnyomás (CMRR) definíciója, a közösjelelnyomás növelésének módszerei.
+
+Kulcsszavak: szimmetrikus erõsítõ, felépítés, munkapont, szimmetrikus vezérlés, feszültségek idõfüggvényei, helyettesítõ kép, szimmetrikus feszültségerõsítés, gm, bemeneti ellenállások, kimeneti ellenállás, közös vezérlés.
+
+ Differenciaerõsítõ Tananyag
+Jegyzet
+
+ Feladatok Tananyag
+Gyakorlás céljára
+
+ Feladatok megoldása Tananyag
+Önellenõrzés céljára
+
+ Differenciaerõsítõk Tananyag
+Áramkörök mûködésének szemléltetése TINA áramkör analizáló programmal
+

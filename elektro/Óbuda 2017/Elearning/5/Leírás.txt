@@ -1,0 +1,20 @@
+A fejezet célja: megismertetni a bipoláris tranzisztoros erõsítõ alapkapcsolások típusait, mûködését, méretezését.
+
+A fejezet tartalma:
+
+Közös emitterû váltakozófeszültségû erõsítõ kapcsolás. Közös emitterû váltakozófeszültségû erõsítõ kapcsolás emitterköri negatív visszacsatolással. Két tápfeszültséges munkapont beállítású közös emitterû AC erõsítõ kapcsolás.
+
+Kulcsszavak: kisjelû, csatolókondenzátor, emitter hidegítõ kondenzátor, fázishelyzet, fizikai, helyettesítõ kép, feszültségerõsítési tényezõje, bemeneti ellenállása, kimeneti ellenállás, feszültség-idõfüggvény, váltakozó áramú munkaegyenes, visszacsatolás.
+
+ Bipoláris tranzisztoros erõsítõ kapcsolások Tananyag
+Jegyzet
+
+ Feladatok Tananyag
+Gyakorlások céljára
+
+ Feladatok megoldása Tananyag
+Önellenõrzés céljára
+
+ Bipoláris tranzisztoros erõsítõ kapcsolások Tananyag
+Áramkörök mûködésének szemléltetése TINA áramkör analizáló programmal
+

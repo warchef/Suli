@@ -1,0 +1,22 @@
+A fejezet célja: a háromrétegû félvezetõ eszköz, a bipoláris tranzisztor alapvetõ mûködésének megismerése, a munkapont beállításának alapos elsajátítása.
+
+A fejezet tartalma:
+
+Bipoláris tranzisztor szerkezete, mûködése, karakterisztikái. A tranzisztor paramétereinek hõmérsékletfüggése, a munkapont beállítása. A jelerõsítés folyamata (földelt emitteres alapkapcsolásnál). A tranzisztor kisjelû helyettesítõ képe.
+
+Kulcsszavak: bázis, kollektor, emitter, alapkapcsolása, mûködési mód, áramerõsítési tényezõ, tranzisztor egyenlet, jelleggörbék, hõfokfüggés, munkapont beállítása, kisjelû helyettesítõ kép
+
+ Bipoláris tranzisztor Tananyag
+Szerkezet, mûködés, karakterisztika, munkapont beállítás
+
+Jegyzet
+
+ Feladatok Tananyag
+Gyakorlás céljára
+
+ Feladatok megoldása Tananyag
+Önellenõrzés céljára
+
+ Bipoláris tranzisztorok munkapont beállítása Tananyag
+Áramkörök mûködésének szemléltetése TINA áramkör analizáló programmal
+

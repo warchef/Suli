@@ -1,0 +1,20 @@
+A fejezet célja: megismertetni a térvezérlésû tranzisztorok szerkezetét, jellemzõit, karakterisztikáit.
+
+A fejezet tartalma:
+
+Záróréteges térvezérlésû tranzisztor szerkezete, jelképi jelölése. Tranzisztor karakterisztikák. JFET hõmérsékletfüggése. A JFET munkapont beállítása. A JFET kisjelû helyettesítõ képe.
+
+Kulcsszavak: záróréteges, drain, source, gate, „n” csatornás, „p” csatornás, vezérlõ feszültség, transzfer karakterisztika, IDS, IDSS, UGS, U0, kimeneti karakterisztika, hõmérsékletfüggése, munkapont, kisjelû helyettesítõ kép.
+
+ Térvezérlésû tranzisztorok Tananyag
+Jegyzet
+
+ Feladatok Tananyag
+Gyakorlás céljára
+
+ Feladatok megoldása Tananyag
+Önellenõrzés céljára
+
+ Térvezérlésû tranzisztorok Tananyag
+Áramkörök mûködésének szemléltetése TINA áramkör analizáló programmal
+

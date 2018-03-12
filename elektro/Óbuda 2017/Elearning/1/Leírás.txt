@@ -1,0 +1,21 @@
+A fejezet célja: Az elektronika meghatározó áramkörei az erõsítõk. A konkrét kapcsolásokkal való ismerkedés elõtt fontos elsajátítani a téma elméleti alapjait.
+
+A fejezet tartalma:
+
+Az analóg jelek erõsítésének alapfogalmai: üzemi jellemzõk, transzfer karakterisztika, az aszimmetrikus erõsítõ célszerû helyettesítõ képe, lineáris négypólusok. Erõsítõk visszacsatolása.
+
+Kulcsszavak: erõsítõk, lezárás, erõsítõjellemzõk, bemeneti impedancia, kimeneti impedancia, erõsítésjellemzõk, feszültségerõsítés, áramerõsítés, erõsítõ impedancia, erõsítõ admittancia, teljesítményerõsítés, transzfer karakterisztika, lineáris erõsítõk, aszimmetrikus erõsítõ, visszacsatolás, eredõ erõsítés, visszacsatolás alaptípusai, szimmetrikus erõsítõ.
+
+ Analóg jelek erõsítésének alapfogalmai. Lineáris erõsítõk Tananyag
+Jegyzet
+
+ Analóg jelek erõsítésének alapfogalmai. Lineáris erõsítõk. Tananyag
+PPT
+
+Az elméleti anyag rövid összefoglalása.
+
+ Ellenõrzõ kérdések Tananyag
+Gyakorlás céljára
+
+ Az ellenõrzõ kérdések megoldása Tananyag
+Önellenõrzés céljára

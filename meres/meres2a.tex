@@ -1,0 +1,459 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[magyar]{babel}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\begin{document}
+\title{Méréstechnika laboratórium 2/a jegyzőkönyv}
+\author{Koncz István Márton}
+\date{\today}
+\maketitle
+\newpage
+\section{12. sz. laboratóriumi mérés}
+	Mérés dátuma:\date{2016.09.20}
+	\subsection{A mérés célja}
+	A teljesítmény összetevőinek, jellemzőinek méréssel történő meghatározása.
+A mérés hibáinak meghatározása, figyelembevétele.
+	\subsection{Mérési feladatok}
+		\subsubsection{A mérőpanelen található izzó teljesítmény-feszültség karakterisztikájának meghatározása! A teljesítménymérő
+használatának megismerése.
+A teljesítmény számítása ill. mérése hibáinak
+meghatározása!}
+Cél: A mérőpanelen található $24 V$, $60 W$-os izzó a
+teljesítmény mérése teljesítménymérővel valamint
+teljesítmény-feszültség karakterisztikájának
+felvétele, váltakozó feszültségű táplálás esetén, $0$ –
+$20 V$ tartományban $2 V$-os lépésenként.\\\\
+A mérendő objektum:\begin{figure}[hbtp]
+\centering
+\includegraphics[scale=0.5]{Toroid.png}
+\caption{}
+\end{figure}\\\\
+Mérési eredmények:
+
+
+\begin{tabular}{|c|c|c|c|}
+\hline 
+Feszültség & Izzón átfolyó áram & Teljesítmény & Izzó számított ellenállása \\ 
+\hline 
+0V & 0A & 0W & - \\ 
+\hline 
+2V & 0,73A & 1,50W & 1,73$\Omega$ \\ 
+\hline 
+4V & 0,92A & 3,71W & 4,30$\Omega$ \\ 
+\hline 
+6V & 1,15A & 7,03W & 5,21$\Omega$ \\ 
+\hline 
+8V & 1,31A & 10,59W & 6,10$\Omega$ \\ 
+\hline 
+10V & 1,45A & 14,90W & 6,80$\Omega$ \\ 
+\hline 
+12V & 1,63A & 19,16W & 7,45$\Omega$ \\ 
+\hline 
+14V & 1,75A & 24,15W & 8,04$\Omega$ \\ 
+\hline 
+16V & 1,88A & 29,0W & 8,51$\Omega$ \\ 
+\hline 
+18V & 2,0A & 34,64W & 9,00$\Omega$ \\ 
+\hline 
+20V & - & - & - \\ 
+\hline 
+\end{tabular} \\\\
+$20V$ esetén átlépnénk a $2A$-es áramkorlátot, ezért azt a mérést kihagyjuk.	
+\begin{figure}[hbtp]
+			 \centering
+			 \includegraphics[scale=0.7]{telj_fesz.png}
+			 \caption{•}
+			 \end{figure}\\\\
+			 \begin{figure}[hbtp]
+			 \centering
+			 \includegraphics[scale=0.7]{ell_fesz.png}
+			 \caption{•}
+			 \end{figure}
+\newpage
+A legnagyobb mért érték esetén a mérés bizonytalansága (MAXWELL MX-25 201):$$\pm h_I=\pm \left(3 + \frac{10}{200} * 100 \right)\% = 8\%$$ $$\pm h_U = \pm \left(1 + \frac{50}{18} * 0,07 \right)\% = \pm 1,19\%$$ $$h_P = h_I + h_U = \left(8+1,19\right)\% = 9,19\%$$
+			 \subsubsection{Teljesítmény mérés ohmos-induktív terhelés esetén}
+A mérés során egy, az ohmos terheléssel (izzóval) sorosan kapcsolt tekercs hatását mérjük, úgy, hogy a vasmag kiszerelhetőségének segítségével változtatjuk a tekercs induktivitását.
+A teljesítménymérővel a hatásos teljesítményt mérünk.
+\begin{tabular}{|c|c|c|c|}
+\hline 
+\multicolumn{4}{|c|}{Vasmag nélkül} \\ 
+\hline 
+Tápfeszültség & Mért áram & Mért feszültség & Mért teljesítmény \\ 
+\hline 
+5V & 1A & 5V & 5,13W \\ 
+\hline 
+10V & 1A & 10,10A & 14,66W \\ 
+\hline 
+\end{tabular} \\\\
+\\\\ $\left|S\right| = U*I$ külső áram, illetve feszültségmérővel mért értékek, amelyek kisebbek, mint a hasznos teljesítmény. Ez ellentmondás, mivel mindig a látszólagos teljesítmény nagysága a legnagyobb. 
+Ezt betudhatjuk mérési hibának, mivel az induktivitás nagyon kicsi, ezért $\phi$ is nagyon kicsi.
+Közelítőleg a hasznos teljesítmény egyenlő a látszólagos teljesítménnyel.\\\\
+\begin{tabular}{|c|c|c|c|}
+\hline 
+\multicolumn{4}{|c|}{Vasmaggal} \\ 
+\hline 
+Tápfeszültség & Mért áram & Mért feszültség & Mért teljesítmény \\ 
+\hline 
+5V & 0,48A & 5V & 2,05W \\ 
+\hline 
+10V & 0,80A & 10,10A & 7,55W \\ 
+\hline 
+\end{tabular}
+$$\left|S\right| = U*I = 2,3 VA$$
+$$\frac{P}{\left|S\right|} = cos^{-1} \phi = 0,887$$
+$$\phi = 27,51 fok$$
+$$Q_{M} = \sin \phi * \left|S\right| = 1,06 vAr$$\\\\
+\begin{tabular}{|c|c|c|c|}
+\hline 
+\multicolumn{4}{|c|}{Gumilappal a vasmag résében} \\ 
+\hline 
+Tápfeszültség & Mért áram & Mért feszültség & Mért teljesítmény \\ 
+\hline 
+5V & 1A & 5,03V & 5,20W \\ 
+\hline 
+10V & 1,49A & 10,10A & 14,42W \\ 
+\hline 
+\end{tabular}
+Itt valamivel nagyobb az induktivitás, mint a vasmag nélküli mérésben, ezért a 10V feszültség esetén mért teljesítményérték kiértékelhető.
+$$\left|S\right| = \left(1,49*10,10\right)VA = 14,9 VA$$
+$$P = 14,42 W$$
+$$\phi = cos^{-1}\left(14,42/14.9\right) = 10,34 fok$$
+$$Q = \left(\left(\sin 10.34\right)*14,9\right)vAr = 2,65 vAr$$
+\section{13. sz. laboratóriumi mérés}
+	Mérés dátuma:\date{2016.09.13}
+	\subsection{A mérés célja}
+	A digitális oszcilloszkóp kezelésének többlet funkcióinak
+elsajátítása, a kapott mérési eredmények kiértékeléséhez
+szükséges szemlélet kialakítása.
+	\subsection{Mérési feladatok}
+		\subsubsection{Az oszcilloszkóp csatorna-menük vizsgálata}
+		\begin{enumerate}
+			\item Beállítások változtatásának eredményei CH1 csatornán:
+				\begin{itemize}
+					\item[--] Csatolás: nincs változás, akkor lenne, ha ténylegesen jelet kötnénk a bemenetre
+					\item[--] Sávkorlátozás: V/DIV kijelzésnél megjelenik egy BW felirat, ha be van kapcsolva
+					\item[--] V/DIV: pontosabb beállítás
+				\end{itemize}
+			\item Az 1V/DIV és a 10mV/DIV finom-beállítások közötti eltérések:\\\\
+			\begin{tabular}{|c|c|}
+			\hline 
+			1V/DIV & 10mV/DIV \\ 
+			\hline 
+			2V<X<5V: 40mV & 10mV<X<11mv: 0,2mV \\ 
+			\hline 
+			1V<X<2V: 20mV & 5mV<X<10mV: 0,1mV \\ 
+			\hline 
+			500mV<X<1V: 10mV & - \\ 
+			\hline 
+			\end{tabular}
+			\item A függőleges pozíció állításához tartozó megfigyeléseim:
+				\begin{itemize}
+					\item[--] CH1 csatorna függőleges pozíciója 1 osztással feljebb került +100mV esetén
+					\item[--] -150mV pozíció mellett a lépésköz 4mV
+				\end{itemize}				 
+		\end{enumerate}
+		\subsubsection{Horizontális menü vizsgálata}
+		\begin{enumerate}
+			\item A Window megjelenítés hatása, rajzzal:
+			\\\\
+						\begin{figure}[hbtp]
+						\centering
+				    		 \includegraphics[scale=0.5]{teljes/osc_hor.jpg}
+						\caption{Ablaktartomány beállításakor}
+						\end{figure}
+			\\
+					\begin{figure}[hbtp]
+					\centering
+					\includegraphics[scale=0.5]{teljes/osc_hor_zoom.jpg}
+					\caption{Ablak megjelenítésekor}
+					\end{figure}\\\\
+			\item Sec/DIV hatása: Belenagyítunk a képbe.
+			\item Autoset hatása, rajzzal:
+			Autoset hatására az ábra értékelhetetlen. A megállításhoz szükséges holdoff idő: $6,950 \mu s$ \\\\\begin{figure}[hbtp]
+			\centering
+			\includegraphics[scale=0.5]{teljes/osc_autoset.jpg}
+			\caption{Autoset}
+			\end{figure}
+					
+		\end{enumerate}
+		\subsubsection{Az utótriggerelés, az előtriggerelés és a késleltetett utótriggerelés vizsgálata}
+			\begin{enumerate}
+				\item A vízszintes pozíció állító működésének vizsgálata:\\
+				-1 osztással való trigger pozíció állítás 90 fokos fáziskését jelent.	A +5 DIV-es eltolás egy előző egész periódust jelenít meg a képernyő közepétől. A nagy tartományban való állíthatóság jól használható a trigger pozíció előtti vagy utáni jelalak  vizsgálatára.
+				\item Set to Zero vizsgálata: a gomb megnyomásával a képernyő közepére helyezhetjük a trigger pozíciót.
+				\item Az oszcilloszkóp jelalakjainak vizsgálata:
+				\\\\
+				\begin{figure}[hbtp]
+				\centering
+				\includegraphics[scale=1]{teljes/osc_Qa_1.jpg}
+				\caption{1MHz négyszögjel}
+				\end{figure}
+				\begin{figure}[hbtp]
+				\centering
+				\includegraphics[scale=1]{teljes/osc_Qa_2.jpg}
+				\caption{QA}
+				\end{figure}
+				\begin{figure}[hbtp]
+				\centering
+				\includegraphics[scale=1]{teljes/osc_Qa_3.jpg}
+				\caption{QB}
+				\end{figure}
+				\begin{figure}[hbtp]
+				\centering
+				\includegraphics[scale=1]{teljes/osc_Qa_4.jpg}
+				\caption{QC}
+				\end{figure}
+				\begin{figure}[hbtp]
+				\centering
+				\includegraphics[scale=1]{teljes/osc_Qa_5.jpg}
+				\caption{QD}
+				\end{figure}
+				\item A jel a képernyőn kívüli részeinek vizsgálata: késleltetett utótriggerelési mód. A memória mérete korlátozza a feldolgozható adatmennyiséget.
+			\end{enumerate}
+			\subsubsection{A trigger menü vizsgálata}
+			\begin{enumerate}
+				\item Nagy és kisfrekvenciás elnyomás határfrekvenciájának mérése.\\\\\begin{tabular}{|c|c|}
+				\hline 
+				Triggerforrás & CH1 \\ 
+				\hline 
+				Trigger él & emelkedő \\ 
+				\hline 
+				Triggerelési üzemmód & Auto \\ 
+				\hline 
+				Triggerjel csatolása & HF: 55 kHz; LF: 13,52 kHz \\ 
+				\hline 
+				\end{tabular}  
+				\item 1 kHz-es négyszögjel vizsgálata CH1 csatornán, kb. 500 $\mu s$ impulzusszélesség mellett: alsó határ 481 $\mu s$, felső határ 532 $\mu s$
+			\end{enumerate}
+			\subsubsection{Kibővített matematikai funkciók vizsgálata}
+			A Math Menu gomb 3 funkciót kínál: összegzés, különbségképzés, FFT spektrum analízis.
+			\subsubsection{Automatikus gyorsmérések elvégzése}
+			\begin{tabular}{|c|c|c|}
+			\hline 
+			Mennyiség & Szinuszjel & Négyszögjel \\ 
+			\hline 
+			f & $1 kHz$ & $10 kHz$ \\ 
+			\hline 
+			T & $1 ms$ & $100 \mu s$ \\ 
+			\hline 
+			Mean & $23,7 mV$ & $134 mV$ \\ 
+			\hline 
+			Pk-Pk & $3,92 V$ & $2,72 V$ \\ 
+			\hline 
+			Cyc RMS & $1,37 V$ & $1,10 V$ \\ 
+			\hline 
+			Min & $-1,92 V$ & $-1,04 V$ \\ 
+			\hline 
+			Max & $2,0 V$ & $1,32 V$ \\ 
+			\hline 
+			Rise time & $296 \mu s$ & $79,6 ns$ \\ 
+			\hline 
+			Fall time & $288 \mu s$ & $78,57 ns$ \\ 
+			\hline 
+			Pos Width & $494 \mu s$ & $50,67 \mu s$ \\ 
+			\hline 
+			Neg Width & $506 \mu s$ & $49,40\mu s$ \\ 
+			\hline 
+			\end{tabular} 
+			$$$$
+			Négyszögjel felfutási idejének mérése:\\\\
+			\begin{tabular}{|c|c|}
+			\hline 
+			TIME/DIV & Négyszögjel felfutási ideje \\ 
+			\hline 
+			$50 \mu s$ & $157 ns$ \\ 
+			\hline 
+			$25 \mu s$ & $76,79 \mu s$ \\ 
+			\hline 
+			$10 \mu s$ & $33,85 \mu s$ \\ 
+			\hline 
+			$5\mu s$ & $28,75 \mu s$ \\ 
+			\hline 
+			\end{tabular} 
+\section{14. sz. laboratóriumi mérés}
+	Mérés dátuma:\date{2016.10.04}
+	\subsection{A mérés célja}
+	Az ellenállás mérésére használatos néhány módszer alkalmazásának elsajátítása. Igen kis ellenállások nagypontosságú mérése.
+A méréseknél előforduló mérési hibák meghatározása.
+	\subsection{Mérési feladatok}
+		\subsubsection{Feszültség összehasonlító módszerrel határozza meg a 4. sz
+mérőpanelen található R7 $= 10 \Omega $ és R4 $= 82 \Omega $ névleges értékű ellenállások pontos értékét és bizonytalanságukat!
+A mért és a számított eredményeket foglalja össze táblázatba. A méréseknél
+az elérhető legnagyobb pontosságra törekedjék!}
+		Mérendő objektum:
+		\\\\
+		\begin{figure}[hbtp]
+		\centering
+		\includegraphics[scale=0.5]{teljes/fesz_ossze.png}
+		\caption{Feszültség összehasonlító módszer}
+		\end{figure}
+		\\\\
+		Határadatok: mivel $R_G$ a legnagyobb ellenállás, és mindegyiknek a megengedett maximálisan felvehető teljesítménye $0,25 W$, ezért célszerű $R1 = R_G$ ellenállással a maximális tápfeszültséget meghatározni.
+		$$P = I^2_{m} * R$$
+		$$I_m = \sqrt{\frac{P}{R}} = \sqrt{\frac{0,25W}{1k\Omega}} = 15,8 mA$$
+		$$U_{Tmax} = \frac{I_m * R_G}{3} = \frac{15,8 mA * 1 k\Omega}{3} = 5 V$$
+		Mért értékek:\\\\
+		\begin{tabular}{|c|c|c|}
+		\hline 
+		$R_x$ & $R_4$ & $R_7$ \\ 
+		\hline 
+		$U_N$ & 43 mV & 43 mV \\ 
+		\hline 
+		$U_X$ & 359,5 mV & 43 mV \\ 
+		\hline 
+		$R_{valodi}$ & - & $8,37 \Omega$ \\ 
+		\hline 
+		\end{tabular} 
+		\\\\ Mérési hiba miatt az $R_4$ ellenállás értéke hibás.$$R_X = R_N * \frac{U_X}{U_N}$$
+		
+		Hibaszámítás (HM8012):\\\\
+		
+		$$\pm h_u = \pm \left(0,05\% + 0,004\% * \frac{U_{mh}}{U_m}\right)$$
+		$$\pm h_{UX7} = 5,57 \%$$
+		$$\pm h_{UN7} = 2,37 \%$$
+		$$\pm h_{RN} = \pm \left(h_{RN} + h_{UN} + h_{UX}\right) = \pm 7,96 \%$$
+		A mérési hiba szerintem túl nagy, rossz volt az általam használt mérési módszer.
+		\subsubsection{Áramösszehasonlító módszerrel határozza meg a 4. sz mérőpanelen
+található R15 $= 100 k\Omega$ névleges értékű, valamint az R11 ismeretlen értékű
+ellenállásokat és bizonytalanságukat! A mért és a számított eredményeket
+foglalja össze táblázatba. A méréseknél az elérhető legnagyobb pontosságra
+törekedjék!
+}		Mérendő objektum:
+		\\\\\begin{figure}[hbtp]
+		\centering
+		\includegraphics[scale=0.2]{teljes/aram_ossze.png}
+		\caption{Áram összehasonlító módszer}
+		\end{figure}
+		\\\\Határadatok: Áramkorlát $I = 3mA$, feszültségkorlát:$$
+		P= U*I$$
+		$$U_{max} = \sqrt{P*R} = \sqrt{0,25 * 100 k\Omega} = 158V$$
+		$$U_T = \frac{U_{max}}{5} = 30 V $$
+		\\\\Mért értékek:\\\\
+		\begin{tabular}{|c|c|c|}
+		\hline 
+		$R_x$ & $R_{11}$ & $R_{15}$ \\ 
+		\hline 
+		$I_N$ & $300 \mu A$ & $300 \mu A$ \\ 
+		\hline 
+		$I_X$ & $844 \mu A$ & $303,6 \mu A$ \\ 
+		\hline 
+		$R_{valodi}$ & $35,54 k\Omega$  & $98,82 k\Omega$ \\ 
+		\hline 
+		\end{tabular}
+		$$R_X = R_N * \frac{I_N}{I_X}$$ 
+		Hibaszámítás (Maxwell):
+		$$\pm h = h_{rdg} + \frac{D}{N_K}*100 \%$$
+		$$\pm h_{IN} = \pm 1,83 \%$$
+		$$\pm h_{IR11} = \pm 1,61 \%$$
+		$$\pm h_{IR15} = \pm 1,83 \%$$
+		$$\pm h_{RX} = \pm \left(h_{RN} + h_{IN} + h_{IX}\right)$$
+		$$\pm h_{R11} = \pm 3,46 \%$$
+		$$\pm h_{R15} = \pm 3,68 \%$$
+		\newpage
+		\subsection{Két- ill. négyvezetékes módszer segítségével határozza meg a 4. sz
+mérőpanelen található R3 =$ 0,5\Omega$ névleges értékű ellenállást! A mért és a
+számított eredményeket foglalja össze táblázatba A méréseknél az elérhető
+legnagyobb pontosságra törekedjék!}
+		Mérendő objektum:\\\\
+		\begin{figure}[hbtp]
+		\centering
+		\includegraphics[scale=0.5]{teljes/ket_negy_vez.png}
+		\caption{4 vezetékes ellenállásmérés}
+		\end{figure}
+		
+		Határadatok:
+		$$I = \sqrt{\frac{P_{R2}}{R_2}} I = \sqrt{\frac{20W}{20\Omega}} = 1 A$$
+		$$U_T = I * \left(R2 + R3\right) = 1A * \left(20\Omega + 0,5\Omega\right) = 20,5 V$$\begin{tabular}{|c|c|c|c|}
+		\hline 
+		Módszer & I & U & R \\ 
+		\hline 
+		Kétvezetékes rövid & 0,9 mA & 504 mV & $0,561 \Omega$ \\ 
+		\hline 
+		Kétvezetékes hosszú & 0,9 mA & 587 mV & $0,652 \Omega$ \\ 
+		\hline 
+		Négyvezetékes rövid & 0,9 & 472 mV & $0,524 \Omega$ \\ 
+		\hline 
+		Négyvezetékes hosszú & 0,9 & 491 mV & $0,545 \Omega$ \\ 
+		\hline 
+		\end{tabular} 
+\section{15. sz. laboratóriumi mérés}
+	Mérés dátuma:\date{2016.09.27}
+	\subsection{A mérés célja}
+	Kapuzással és impulzusszámlálással dolgozó digitális frekvencia- és időmérő
+működési elvének és működésének modellen történő bemutatása az alapvető
+üzemmódokban. A kapcsolást alkotó áramkörök vizsgálata.
+
+	\subsection{Mérési feladatok}
+		\subsubsection{Az Nx számláló számlálási bizonytalanságának mérése}
+		Állítson be a függvénygenerátoron kb. 15Hz-es négyszög-jelet! Válasszon a
+mérőpanel frekvenciamérő üzemmódjában 10MHz-es méréshatárt és mérje
+meg a jel frekvenciáját!
+		\begin{figure}[hbtp]
+		\centering
+		\includegraphics[scale=0.5]{teljes/nx_biz.png}
+		\caption{Az impulzusszámlálás hibája}
+		\end{figure}
+		\subsubsection{Közvetlen frekvenciamérés}
+		Oszcilloszkóp segítségével állítson be a függvénygenerátor kimenetén
+négyszögjelet, a pozitív szint 3 V, a negatív szint 0 V legyen!
+		\\\\
+		Mérendő objektum:
+		\begin{figure}[hbtp]
+		\centering
+		\includegraphics[scale=0.3]{teljes/kozv_frekvencia.png}
+		\caption{}
+		\end{figure}
+		\newpage\begin{tabular}{|c|c|c|c|c|c|c|}
+		\hline 
+		f[Hz] & 10 & $10^2$ & $10^3$ & $10^4$ & $10^5$ & $10^6$ \\ 
+		\hline 
+		Nx & 1 & 10 & 103 & 1040 & 10083 & 100325 \\ 
+		\hline 
+		$h_{fx}$ & 1 & 0,1 & 0,01 & 0,001 & 0,0001 & 0,00001 \\ 
+		\hline 
+		\end{tabular} 
+		$$h_{fx} = h_{fR} + \frac{1}{Nx}; h_{fR} = 10^{-6}$$
+		$$Mode=FREQ; RANGE=10000 \frac{kHz}{ms}$$
+		RANGE kapcsoló 3 állásának mérése:\\\\
+		\begin{tabular}{|c|c|c|c|}
+		\hline 
+		RANGE & 100 kHz & 1000 kHz & 10000 kHz \\ 
+		\hline 
+		Nx & 10029 & 10029 & 1003 \\ 
+		\hline 
+		$h_{fX}$ & 0,00010071 & 0,00010071 & 0,000998008 \\ 
+		\hline 
+		\end{tabular} 
+		\\\\A RANGE kapcsoló legnagyobb állásában a hiba 10x-sére nőtt, mivel nem elég digit a kijelzéshez.
+		\subsubsection{Periódusidőmérésen alapuló frekvenciamérés}
+		Oszcilloszkóp segítségével állítson be a függvénygenerátor kimenetén
+négyszögjelet, a pozitív szint 3 V, a negatív szint 0 V legyen!
+		\\\\
+		\begin{tabular}{|c|c|c|c|c|c|c|}
+		\hline 
+		f[Hz] & 1 & 10 & 100 & $10^3$ & $10^4$ & $10^5$ \\ 
+		\hline 
+		Nx & 994472 & 100780 & 10360 & 1000 & 99 & 8 \\ 
+		\hline 
+		$h_{fx}$ & $2*10^{-6}$ & $10,9*10^{-6}$ & $47,56*10^{-6}$ & $1,001*10^{-3}$ & $10,2*10^{-3}$ & 0,125 \\ 
+		\hline 
+		\end{tabular} 
+		$$h_{Tx} = h_{fR} + \frac{1}{Nx}; h_{fR} = 10^{-6}$$
+		$$Mode=FREQ; RANGE=10000 \frac{kHz}{ms}$$
+		RANGE kapcsoló 3 állásának mérése:\\\\
+		\begin{tabular}{|c|c|c|c|}
+		\hline 
+		RANGE & 100 ms & 1000 ms & 10000 ms \\ 
+		\hline 
+		Nx & 999528 & 99970 & 9999 \\ 
+		\hline 
+		$h_{fX}$ & 1 & 0,1 & 0,01 \\ 
+		\hline 
+		\end{tabular} 
+		\\\\A RANGE kapcsoló legnagyobb állásában a hiba 10x-sére nőtt, mivel nem elég digit a kijelzéshez.
+\tableofcontents
+\end{document}

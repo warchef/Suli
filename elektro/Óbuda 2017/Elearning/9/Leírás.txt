@@ -1,0 +1,20 @@
+A fejezet célja: a mûveleti erõsítõk tulajdonságainak, és a mûveleti erõsítõkkel megvalósított egyenfeszültségû erõsítõknek az ismertetése.
+
+A fejezet tartalma:
+
+Az integrált mûveleti erõsítõ definíciója, felépítése (blokkséma), az ideális és valóságos mûveleti erõsítõ tulajdonságai, katalógusadatai. A mûveleti erõsítõk munkapontja. Neminvertáló erõsítõ, feszültségkövetõ erõsítõ, invertáló erõsítõ kapcsolások mûködése, jellemzõik meghatározása.
+
+Kulcsszavak: tömbvázlat, jelképi jelölés, transzfer karakterisztika, neminvertáló, visszacsatolás, eredõ feszültségerõsítés, bemeneti ellenállás, kimeneti ellenállás, munkapont beállítás, feszültségkövetõ, invertáló erõsítõ, feszültségerõsítés.
+
+ Mûveleti erõsítõk Tananyag
+Jegyzet
+
+ Feladatok Tananyag
+Gyakorlás céljára
+
+ Feladatok megoldása Tananyag
+Önellenõrzés céljára
+
+ Mûveleti erõsítõk Tananyag
+Áramkörök mûködésének szemléltetése TINA áramkör analizáló programmal
+

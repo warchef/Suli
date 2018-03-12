@@ -1,0 +1,27 @@
+;Szimulátor alaphelyzetbe állítása
+Reset
+
+;Kezdeti feltételek beállítása: felfelé számlálás
+Set Reset 1 0
+Set Up/Down 0 0
+Set Load 1 0
+
+;Resetbõl felengedés 100ns-nál
+Set Reset 0 100
+
+;1us-ig (1000ns) futtatjuk
+Go 1000
+
+;(1100ns-nál járunk)
+;Visszafelé számlálás tesztje
+Set Up/Down 1 1250
+Go 500
+
+;(1750ns-nál járunk)
+;Megvizsgáljuk, mûködik-e a betöltés
+Set Value 4 1800
+Set Load 0 1850
+set Load 1 1900
+Go 1000
+
+;Vége a tesztnek

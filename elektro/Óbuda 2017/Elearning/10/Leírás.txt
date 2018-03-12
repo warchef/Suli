@@ -1,0 +1,19 @@
+A fejezet célja: a mûveleti erõsítõk alkalmazástechnikájának ismertetése.
+
+A fejezet tartalma:
+
+Összegzõ erõsítõk. Különbségképzõ (differencia) erõsítõk. Áramgenerátorok.
+
+Kulcsszavak: szuperpozíció, virtuális földpont, bemeneti áramok, kimeneti feszültség, szimmetrikus bemeneti feszültség, Rtmin, Rtmax
+
+ Mûveleti erõsítõk alkalmazása Tananyag
+Összegzõ, különbségképzõ erõsítõk. Áramgenerátorok.
+
+Jegyzet
+
+ Feladatok Tananyag
+Gyakorlás céljára
+
+ Feladatok megoldása Tananyag
+Önellenõrzés céljára
+

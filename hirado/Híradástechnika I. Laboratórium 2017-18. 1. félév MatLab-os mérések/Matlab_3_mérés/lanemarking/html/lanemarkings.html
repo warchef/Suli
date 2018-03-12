@@ -1,0 +1,214 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN">
+<html xmlns:mwsh="http://www.mathworks.com/namespace/mcode/v1/syntaxhighlight.dtd">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   
+      <!--
+This HTML is auto-generated from an M-file.
+To make changes, update the M-file and republish this document.
+      -->
+      <title>Lane Marking Identification</title>
+      <meta name="generator" content="MATLAB 7.3">
+      <meta name="date" content="2006-10-17">
+      <meta name="m-file" content="lanemarkings"><style>
+
+body {
+  background-color: white;
+  margin:10px;
+}
+
+h1 {
+  color: #990000; 
+  font-size: x-large;
+}
+
+h2 {
+  color: #990000;
+  font-size: medium;
+}
+
+/* Make the text shrink to fit narrow windows, but not stretch too far in 
+wide windows. */ 
+p,h1,h2,div.content div {
+  max-width: 600px;
+  /* Hack for IE6 */
+  width: auto !important; width: 600px;
+}
+
+pre.codeinput {
+  background: #EEEEEE;
+  padding: 10px;
+}
+@media print {
+  pre.codeinput {word-wrap:break-word; width:100%;}
+} 
+
+span.keyword {color: #0000FF}
+span.comment {color: #228B22}
+span.string {color: #A020F0}
+span.untermstring {color: #B20000}
+span.syscmd {color: #B28C00}
+
+pre.codeoutput {
+  color: #666666;
+  padding: 10px;
+}
+
+pre.error {
+  color: red;
+}
+
+p.footer {
+  text-align: right;
+  font-size: xx-small;
+  font-weight: lighter;
+  font-style: italic;
+  color: gray;
+}
+
+  </style></head>
+   <body>
+      <div class="content">
+         <h1>Lane Marking Identification</h1>
+         <introduction>
+            <p>One component of future luxury automobile safety systems is warning drivers that they are drifting between lanes.  To do this,
+               it is first necessary to identify where the lanes are.  In this example, we will look at identifying the lanes from a image
+               of a road.
+            </p>
+         </introduction>
+         <h2>Contents</h2>
+         <div>
+            <ul>
+               <li><a href="#1">Setup</a></li>
+               <li><a href="#2">Read image</a></li>
+               <li><a href="#3">Display image</a></li>
+               <li><a href="#4">Scale image</a></li>
+               <li><a href="#5">Thresholding image</a></li>
+               <li><a href="#6">Remove the noise</a></li>
+               <li><a href="#7">Find the boundaries of objects</a></li>
+               <li><a href="#8">Find lanes and delete non-lane objects</a></li>
+               <li><a href="#9">Place lanes on original image</a></li>
+            </ul>
+         </div>
+         <h2>Setup<a name="1"></a></h2><pre class="codeinput">clear
+</pre><h2>Read image<a name="2"></a></h2>
+         <p>Let's first read in this JPEG image from the current directory by double-clicking.</p><pre class="codeinput">street1 = imread(<span class="string">'street1.jpg'</span>);
+</pre><h2>Display image<a name="3"></a></h2>
+         <p>First of all, in MATLAB 7, we can now plot any workspace variables just by selecting it and choosing a plot type. Here we
+            see a frame from a camera looking at a road scene including the lanes we need to identify.
+         </p><pre class="codeinput">imagesc(street1); shg
+</pre><img vspace="5" hspace="5" src="lanemarkings_01.png"> <h2>Scale image<a name="4"></a></h2>
+         <p>This image is a little too dark so let's brighten it. However, you will notice that it contains uint8 data. Now for the first
+            time we can perform arithmetic on integers and singles. As well as resulting in up to 8x less memory used than if the data
+            was expanded to doubles, it can result in up to 8x faster executions.
+         </p><pre class="codeinput">scaled=street1*1.2;
+image(scaled);
+</pre><img vspace="5" hspace="5" src="lanemarkings_02.png"> <h2>Thresholding image<a name="5"></a></h2>
+         <p>Next, we will create a binary image by comparing it to a threshold value. We will use a new feature in MATLAB 7 called anonymous
+            functions which let you create functions at the command line or in scripts with no associated M-file.
+         </p><pre class="codeinput">level  = 220;
+binary = scaled&gt;level;
+imagesc(binary);
+</pre><img vspace="5" hspace="5" src="lanemarkings_03.png"> <h2>Remove the noise<a name="6"></a></h2>
+         <p>We will now use an Image Processing Toolbox function to remove all small groups of pixels.</p><pre class="codeinput">binary = bwareaopen(binary,100);
+imagesc(binary)
+hold <span class="string">on</span>
+</pre><img vspace="5" hspace="5" src="lanemarkings_04.png"> <h2>Find the boundaries of objects<a name="7"></a></h2><pre class="codeinput"><span class="comment">%... then another function to find the boundaries of all the objects in the image. Then we display those in green.</span>
+[B,L] = bwboundaries(binary,<span class="string">'noholes'</span>);
+
+<span class="comment">% Plot boundaries</span>
+<span class="keyword">for</span> K=1:length(B)
+    boundary = B{K};
+	h(K)=plot(boundary(:,2), boundary(:,1), <span class="string">'g'</span>, <span class="string">'LineWidth'</span>, 2);
+<span class="keyword">end</span>
+<span class="comment">% Extract statistics</span>
+stats = regionprops(L,<span class="string">'MajorAxisLength'</span>,<span class="string">'MinorAxisLength'</span>);
+</pre><img vspace="5" hspace="5" src="lanemarkings_05.png"> <h2>Find lanes and delete non-lane objects<a name="8"></a></h2>
+         <p>We can detect the lanes by testing each object and deleting ones that are not lane-shaped i.e. long and thin. This function
+            <tt>findlanes</tt> uses a major new feature in MATLAB 7 where you can nest functions inside others, where the inner function can see the workspace
+            of its parents.
+         </p><pre class="codeinput">lanes=findlanes(B,h,stats);
+hold <span class="string">off</span>;
+</pre><img vspace="5" hspace="5" src="lanemarkings_06.png"> <h2>Place lanes on original image<a name="9"></a></h2>
+         <p>Finally we will display the original image and plot the lanes on it</p><pre class="codeinput">imagesc(street1);
+hold <span class="string">on</span>
+
+<span class="keyword">for</span> K = 1:length(lanes)
+    plot(lanes{K}(:,2), lanes{K}(:,1), <span class="string">'g'</span>, <span class="string">'LineWidth'</span>, 2)
+<span class="keyword">end</span>
+hold <span class="string">off</span>
+</pre><img vspace="5" hspace="5" src="lanemarkings_07.png"> <p class="footer"><br>
+            Published with MATLAB&reg; 7.3<br></p>
+      </div>
+      <!--
+##### SOURCE BEGIN #####
+%% Lane Marking Identification
+% One component of future luxury automobile safety systems is warning drivers that they are drifting between lanes.  To do this, it is first necessary to
+% identify where the lanes are.  In this example, we will look at
+% identifying the lanes from a image of a road. 
+
+%% Setup
+clear
+
+%% Read image 
+% Let's first read in this JPEG image from the current directory by double-clicking.
+street1 = imread('street1.jpg');
+
+%% Display image
+% First of all, in MATLAB 7, we can now plot any workspace variables just by selecting it and choosing a plot type. Here we see a frame from a camera looking at
+% a road scene including the lanes we need to identify.
+imagesc(street1); shg
+
+%% Scale image
+% This image is a little too dark so let's brighten it. However, you will notice that it contains uint8 data. Now for the first time we can perform arithmetic on integers and singles. As well as resulting in up to
+% 8x less memory used than if the data was expanded to doubles, it can result in up to 8x faster executions. 
+scaled=street1*1.2; 
+image(scaled);
+
+%% Thresholding image
+% Next, we will create a binary image by comparing it to a threshold value. We will use a new feature in MATLAB 7 called anonymous functions which let you
+% create functions at the command line or in scripts with no associated M-file.
+level  = 220;
+binary = scaled>level; 
+imagesc(binary);
+
+%% Remove the noise
+% We will now use an Image Processing Toolbox function to remove all small groups of pixels.
+binary = bwareaopen(binary,100);
+imagesc(binary)
+hold on
+
+%% Find the boundaries of objects
+%... then another function to find the boundaries of all the objects in the image. Then we display those in green.
+[B,L] = bwboundaries(binary,'noholes');
+
+% Plot boundaries
+for K=1:length(B)
+    boundary = B{K};
+	h(K)=plot(boundary(:,2), boundary(:,1), 'g', 'LineWidth', 2);
+end
+% Extract statistics
+stats = regionprops(L,'MajorAxisLength','MinorAxisLength'); 
+
+%% Find lanes and delete non-lane objects
+% We can detect the lanes by testing each object and deleting ones that are not lane-shaped i.e. long and thin. This function |findlanes| uses a major new
+% feature in MATLAB 7 where you can nest functions inside others, where the inner function can see the workspace of its parents.
+lanes=findlanes(B,h,stats);
+hold off;
+
+%% Place lanes on original image
+% Finally we will display the original image and plot the lanes on it
+imagesc(street1);
+hold on
+
+for K = 1:length(lanes) 
+    plot(lanes{K}(:,2), lanes{K}(:,1), 'g', 'LineWidth', 2) 
+end
+hold off
+
+##### SOURCE END #####
+-->
+   </body>
+</html>

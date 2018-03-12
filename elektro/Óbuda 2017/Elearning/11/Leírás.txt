@@ -1,0 +1,20 @@
+A fejezet célja: a mûveleti erõsítõvel megvalósított váltakozófeszültség erõsítõk, valamint frekvenciafüggõ alkalmazásainak ismertetése.
+
+A fejezet tartalma:
+
+A mûveleti erõsítõk alkalmazástechnikája. Mûveleti erõsítõvel megvalósított váltakozófeszültség erõsítõk. A mûveleti erõsítõk frekvenciafüggése. Integráló és differenciáló kapcsolások.
+
+Kulcsszavak: váltakozófeszültségû erõsítõ, invertáló, neminvertáló, ofszet, nyugalmi áram, törésponti frekvencia, Bode-diagram, felsõ törésponti frekvencia, C1, C2 , csatolókondenzátor, alsó, felsõ határfrekvencia, integráló, differenciáló, integrálási idõállandó, differenciálási idõállandó.
+
+ Mûveleti erõsítõvel megvalósított AC erõsítõ Tananyag
+Jegyzet
+
+ Feladatok Tananyag
+Gyakorlás céljára
+
+ Feladatok megoldása Tananyag
+Önellenõrzés céljára
+
+ Mûveleti erõsítõk alkalmazástechnikája. AC erõsítõk Tananyag
+Áramkörök mûködésének szemléltetése TINA áramkör analizáló programmal
+

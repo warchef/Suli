@@ -1,0 +1,20 @@
+A fejezet célja: megismerkedni az elsõ félvezetõ eszköz, a dióda egyszerû alkalmazásaival, elsajátítani a kapcsolások jellemzõinek számítását.
+
+A fejezet tartalma:
+
+Diódák, Zener diódák egyszerû alkalmazásai. Soros diódás egyenirányító, soros diódás csúcsegyenirányító, hídkapcsolású egyenirányító, hídkapcsolású csúcsegyenirányító. Egyszerû Zener stabilizátor. Diódás és Zener diódás illesztõ és vágóáramkörök.
+
+Kulcsszavak: soros diódás egyenirányító, transzfer karakterisztika, soros diódás csúcsegyenirányító, hídkapcsolású egyenirányító, hídkapcsolású csúcsegyenirányító, stabilizátor, illesztõ áramkör, vágó áramkör
+
+ Dióda alkalmazások. Tananyag
+Jegyzet
+
+ Feladatok Tananyag
+Gyakorlás céljára
+
+ Feladatok megoldása Tananyag
+Önellenõrzés céljára
+
+ Dióda alkalmazások Tananyag
+Áramkörök mûködésének szemléltetése TINA áramkör analizáló programmal
+

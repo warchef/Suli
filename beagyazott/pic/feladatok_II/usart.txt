@@ -1,0 +1,8 @@
+wait 20 ms
+30 31 32
+
+wait 10 ms
+"BMF KVK "
+
+rand 10 50 ms
+"MAI"

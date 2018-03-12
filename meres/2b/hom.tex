@@ -1,0 +1,109 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage{anysize}
+\paperwidth=21cm \paperheight29.7cm
+\marginsize{1cm}{1cm}{1cm}{1cm}
+\usepackage[utf8]{inputenc}
+\usepackage[magyar]{babel}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\begin{document}
+\section{18. sz. laboratóriumi mérés}
+	\subsection{A mérés célja}
+	Az ipari méréstechnikában a leggyakoribb mérendő jellemző a
+hőmérséklet.
+Hőmérséklet mérésére széles hőmérséklet tartományban
+fémalapú mérőellenállásokat, kisebb hőmérsékleti tartomány, de
+nagy érzékenységi igény esetén a félvezető alapúakat
+(termisztorok) alkalmaznak. Egyre elterjedtebbek az analóg vagy
+digitális kimeneti jellel rendelkező hőmérséklet mérő chippek is.
+Nagyobb hőmérsékletek mérésekor (0 – 1600 $^{\circ}C$) hőelemeket
+használnak. Jelen mérésben az említett hőmérséklet érzékelők legfontosabb
+tulajdonságaival ismerkedünk meg.
+	\subsection{Mérési feladatok}
+\subsubsection{Önmelegedés vizsgálata}
+Mérje meg a Therm 0 termisztor ellenállását a HM8012-es típusú
+digitális multiméterrel az alábbi táblázatban megadott
+méréshatárokban.
+Mint az alábbi táblázatból is látja a DMM az ellenállásmérő
+üzemmód esetén a különböző méréshatárokban más és más
+áramot hajt át a mérendő ellenálláson.
+A különböző méréshatárok beállítása után várja meg a termikus
+egyensúly beállását (nem változik tovább a mért ellenállás kb. 2
+perc). A 10 $\mu A$-es mérőáram esetén a mérés kezdetén mért értéket
+tekintse alap értéknek. Számítsa ki, hogy a különböző mérőáramok a termikus egyensúly
+beállta után mekkora relatív hibát okoznak!$$$$Mért értékek:$$$$\begin{tabular}{|c|c|c|c|c|c|}
+\hline 
+Méréshatár & Mérőáram & R (mérés kezdetén) & R (termikus egyensúly beállta után) & $\Delta R$ & $h \%$ \\ 
+\hline 
+500 $k\Omega$ (L4) & 10 $\mu A$ &  &  &  &  \\ 
+\hline 
+50 $k\Omega$ (L3) & 100 $\mu A$ &  &  &  &  \\ 
+\hline 
+5 $k\Omega$ (L2) & 1 mA &  &  &  &  \\ 
+\hline 
+\end{tabular} 
+\subsubsection{Hőmérséklet jelleggörbék felvétele}
+A mérendő objektum egy 6x6x1cm-es alumínium tömb, melynek
+a hátlapjára (6x6cm) egy 47 $\Omega$-os 25 W-os fűtőellenállást
+helyeztünk el.
+Az érzékelők a tömb felső szélén vannak elhelyezve. Ezzel az
+elrendezéssel próbáljuk meg biztosítani, hogy minden érzékelő
+közel azonos hőmérsékletet mérjen.
+Az alumínium tömb tetején a 6x1 cm-es felületen van 4 féle
+érzékelő rögzítve, ezek kivezetéseit találják meg a mérőpanel
+előlapján.
+A mérőpanel tápfeszültség ellátásának egy része fixen bekötött
+(12V és 42V), de az előlapra egy $\pm$15 V-os tápfeszültséget kell
+csatlakoztatni.
+A hőmérséklet változtatását a beépített kapcsoló változtatásával
+tudják elérni.
+A maximális hőmérséklet biztonsági okokból kb 50 $^{\circ}C$
+A mérést a hőmérséklet beállító kapcsoló minden állásában
+végezze el. A hőmérséklet beállítását egy szabályzás végzi. A
+kapcsolóval az alapjelet állítják. A stabil hőmérséklet
+beállításához kb. 3 percre van szükség. A termikus egyensúly
+beállásának elérését a thermisztor ellenállásváltozását figyelve
+tudjuk legegyszerűbben nyomon követni. Amikor a thermisztor
+ellenállása már nem változik (esetleg csak nagyon lassan)
+beálltnak tekinthetjük a termikus egyensúlyt.
+A méréshez használjon két darab HM8012-es, egy TR1667/B és
+két MX-25201-es típusú digitális multimétert.
+Tervezze meg melyik műszerrel érdemes melyik érzékelő kimeneti
+jelét mérni! A panel bal oldalán lévő piros banánhüvelyekre csatlakoztassa az
+egyik HM8012-es multimétert $^{\circ}C$ mérő üzemmódban, a műszer
+által mutatott feszültséget tekintsük a „hiteles” referenica
+hőmérsékletnek!
+$$$$Mért értékek:$$$$\begin{tabular}{|c|c|c|c|c|}
+\hline 
+Referencia hőmérséklet [$^{\circ}C$] & Therm [k$\Omega$] & PT100 [$\Omega$] & Hőelem [mV] & IC [mV] \\ 
+\hline 
+ &  &  &  &  \\ 
+\hline 
+ &  &  &  &  \\ 
+\hline 
+ &  &  &  &  \\ 
+\hline 
+ &  &  &  &  \\ 
+\hline 
+ &  &  &  &  \\ 
+\hline 
+ &  &  &  &  \\ 
+\hline 
+ &  &  &  &  \\ 
+\hline 
+\end{tabular} $$$$Az ábra az 5. számú mellékletben található meg.
+\subsubsection{A szilárd testek felületén mérhető hőmérséklet eloszlásának vizsgálata}
+A mérendő objektum felfűtés után a kézi tapintófejes
+hőmérsékletmérő műszer segítségével mérje meg az alumínium
+tömb közepén és alsó szélén a hőmérsékletét.
+Adjon magyarázatot a mért hőmérséklet értékekre.$$$$Mért értékek:$$$$\begin{tabular}{|c|c|}
+\hline 
+Középen & Alul \\ 
+\hline 
+ &  \\ 
+\hline 
+\end{tabular} 
+\end{document}
