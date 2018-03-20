@@ -1,0 +1,65 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<html>
+<head>
+   <title></title>
+   <meta name="generator" content="Help & Manual">
+   <meta name="keywords" content="">
+</head>
+
+
+  <!-- Redirect browser to index page if page is not in the content frame.
+       This script is only valid for regular HTML export -->
+  <script language="JavaScript">
+       <!-- 
+           if(top.frames.length==0) top.location.href='index.html?windownt.htm'
+       //-->
+  </script>
+
+
+<body bgcolor="#FFFFFF">
+
+
+
+
+<span style="font-family:Helvetica,Arial; font-size:10pt; color:#000000"><b>Windows NT</b>
+<br>
+Si votre ordinateur fonctionne sous <b>Windows NT</b> et que vous souhaitez utiliser une souris à molette (Wheelmouse) pour naviguer dans la pile d'images ou naviguer de ligne en ligne en mode Bande, vous devez modifier certains paramètres de votre système d'exploitation au niveau de l'Editeur du registre :
+<br>
+
+<br>
+<table width="100%" border="0" cellpadding="0" cellspacing="0"><tr valign="top"><td width="14"></td><td width="14"><span style="font-family:Helvetica,Arial; font-size:10pt; color:#000000"><font face="Symbol" size="2" color="#000000">&#183;</font></span></td><td><span style="font-family:Helvetica,Arial; font-size:10pt; color:#000000">Ouvrez l'Editeur du registre. Pour ce faire, cliquez sur  <b>Démarrer</b> <b>&gt;</b> <b>Exécuter</b> et tapez : <b>regedit</b>
+&nbsp;<br>
+</span></td></tr></table><table width="100%" border="0" cellpadding="0" cellspacing="0"><tr valign="top"><td width="14"></td><td width="14"><span style="font-family:Helvetica,Arial; font-size:10pt; color:#000000"></span></td><td></td></tr></table><span style="font-family:Helvetica,Arial; font-size:10pt; color:#000000"><table width="100%" border="0" cellpadding="0" cellspacing="0"><tr valign="top"><td width="14"></td><td><span style="font-family:Helvetica,Arial; font-size:10pt; color:#000000">
+&nbsp;<br>
+</span></span></span></td></tr></table><table width="100%" border="0" cellpadding="0" cellspacing="0"><tr valign="top"><td width="14"></td><td><span style="font-family:Helvetica,Arial; font-size:10pt; color:#000000"></span></td></tr></table><span style="font-family:Helvetica,Arial; font-size:10pt; color:#000000"><table width="100%" border="0" cellpadding="0" cellspacing="0"><tr valign="top"><td width="14"></td><td width="14"><span style="font-family:Helvetica,Arial; font-size:10pt; color:#000000"><font face="Symbol" size="2" color="#000000">&#183;</font></span></span></span></td><td><span style="font-family:Helvetica,Arial; font-size:10pt; color:#000000">Modifiez les paramètres de registre ci-dessous, comme suit :
+&nbsp;<br>
+</span></td></tr></table><table width="100%" border="0" cellpadding="0" cellspacing="0"><tr valign="top"><td width="14"></td><td width="14"><span style="font-family:Helvetica,Arial; font-size:10pt; color:#000000"></span></td><td></td></tr></table><span style="font-family:Helvetica,Arial; font-size:10pt; color:#000000"><table width="100%" border="0" cellpadding="0" cellspacing="0"><tr valign="top"><td width="14"></td><td><span style="font-family:Helvetica,Arial; font-size:10pt; color:#000000">
+&nbsp;<br>
+</span></span></span></td></tr></table><table width="100%" border="0" cellpadding="0" cellspacing="0"><tr valign="top"><td width="14"></td><td><span style="font-family:Helvetica,Arial; font-size:10pt; color:#000000"></span></td></tr></table><span style="font-family:Helvetica,Arial; font-size:10pt; color:#000000"><table width="100%" border="0" cellpadding="0" cellspacing="0"><tr valign="top"><td width="25"></td><td>
+<span style="font-size: 10.0pt; font-family: Arial; layout-grid-mode: line">
+Localisez la clé : </span>
+<span style="font-family:Helvetica,Arial; font-size:10pt; color:#000000"><b>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\i8042prt\Parameters\EnableWheelDetect</b>
+&nbsp;<br>
+</span></span></span></td></tr></table><table width="100%" border="0" cellpadding="0" cellspacing="0"><tr valign="top"><td width="25"></td><td><span style="font-family:Helvetica,Arial; font-size:10pt; color:#000000">et attribuez-lui la valeur   </span><span style="font-family:Helvetica,Arial; font-size:12pt; color:#000000"><b>2</b></span><span style="font-family:Helvetica,Arial; font-size:10pt; color:#000000"><b>   </b>(utilisation permanente de la roulette).
+&nbsp;<br>
+</span></td></tr></table><table width="100%" border="0" cellpadding="0" cellspacing="0"><tr valign="top"><td width="25"></td><td><span style="font-family:Helvetica,Arial; font-size:10pt; color:#000000">
+&nbsp;<br>
+</span></td></tr></table><table width="100%" border="0" cellpadding="0" cellspacing="0"><tr valign="top"><td width="25"></td><td>
+	<span style="font-size: 10.0pt; font-family: Arial; layout-grid-mode: line">
+	Localisez la clé : </span>
+	<span style="font-family:Helvetica,Arial; font-size:10pt; color:#000000"><b>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\i8042prt\Parameters\NumberofButtons
+&nbsp;<br>
+</b></span></td></tr></table><table width="100%" border="0" cellpadding="0" cellspacing="0"><tr valign="top"><td width="25"></td><td><span style="font-family:Helvetica,Arial; font-size:10pt; color:#000000"><b></b>
+	et attribuez-lui la valeur</span><span style="font-family:Helvetica,Arial; font-size:12pt; color:#000000"><b>   3</b></span><span style="font-family:Helvetica,Arial; font-size:10pt; color:#000000">   (</span><span lang="FR" style="font-size: 10.0pt; font-family: Arial; layout-grid-mode: line">nombre 
+		de boutons de la souris</span><span style="font-family:Helvetica,Arial; font-size:10pt; color:#000000">).
+&nbsp;<br>
+</span></td></tr></table><table width="100%" border="0" cellpadding="0" cellspacing="0"><tr valign="top"><td width="25"></td><td><span style="font-family:Helvetica,Arial; font-size:10pt; color:#000000"></span></td></tr></table><span style="font-family:Helvetica,Arial; font-size:10pt; color:#000000"><table width="100%" border="0" cellpadding="0" cellspacing="0"><tr valign="top"><td width="14"></td><td><span style="font-family:Helvetica,Arial; font-size:10pt; color:#000000">
+&nbsp;<br>
+</span></span></span></td></tr></table><table width="100%" border="0" cellpadding="0" cellspacing="0"><tr valign="top"><td width="14"></td><td><span style="font-family:Helvetica,Arial; font-size:10pt; color:#000000"></span></td></tr></table><span style="font-family:Helvetica,Arial; font-size:10pt; color:#000000"><img src="clip0250.gif" width="38" height="42" border="0" alt="clip0250">Notez que les modifications apportées aux clés de registre peuvent modifier le comportement d'autres applications avec lesquelles vous travaillez.    <b>
+<br>
+</b>
+<br>
+</span></span></span>
+
+</body>
+</html>

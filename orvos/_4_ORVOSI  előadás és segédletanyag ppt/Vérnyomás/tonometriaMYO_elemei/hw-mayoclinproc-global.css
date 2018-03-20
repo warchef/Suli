@@ -1,0 +1,126 @@
+/*****************************************************************
+ * HW-provided Top-level CSS stylesheet for Plantgeone site
+ *
+ * Should contain (or import) all styles used across many pages
+ * within the site, and overrides to HW global CSS stylesheet.
+ * 
+ *****************************************************************/
+ /** requires sidebar styles **/
+@import url("hw-mayoclinproc-sidebars.css");
+
+div#header-logo {
+	background-color:#EF7B07;
+	height:85px;
+	position:absolute;
+	top:77px;
+	width:376px;
+	background:#EF7B07 url(/shared/img/standard-design/design1/left-content-shadow.png) repeat-y scroll left top;
+}
+
+#header div.banner-ads {
+	background:#EF7B07 url(/shared/img/standard-design/design1/banner-shadow.png) repeat-y scroll right top;
+}
+
+#main-logo {
+	background:none;
+	padding:10px 0 1px 10px;
+	position:relative;
+	top:0px;
+}
+
+#header {
+	border-bottom:0px solid;
+	border-top:17px solid #999999;
+	position:relative;
+}
+
+div#pageid-emailafriend div#col-3 {
+	float:right;
+}
+
+img#publisher-icon {
+left:6px;
+position:absolute;
+top:6px;
+}
+
+img#banner-text {
+position: relative;
+float:right;
+top: 120px;
+margin-right: 10px;
+z-index: 1;
+}
+
+ul.tower-ads  {
+	list-style-type: none;
+	list-style-image: none;
+	margin:0em;
+	padding:0em;
+}
+
+#footer ul.tower-ads {
+	font-size: 1em;
+	font-weight: normal;
+}	
+
+ul.tower-ads li  img, #footer ul.tower-ads li  img{
+	display: block;
+	margin-top: 1em;
+	margin-bottom: 0.5em;
+	margin-right:auto;
+	margin-left:auto;
+	padding:0px
+}
+
+ ul.square-ads  {
+	list-style-type: none;
+	list-style-image: none;
+	margin:0em;
+	padding:0em;
+	float:left;
+}
+	
+ ul.square-ads  li{
+	margin-left:0px;
+}
+ul.square-ads li  img{
+	display: block;
+	margin-top: 1em;
+	margin-bottom: 0.5em;
+	margin-right:0px;
+	margin-left:25px;
+	padding:0px;
+
+}
+
+#header .header-rss {
+	top:9px;
+}
+
+span.ad-header {
+	text-align:center;
+	/*color:#999999;*/
+	display:block;
+	font-family:sans-serif;
+	font-size:80%;
+	margin: 0.5em 0 0.5em 0;
+}
+
+span.ad-header2 {
+	text-align:center;
+	color:#403838;
+	display:block;
+	font-family:sans-serif;
+	font-size:80%;
+	margin: 1.5em 0 0 0;
+}
+#pageid-search #content-block legend {
+    background-color:#DBDBDB;
+}
+form#adv-search fieldset, form#adv-search-tables fieldset {
+    border:1px solid #DBDBDB;
+}
+form#adv-search h1, form#adv-search .search-date-range, form#adv-search-tables h1 {
+    color:#666666;
+}

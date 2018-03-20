@@ -1,0 +1,9 @@
+/* Override from shared/.../leaderboard.css  --
+   we need more space for the "Advertisement" */
+div.leaderboard-ads {
+	height: 115px;
+}
+div.hw-gen-page div#header {
+	margin: 0 0 115px 0;
+	top: 115px;
+}

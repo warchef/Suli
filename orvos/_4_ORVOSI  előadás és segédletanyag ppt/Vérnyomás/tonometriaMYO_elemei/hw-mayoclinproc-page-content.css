@@ -1,0 +1,66 @@
+/*****************************************************************
+ * HW-provided CSS stylesheet specific to mayoclinproc content pages
+ *****************************************************************/
+
+div.ref-list cite abbr.cit-jnl-abbrev {
+	font-style: italic;
+}
+div.ref-list .cit-vol {
+	font-weight: normal;
+}
+
+div.article .fig, div.article .table {
+   padding-bottom: .5em;
+}
+
+div.contributors ol.affiliation-list li address, div.contributors ol.corresp-list li address {
+	font-style: italic;
+}
+
+div.contributors ol.affiliation-list li {
+	font-style:italic;
+}
+
+div.boxed-text {
+	background-color:#e4e4e4;
+	border: 1px solid #666666;
+	padding:15px;
+	margin-top: 5px;
+}
+
+#content-block div.boxed-text p{
+	padding:0px;
+	margin: 0px;
+}
+
+.article div.abstract {
+	font-weight:bold;
+}
+
+ol.corresp-list {
+	list-style-type: none;
+}
+
+ol.list-alphalower {
+        list-style-type: lower-alpha;
+}
+
+/* Override of global */
+.cit .cit-auth-list li span.cit-collab {
+	white-space: normal;
+}
+
+sup {
+    vertical-align: baseline;
+    position: relative;
+    bottom: 0.45em;
+}
+
+div#pageid-content .article blockquote {
+	font-size: 1.0em;
+}
+
+#content-block #slug-section {
+	margin-top: 1.0em;
+	font-weight: bold;
+}

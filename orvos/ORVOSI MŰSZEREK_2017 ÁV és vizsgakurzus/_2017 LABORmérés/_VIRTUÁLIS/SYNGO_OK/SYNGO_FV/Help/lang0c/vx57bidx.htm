@@ -1,0 +1,296 @@
+
+<html>
+<head></head>
+<style type="text/css">
+       SPAN.idxsection { font-family: Arial,Helvetica; font-weight: normal; font-size: 14pt; color: #000000; text-decoration: none }
+       SPAN.idxkeyword { font-family: Arial,Helvetica; font-weight: normal; font-size: 10pt; color: #000000; text-decoration: none }
+       SPAN.idxkeyword2 { font-family: Arial,Helvetica; font-weight: normal; font-size: 10pt; color: #000000; text-decoration: none }
+       SPAN.idxlink { font-family: Arial,Helvetica; font-weight: normal; font-size: 8pt; color: #000000; text-decoration: none }
+
+</style>
+<body bgcolor="#FFFFFF">
+<font face="Arial,Helvetica" size="4"><b>Index</b></font><br><font face="Arial,Helvetica" size="2"><a href="javaScript:parent.reDisplay('navContent',0,0);">Sommaire</a></font><br><br><!-- Place holder for the index, do not delete the line below -->
+  <script language="JavaScript"><!--
+var isDOM=document.getElementById?1:0;
+var isIE=document.all?1:0;
+var isNS4=navigator.appName=='Netscape'&&!isDOM?1:0;
+var isOp=window.opera?1:0;
+var isWin=navigator.platform.indexOf('Win')!=-1?1:0;
+var isDyn=isDOM||isIE||isNS4;
+function getRef(id, par)
+{
+ par=!par?document:(par.navigator?par.document:par);
+ return isIE ? par.all[id] :
+  (isDOM ? (par.getElementById?par:par.ownerDocument).getElementById(id) :
+  (isNS4 ? par.layers[id] : null));
+}
+function getSty(id, par)
+{
+ var r=getRef(id, par);
+ return r?(isNS4?r:r.style):null;
+}
+if (!window.LayerObj) var LayerObj = new Function('id','par',
+ 'this.ref=getRef(id, par); this.sty=getSty(id, par); return this');
+function getLyr(id, par) { return new LayerObj(id, par) }
+function LyrFn(fn, fc)
+{
+ LayerObj.prototype[fn] = new Function('var a=arguments,p=a[0],px=isNS4||isOp?0:"px"; ' +
+  'with (this) { '+fc+' }');
+}
+LyrFn('x','if (!isNaN(p)) sty.left=p+px; else return parseInt(sty.left)');
+LyrFn('y','if (!isNaN(p)) sty.top=p+px; else return parseInt(sty.top)');
+LyrFn('w','if (p) (isNS4?sty.clip:sty).width=p+px; ' +
+ 'else return (isNS4?ref.document.width:ref.offsetWidth)');
+LyrFn('h','if (p) (isNS4?sty.clip:sty).height=p+px; ' +
+ 'else return (isNS4?ref.document.height:ref.offsetHeight)');
+LyrFn('vis','sty.visibility=p');
+LyrFn('write','if (isNS4) with (ref.document){write(p);close()} else ref.innerHTML=p');
+LyrFn('alpha','var f=ref.filters,d=(p==null); if (f) {' +
+ 'if (!d&&sty.filter.indexOf("alpha")==-1) sty.filter+=" alpha(opacity="+p+")"; ' +
+ 'else if (f.length&&f.alpha) with(f.alpha){if(d)enabled=false;else{opacity=p;enabled=true}} }' +
+ 'else if (isDOM) sty.MozOpacity=d?"":p+"%"');
+var CSSmode=document.compatMode;
+CSSmode=(CSSmode&&CSSmode.indexOf('CSS')!=-1)||isDOM&&!isIE||isOp?1:0;
+if (!window.page) var page = { win: window, minW: 0, minH: 0, MS: isIE&&!isOp,
+ db: CSSmode?'documentElement':'body' }
+page.winW=function()
+ { with (this) return Math.max(minW, MS?win.document[db].clientWidth:win.innerWidth) }
+page.winH=function()
+ { with (this) return Math.max(minH, MS?win.document[db].clientHeight:win.innerHeight) }
+page.scrollY=function()
+ { with (this) return MS?win.document[db].scrollTop:win.pageYOffset }
+page.scrollX=function()
+ { with (this) return MS?win.document[db].scrollLeft:win.pageXOffset }
+function tipTrack(evt, always) { with (this)
+{
+ evt=evt?evt:window.event;
+ sX = page.scrollX();
+ sY = page.scrollY();
+ mX = isNS4 ? evt.pageX : sX + evt.clientX;
+ mY = isNS4 ? evt.pageY : sY + evt.clientY;
+}}
+function tipPosition(forcePos) { with (this)
+{
+ if (!actTip) return;
+ var wW = page.winW()-(isIE?0:15), wH = page.winH()-(isIE?0:15);
+ var t=tips[actTip], tipX=eval(t[0]), tipY=eval(t[1]), tipW=div.w(), tipH=div.h(), adjY = 1;
+ if (typeof(t[0])=='number') tipX += mX;
+ if (typeof(t[1])=='number') tipY += mY;
+ if (tipX + tipW + 5 > sX + wW) { tipX = sX + wW - tipW - 5; adjY = 2 }
+ if (tipY + tipH + 5 > sY + wH) tipY = sY + wH - (adjY*tipH) - 5;
+ if (tipX < sX+ 5) tipX = sX + 5;
+ if (tipY < sY + 5) tipY = sY + 5;
+ div.x(tipX);
+ div.y(tipY-10);
+}}
+function tipShow(tipN) { with (this)
+{
+ if (!isDyn) return;
+ if (!div) div = getLyr(myName + 'Layer');
+ if (isDOM) div.sty.width = 'auto';
+ if (actTip != tipN)
+ {
+  actTip = tipN;
+   if (isNS4) div.ref.captureEvents(Event.MOUSEOVER | Event.MOUSEOUT);
+   div.ref.onmouseover = new Function('evt', myName + '.show("' + tipN + '"); ' +
+    'if (isNS4) return this.routeEvent(evt)');
+   div.ref.onmouseout = new Function('evt', myName + '.hide(); ' +
+   'if (isNS4) return this.routeEvent(evt)');
+  position(true);
+  div.write(template);
+ }
+ showTip = true;
+ fade();
+}}
+function tipHide() { with (this)
+{
+ if (!isDyn || !actTip) return;
+ if (isNS4 && xPos<=mX && mX<=xPos+div.w() && yPos<=mY && mY<=yPos+div.h()) return;
+ clearTimeout(fadeTimer);
+ fadeTimer = setTimeout('with (' + myName + ') { showTip=false; fade() }', hideDelay);
+}}
+function tipFade() { with (this)
+{
+ clearTimeout(fadeTimer);
+ if (showTip)
+ {
+  div.vis('visible');
+ }
+ else
+ {
+  div.vis('hidden');
+  actTip = "";
+  clearInterval(trackTimer);
+ }
+}}
+function TipObj(myName)
+{
+ this.myName = myName;
+ this.tips = new Array();
+ this.template = '';
+ this.actTip = '';
+ this.showTip = false;
+ this.showDelay = 50;
+ this.hideDelay = 500;
+ this.xPos = this.yPos = this.sX = this.sY = this.mX = this.mY = 0;
+ this.track = tipTrack;
+ this.position = tipPosition;
+ this.show = tipShow;
+ this.hide = tipHide;
+ this.fade = tipFade;
+ this.div = null;
+ this.trackTimer = this.fadeTimer = 0;
+ this.doFades = false;
+}
+var kwPopup = new TipObj('kwPopup');
+with (kwPopup)
+{
+ tips.links = new Array(5,0);
+ tipStick = 0;
+}
+if (isNS4) document.captureEvents(Event.MOUSEMOVE);
+document.onmousemove = function(evt)
+{
+ kwPopup.track(evt);
+ if (isNS4) return document.routeEvent(evt);
+}
+var nsWinW = window.innerWidth, nsWinH = window.innerHeight;
+function ns4BugCheck()
+{
+ if (isNS4 && (nsWinW!=innerWidth || nsWinH!=innerHeight)) location.reload()
+}
+window.onresize = function()
+{
+ ns4BugCheck();
+}
+function displayLink(aLink) {
+with (kwPopup)
+{
+ actTip = "";
+ hide();
+ template = '<table bgcolor="#000000" cellpadding="1" cellspacing="0" border="0">' +
+  '<tr><td><table cellpadding="3" cellspacing="1" border="0">' +
+  '<tr><td bgcolor="#f0f0f0"><span class="idxlink">Thèmes localisés</span></td></tr>';
+ template = template + '<tr><td align="left" bgcolor="#ffffff"><span class="idxlink">' + aLink + '</span></td></tr>';
+ template = template + '</table></td></tr></table>';
+ show('links');
+}
+}
+//--></script>
+<div id="kwPopupLayer" style="position: absolute; z-index: 1000; visibility: hidden; left: 0px; top: 0px; width: 10px">&nbsp;</div>
+
+<a name="A"><br><span class="idxsection">- A -</span><br><br>
+<a href="javascript:void(0)" onMouseOver="JavaScript:displayLink('<a href=imadisp.htm target=content>Affichage des images</a><br>')" onMouseOut="kwPopup.hide()"><span class="idxkeyword">Agencement des images.</span></a></br>
+<a href="javascript:void(0)" onMouseOver="JavaScript:displayLink('<a href=imaprc.htm target=content>Edition des images</a><br>')" onMouseOut="kwPopup.hide()"><span class="idxkeyword">Agrandir et réduire</span></a></br>
+<a href="javascript:void(0)" onMouseOver="JavaScript:displayLink('<a href=brwadd.htm target=content>Ajout de données patient</a><br>')" onMouseOut="kwPopup.hide()"><span class="idxkeyword">Ajout de données patient</span></a></br>
+<a href="javascript:void(0)" onMouseOver="JavaScript:displayLink('<a href=purpose1.htm target=content>Champ d'application</a><br>')" onMouseOut="kwPopup.hide()"><span class="idxkeyword">Application principale</span></a></br>
+<a href="javascript:void(0)" onMouseOver="JavaScript:displayLink('<a href=ldappend.htm target=content> Ajout d'images aux images en cours dans la fenêtre principale</a><br>')" onMouseOut="kwPopup.hide()"><span class="idxkeyword">Avancement de l'opération de chargement</span></a></br>
+
+<a name="B"><br><span class="idxsection">- B -</span><br><br>
+<a href="javascript:void(0)" onMouseOver="JavaScript:displayLink('<a href=navrow.htm target=content>Naviguer de ligne en ligne</a><br>')" onMouseOut="kwPopup.hide()"><span class="idxkeyword">Barre de défilement</span></a></br>
+<a href="javascript:void(0)" onMouseOver="JavaScript:displayLink('<a href=mainwndw.htm target=content>Fenêtre principale</a><br>')" onMouseOut="kwPopup.hide()"><span class="idxkeyword">Barre d'état</span></a></br>
+<a href="javascript:void(0)" onMouseOver="JavaScript:displayLink('<a href=imadir.htm target=content>Images stockées dans un répertoire</a><br>')" onMouseOut="kwPopup.hide()"><span class="idxkeyword">Boîte de dialogue "Ouvrir"</span></a></br>
+<a href="javascript:void(0)" onMouseOver="JavaScript:displayLink('<a href=imadir.htm target=content>Images stockées dans un répertoire</a><br>')" onMouseOut="kwPopup.hide()"><span class="idxkeyword">Boîte de dialogue Parcourir</span></a></br>
+
+<a name="C"><br><span class="idxsection">- C -</span><br><br>
+<a href="javascript:void(0)" onMouseOver="JavaScript:displayLink('<a href=ima4sel.htm target=content>Sélection simple</a><br>')" onMouseOut="kwPopup.hide()"><span class="idxkeyword">Cadre de sélection </span></a></br>
+<a href="javascript:void(0)" onMouseOver="JavaScript:displayLink('<a href=newitem.htm target=content>Fonctions </a><br>')" onMouseOut="kwPopup.hide()"><span class="idxkeyword">Caractéristiques</span></a></br>
+<a href="javascript:void(0)" onMouseOver="JavaScript:displayLink('<a href=fvstart.htm target=content>Lancer syngo fastView</a><br>')" onMouseOut="kwPopup.hide()"><span class="idxkeyword">CD</span></a></br>
+<a href="javascript:void(0)" onMouseOver="JavaScript:displayLink('<a href=imacd.htm target=content>Images stockées sur CD-ROM</a><br>')" onMouseOut="kwPopup.hide()"><span class="idxkeyword">CD/DVD avec données d'images DICOM</span></a></br>
+<a href="javascript:void(0)" onMouseOver="JavaScript:displayLink('<a href=imacd.htm target=content>Images stockées sur CD-ROM</a><br>')" onMouseOut="kwPopup.hide()"><span class="idxkeyword">CD/DVD avec <i>syngo</i> fastView préinstallé</span></a></br>
+<a href="javascript:void(0)" onMouseOver="JavaScript:displayLink('<a href=newitem.htm target=content>Fonctions </a><br>')" onMouseOut="kwPopup.hide()"><span class="idxkeyword">Cinéma</span></a></br>
+<a href="javascript:void(0)" onMouseOver="JavaScript:displayLink('<a href=purpose1.htm target=content>Champ d'application</a><br>')" onMouseOut="kwPopup.hide()"><span class="idxkeyword">Cinéma</span></a></br>
+<a href="javascript:void(0)" onMouseOver="JavaScript:displayLink('<a href=movauto.htm target=content>Cinéma automatique</a><br>')" onMouseOut="kwPopup.hide()"><span class="idxkeyword">Cinéma automatique</span></a></br>
+<a href="javascript:void(0)" onMouseOver="JavaScript:displayLink('<a href=movinter.htm target=content>Cinéma interactif</a><br>')" onMouseOut="kwPopup.hide()"><span class="idxkeyword">Cinéma interactif</span></a></br>
+<a href="javascript:void(0)" onMouseOver="JavaScript:displayLink('<a href=hardware.htm target=content>Configuration matérielle</a><br>')" onMouseOut="kwPopup.hide()"><span class="idxkeyword">Configuration matérielle</span></a></br>
+
+<a name="D"><br><span class="idxsection">- D -</span><br><br>
+<a href="javascript:void(0)" onMouseOver="JavaScript:displayLink('<a href=navrow.htm target=content>Naviguer de ligne en ligne</a><br>')" onMouseOut="kwPopup.hide()"><span class="idxkeyword">De ligne en ligne</span></a></br>
+<a href="javascript:void(0)" onMouseOver="JavaScript:displayLink('<a href=purpose1.htm target=content>Champ d'application</a><br>')" onMouseOut="kwPopup.hide()"><span class="idxkeyword">Déplacer</span></a></br>
+<a href="javascript:void(0)" onMouseOver="JavaScript:displayLink('<a href=newitem.htm target=content>Fonctions </a><br><a href=brwcont.htm target=content>PatientBrowser</a><br>')" onMouseOut="kwPopup.hide()"><span class="idxkeyword">DICOMDIR</span></a></br>
+<a href="javascript:void(0)" onMouseOver="JavaScript:displayLink('<a href=fvstart.htm target=content>Lancer syngo fastView</a><br>')" onMouseOut="kwPopup.hide()"><span class="idxkeyword">Disque dur</span></a></br>
+<a href="javascript:void(0)" onMouseOver="JavaScript:displayLink('<a href=ldrepl.htm target=content>Remplacement des images en cours dans la fenêtre principale</a><br>')" onMouseOut="kwPopup.hide()"><span class="idxkeyword">Double-clic</span></a></br>
+<a href="javascript:void(0)" onMouseOver="JavaScript:displayLink('<a href=navstdy.htm target=content>Naviguer d'une étude à l'autre</a><br>')" onMouseOut="kwPopup.hide()"><span class="idxkeyword">D'une étude à l'autre</span></a></br>
+<a href="javascript:void(0)" onMouseOver="JavaScript:displayLink('<a href=navser.htm target=content>Naviguer d'une série à l'autre</a><br>')" onMouseOut="kwPopup.hide()"><span class="idxkeyword">D'une série à l'autre</span></a></br>
+
+<a name="E"><br><span class="idxsection">- E -</span><br><br>
+<a href="javascript:void(0)" onMouseOver="JavaScript:displayLink('<a href=purpose1.htm target=content>Champ d'application</a><br>')" onMouseOut="kwPopup.hide()"><span class="idxkeyword">Enregistrer au format AVI</span></a></br>
+<a href="javascript:void(0)" onMouseOver="JavaScript:displayLink('<a href=purpose1.htm target=content>Champ d'application</a><br>')" onMouseOut="kwPopup.hide()"><span class="idxkeyword">Enregistrer au format BITMAP</span></a></br>
+
+<a name="F"><br><span class="idxsection">- F -</span><br><br>
+<a href="javascript:void(0)" onMouseOver="JavaScript:displayLink('<a href=imaprc.htm target=content>Edition des images</a><br>')" onMouseOut="kwPopup.hide()"><span class="idxkeyword">Fenêtrage</span></a></br>
+<a href="javascript:void(0)" onMouseOver="JavaScript:displayLink('<a href=fvstart.htm target=content>Lancer syngo fastView</a><br><a href=mainwndw.htm target=content>Fenêtre principale</a><br>')" onMouseOut="kwPopup.hide()"><span class="idxkeyword">Fenêtre d'affichage des images</span></a></br>
+<a href="javascript:void(0)" onMouseOver="JavaScript:displayLink('<a href=newitem.htm target=content>Fonctions </a><br>')" onMouseOut="kwPopup.hide()"><span class="idxkeyword">Fenêtrage (Windowing)</span></a></br>
+<a href="javascript:void(0)" onMouseOver="JavaScript:displayLink('<a href=patclose.htm target=content>Fermer des images</a><br>')" onMouseOut="kwPopup.hide()"><span class="idxkeyword">Fermer des images</span></a></br>
+<a href="javascript:void(0)" onMouseOver="JavaScript:displayLink('<a href=intro.htm target=content>Introduction</a><br>')" onMouseOut="kwPopup.hide()"><span class="idxkeyword">Fonctions</span></a></br>
+<a href="javascript:void(0)" onMouseOver="JavaScript:displayLink('<a href=purpose1.htm target=content>Champ d'application</a><br>')" onMouseOut="kwPopup.hide()"><span class="idxkeyword">Fonctions de conversion</span></a></br>
+<a href="javascript:void(0)" onMouseOver="JavaScript:displayLink('<a href=purpose1.htm target=content>Champ d'application</a><br>')" onMouseOut="kwPopup.hide()"><span class="idxkeyword">Formats</span></a></br>
+<a href="javascript:void(0)" onMouseOver="JavaScript:displayLink('<a href=lytsel.htm target=content>Présentation des images sous différents formats</a><br>')" onMouseOut="kwPopup.hide()"><span class="idxkeyword">Formats de présentation</span></a></br>
+
+<a name="G"><br><span class="idxsection">- G -</span><br><br>
+<a href="javascript:void(0)" onMouseOver="JavaScript:displayLink('<a href=fvstart.htm target=content>Lancer syngo fastView</a><br>')" onMouseOut="kwPopup.hide()"><span class="idxkeyword">Glisser&amp;Déposer</span></a></br>
+<a href="javascript:void(0)" onMouseOver="JavaScript:displayLink('<a href=newitem.htm target=content>Fonctions </a><br>')" onMouseOut="kwPopup.hide()"><span class="idxkeyword">Graphiques syngo(tm)</span></a></br>
+<a href="javascript:void(0)" onMouseOver="JavaScript:displayLink('<a href=graphhid.htm target=content>Afficher et masquer le graphique syngo</a><br>')" onMouseOut="kwPopup.hide()"><span class="idxkeyword">Graphique syngo</span></a></br>
+
+<a name="I"><br><span class="idxsection">- I -</span><br><br>
+<a href="javascript:void(0)" onMouseOver="JavaScript:displayLink('<a href=navima.htm target=content>Navigation - Images d'une série</a><br>')" onMouseOut="kwPopup.hide()"><span class="idxkeyword">Images d'une série</span></a></br>
+<a href="javascript:void(0)" onMouseOver="JavaScript:displayLink('<a href=ima2sel.htm target=content>Sélection d'images isolées dans une série</a><br>')" onMouseOut="kwPopup.hide()"><span class="idxkeyword">	Images isolées</span></a></br>
+<a href="javascript:void(0)" onMouseOver="JavaScript:displayLink('<a href=install.htm target=content>Installation</a><br>')" onMouseOut="kwPopup.hide()"><span class="idxkeyword">Installation</span></a></br>
+<a href="javascript:void(0)" onMouseOver="JavaScript:displayLink('<a href=cnclload.htm target=content>Interruption du processus de chargement</a><br>')" onMouseOut="kwPopup.hide()"><span class="idxkeyword">Interrompre le chargement</span></a></br>
+
+<a name="M"><br><span class="idxsection">- M -</span><br><br>
+<a href="javascript:void(0)" onMouseOver="JavaScript:displayLink('<a href=newitem.htm target=content>Fonctions </a><br>')" onMouseOut="kwPopup.hide()"><span class="idxkeyword">Marque-page</span></a></br>
+<a href="javascript:void(0)" onMouseOver="JavaScript:displayLink('<a href=brwcont.htm target=content>PatientBrowser</a><br>')" onMouseOut="kwPopup.hide()"><span class="idxkeyword">Menu contextuel</span></a></br>
+<a href="javascript:void(0)" onMouseOver="JavaScript:displayLink('<a href=mainwndw.htm target=content>Fenêtre principale</a><br>')" onMouseOut="kwPopup.hide()"><span class="idxkeyword">Menu principal</span></a></br>
+<a href="javascript:void(0)" onMouseOver="JavaScript:displayLink('<a href=purpose1.htm target=content>Champ d'application</a><br>')" onMouseOut="kwPopup.hide()"><span class="idxkeyword">Mesures des distances</span></a></br>
+<a href="javascript:void(0)" onMouseOver="JavaScript:displayLink('<a href=stckstrp.htm target=content>Affichage en mode Pile et en mode Bande</a><br>')" onMouseOut="kwPopup.hide()"><span class="idxkeyword">Mode Bande</span></a></br>
+<a href="javascript:void(0)" onMouseOver="JavaScript:displayLink('<a href=purpose1.htm target=content>Champ d'application</a><br>')" onMouseOut="kwPopup.hide()"><span class="idxkeyword">Mode Bande</span></a></br>
+<a href="javascript:void(0)" onMouseOver="JavaScript:displayLink('<a href=purpose1.htm target=content>Champ d'application</a><br>')" onMouseOut="kwPopup.hide()"><span class="idxkeyword">Mode Pile</span></a></br>
+<a href="javascript:void(0)" onMouseOver="JavaScript:displayLink('<a href=stckstrp.htm target=content>Affichage en mode Pile et en mode Bande</a><br>')" onMouseOut="kwPopup.hide()"><span class="idxkeyword">Mode Pile</span></a></br>
+<a href="javascript:void(0)" onMouseOver="JavaScript:displayLink('<a href=navowv.htm target=content>Navigation</a><br>')" onMouseOut="kwPopup.hide()"><span class="idxkeyword">Modes de navigation</span></a></br>
+<a href="javascript:void(0)" onMouseOver="JavaScript:displayLink('<a href=serselmt.htm target=content>Multisélection</a><br>')" onMouseOut="kwPopup.hide()"><span class="idxkeyword">Multisélection</span></a></br>
+
+<a name="N"><br><span class="idxsection">- N -</span><br><br>
+<a href="javascript:void(0)" onMouseOver="JavaScript:displayLink('<a href=newitem.htm target=content>Fonctions </a><br>')" onMouseOut="kwPopup.hide()"><span class="idxkeyword">Navigation</span></a></br>
+
+<a name="O"><br><span class="idxsection">- O -</span><br><br>
+<a href="javascript:void(0)" onMouseOver="JavaScript:displayLink('<a href=mainwndw.htm target=content>Fenêtre principale</a><br>')" onMouseOut="kwPopup.hide()"><span class="idxkeyword">Onglets</span></a></br>
+<a href="javascript:void(0)" onMouseOver="JavaScript:displayLink('<a href=brwcont.htm target=content>PatientBrowser</a><br>')" onMouseOut="kwPopup.hide()"><span class="idxkeyword">Option de menu</span></a></br>
+<a href="javascript:void(0)" onMouseOver="JavaScript:displayLink('<a href=ldappend.htm target=content> Ajout d'images aux images en cours dans la fenêtre principale</a><br>')" onMouseOut="kwPopup.hide()"><span class="idxkeyword">Ordre de chargement</span></a></br>
+
+<a name="P"><br><span class="idxsection">- P -</span><br><br>
+<a href="javascript:void(0)" onMouseOver="JavaScript:displayLink('<a href=purpose1.htm target=content>Champ d'application</a><br>')" onMouseOut="kwPopup.hide()"><span class="idxkeyword">Paramètres de fenêtrage</span></a></br>
+<a href="javascript:void(0)" onMouseOver="JavaScript:displayLink('<a href=newitem.htm target=content>Fonctions </a><br><a href=fvstart.htm target=content>So starten Sie syngo fastView</a><br><a href=brwcont.htm target=content>PatientBrowser</a><br>')" onMouseOut="kwPopup.hide()"><span class="idxkeyword">PatientBrowser</span></a></br>
+<a href="javascript:void(0)" onMouseOver="JavaScript:displayLink('<a href=imadisp.htm target=content>Affichage des images</a><br>')" onMouseOut="kwPopup.hide()"><span class="idxkeyword">Présentation</span></a></br>
+<a href="javascript:void(0)" onMouseOver="JavaScript:displayLink('<a href=welcmtpc.htm target=content>Aide en ligne syngo fastView</a><br>')" onMouseOut="kwPopup.hide()"><span class="idxkeyword">Présentation de syngo fastView</span></a></br>
+
+<a name="R"><br><span class="idxsection">- R -</span><br><br>
+<a href="javascript:void(0)" onMouseOver="JavaScript:displayLink('<a href=fvstart.htm target=content>Lancer syngo fastView</a><br>')" onMouseOut="kwPopup.hide()"><span class="idxkeyword">Raccourci</span></a></br>
+<a href="javascript:void(0)" onMouseOver="JavaScript:displayLink('<a href=fvstart.htm target=content>Lancer syngo fastView</a><br>')" onMouseOut="kwPopup.hide()"><span class="idxkeyword">Raccourci bureau</span></a></br>
+<a href="javascript:void(0)" onMouseOver="JavaScript:displayLink('<a href=replace.htm target=content>Remplacement des données patient</a><br>')" onMouseOut="kwPopup.hide()"><span class="idxkeyword">Remplacement des données patient</span></a></br>
+<a href="javascript:void(0)" onMouseOver="JavaScript:displayLink('<a href=brwcont.htm target=content>PatientBrowser</a><br>')" onMouseOut="kwPopup.hide()"><span class="idxkeyword">Répertoire</span></a></br>
+<a href="javascript:void(0)" onMouseOver="JavaScript:displayLink('<a href=imaprc.htm target=content>Edition des images</a><br>')" onMouseOut="kwPopup.hide()"><span class="idxkeyword">Rotation de l'image</span></a></br>
+
+<a name="S"><br><span class="idxsection">- S -</span><br><br>
+<a href="javascript:void(0)" onMouseOver="JavaScript:displayLink('<a href=imasel.htm target=content>Sélection d'images</a><br>')" onMouseOut="kwPopup.hide()"><span class="idxkeyword">Sélection d'images</span></a></br>
+<a href="javascript:void(0)" onMouseOver="JavaScript:displayLink('<a href=ima3sel.htm target=content>Sélection d'une plage d'images</a><br>')" onMouseOut="kwPopup.hide()"><span class="idxkeyword">Sélection d'une plage d'images</span></a></br>
+<a href="javascript:void(0)" onMouseOver="JavaScript:displayLink('<a href=ima4sel.htm target=content>Sélection simple</a><br>')" onMouseOut="kwPopup.hide()"><span class="idxkeyword">Sélection simple</span></a></br>
+<a href="javascript:void(0)" onMouseOver="JavaScript:displayLink('<a href=movovw.htm target=content>Cinéma - Séquences d'images d'une série</a><br>')" onMouseOut="kwPopup.hide()"><span class="idxkeyword">Séquences d'images</span></a></br>
+<a href="javascript:void(0)" onMouseOver="JavaScript:displayLink('<a href=software.htm target=content>Logiciel</a><br>')" onMouseOut="kwPopup.hide()"><span class="idxkeyword">Système d'exploitation</span></a></br>
+
+<a name="T"><br><span class="idxsection">- T -</span><br><br>
+<a href="javascript:void(0)" onMouseOver="JavaScript:displayLink('<a href=purpose1.htm target=content>Champ d'application</a><br>')" onMouseOut="kwPopup.hide()"><span class="idxkeyword">Techniques d'examen</span></a></br>
+<a href="javascript:void(0)" onMouseOver="JavaScript:displayLink('<a href=newitem.htm target=content>Fonctions </a><br><a href=txthid.htm target=content>Afficher et masquer le texte d'image</a><br>')" onMouseOut="kwPopup.hide()"><span class="idxkeyword">Texte d'image</span></a></br>
+
+<a name="V"><br><span class="idxsection">- V -</span><br><br>
+<a href="javascript:void(0)" onMouseOver="JavaScript:displayLink('<a href=brwcont.htm target=content>PatientBrowser</a><br>')" onMouseOut="kwPopup.hide()"><span class="idxkeyword">Vignette</span></a></br>
+<a href="javascript:void(0)" onMouseOver="JavaScript:displayLink('<a href=purpose1.htm target=content>Champ d'application</a><br>')" onMouseOut="kwPopup.hide()"><span class="idxkeyword">Visualiseur</span></a></br>
+
+<a name="Z"><br><span class="idxsection">- Z -</span><br><br>
+<a href="javascript:void(0)" onMouseOver="JavaScript:displayLink('<a href=purpose1.htm target=content>Champ d'application</a><br>')" onMouseOut="kwPopup.hide()"><span class="idxkeyword">Zoom</span></a></br>
+<a href="javascript:void(0)" onMouseOver="JavaScript:displayLink('<a href=imaprc.htm target=content>Edition des images</a><br>')" onMouseOut="kwPopup.hide()"><span class="idxkeyword">Zoom et Déplacement</span></a></br>
+<a href="javascript:void(0)" onMouseOver="JavaScript:displayLink('<a href=mainwndw.htm target=content>	Fenêtre principale</a><br>')" onMouseOut="kwPopup.hide()"><span class="idxkeyword">zone Informations patient</span></a></br>
+
+
+</body>
+</html>

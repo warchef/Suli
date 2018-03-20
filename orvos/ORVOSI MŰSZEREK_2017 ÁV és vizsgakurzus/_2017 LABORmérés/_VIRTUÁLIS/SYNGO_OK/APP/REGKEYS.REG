@@ -1,0 +1,310 @@
+REGEDIT4
+
+[HKEY_CURRENT_USER\Software\SIEMENS]
+
+[HKEY_CURRENT_USER\Software\SIEMENS\ACOM PC]
+
+[HKEY_CURRENT_USER\Software\SIEMENS\ACOM PC\V4.0]
+"WinPosX"=dword:0000000f
+"WinPosY"=dword:00000089
+"WinHeight"=dword:0000021c
+"WinWidth"=dword:000003c2
+"WinState"=dword:00000001
+"MoveOnlineWinPosX"=dword:00000060
+"MoveOnlineWinPosY"=dword:0000018a
+"MoveOnlineWinHeight"=dword:000000aa
+"MoveOnlineWinWidth"=dword:00000384
+"MoveOnlineWinState"=dword:00000002
+"ShowEasySearchBar"=dword:00000001
+"ShowToolBar"=dword:00000000
+"ShowStatusBar"=dword:00000001
+"ShowJoinedView"=dword:00000000
+"Dll Info Column Width 1"=dword:00000064
+"Dll Info Column Width 2"=dword:0000004b
+"Dll Info Column Width 3"=dword:000001f4
+"BuildNumber"="1423"
+"Version"="VA02A"
+
+[HKEY_CURRENT_USER\Software\SIEMENS\ACOM PC\V4.0\ACOMPC]
+
+[HKEY_CURRENT_USER\Software\SIEMENS\ACOM PC\V4.0\ACOMPC\Settings]
+
+[HKEY_CURRENT_USER\Software\SIEMENS\ACOM PC\V4.0\ACOMPC\ToolBar_Acom.PC-Bar0]
+"BarID"=dword:0000e801
+
+[HKEY_CURRENT_USER\Software\SIEMENS\ACOM PC\V4.0\ACOMPC\ToolBar_Acom.PC-Bar1]
+"BarID"=dword:0000e800
+"XPos"=dword:fffffffe
+"YPos"=dword:fffffffe
+"Docking"=dword:00000001
+"MRUDockID"=dword:0000e81b
+"MRUDockLeftPos"=dword:fffffffe
+"MRUDockTopPos"=dword:fffffffe
+"MRUDockRightPos"=dword:00000217
+"MRUDockBottomPos"=dword:00000025
+"MRUFloatStyle"=dword:00002004
+"MRUFloatXPos"=dword:ffffffff
+"MRUFloatYPos"=dword:cdcdcdcd
+
+[HKEY_CURRENT_USER\Software\SIEMENS\ACOM PC\V4.0\ACOMPC\ToolBar_Acom.PC-Bar2]
+"BarID"=dword:0000e81b
+"Bars"=dword:00000005
+"Bar#0"=dword:00000000
+"Bar#1"=dword:0000e800
+"Bar#2"=dword:00000000
+"Bar#3"=dword:0000008a
+"Bar#4"=dword:00000000
+
+[HKEY_CURRENT_USER\Software\SIEMENS\ACOM PC\V4.0\ACOMPC\ToolBar_Acom.PC-Bar3]
+"BarID"=dword:0000008a
+"YPos"=dword:00000023
+"Docking"=dword:00000001
+"MRUDockID"=dword:0000e81b
+"MRUDockLeftPos"=dword:ffffffff
+"MRUDockTopPos"=dword:00000023
+"MRUDockRightPos"=dword:000002ae
+"MRUDockBottomPos"=dword:00000044
+"MRUFloatStyle"=dword:00002000
+"MRUFloatXPos"=dword:00000073
+"MRUFloatYPos"=dword:0000012e
+
+[HKEY_CURRENT_USER\Software\SIEMENS\ACOM PC\V4.0\ACOMPC\ToolBar_Acom.PC-Summary]
+"Bars"=dword:00000004
+"ScreenCX"=dword:00000400
+"ScreenCY"=dword:00000300
+
+[HKEY_CURRENT_USER\Software\SIEMENS\ACOM PC\V4.0\DEVBUI]
+"AcomNetClientTypeID"=""
+"AcomNetClientVersion"=""
+"AcomNetClientDescription"=""
+
+[HKEY_CURRENT_USER\Software\SIEMENS\ACOM PC\V4.0\DEVBUI\BUI]
+
+[HKEY_CURRENT_USER\Software\SIEMENS\ACOM PC\V4.0\DEVBUI\BUI\ExamList]
+
+[HKEY_CURRENT_USER\Software\SIEMENS\ACOM PC\V4.0\DEVBUI\BUI\ExamList\ExamDateTime]
+"SortOrder"=dword:00000001
+"SortState"=dword:00000001
+"Width"=dword:000000c4
+
+[HKEY_CURRENT_USER\Software\SIEMENS\ACOM PC\V4.0\DEVBUI\BUI\ExamList\Institution]
+"Width"=dword:00000086
+"SortOrder"=dword:00000000
+"SortState"=dword:00000000
+
+[HKEY_CURRENT_USER\Software\SIEMENS\ACOM PC\V4.0\DEVBUI\BUI\ExamList\PerformingPhysician]
+"Width"=dword:0000009d
+"SortOrder"=dword:00000000
+"SortState"=dword:00000000
+
+[HKEY_CURRENT_USER\Software\SIEMENS\ACOM PC\V4.0\DEVBUI\BUI\ExamList\ReferringPhysician]
+"Width"=dword:00000065
+"SortOrder"=dword:00000000
+"SortState"=dword:00000000
+
+[HKEY_CURRENT_USER\Software\SIEMENS\ACOM PC\V4.0\DEVBUI\BUI\ExamList\StudyDescription]
+"Width"=dword:0000007a
+"SortOrder"=dword:00000000
+"SortState"=dword:00000000
+
+[HKEY_CURRENT_USER\Software\SIEMENS\ACOM PC\V4.0\DEVBUI\BUI\ExamList\StudyID]
+"SortOrder"=dword:00000002
+"SortState"=dword:00000000
+
+[HKEY_CURRENT_USER\Software\SIEMENS\ACOM PC\V4.0\DEVBUI\BUI\JoinedList]
+
+[HKEY_CURRENT_USER\Software\SIEMENS\ACOM PC\V4.0\DEVBUI\BUI\JoinedList\ExamDateTime]
+"SortOrder"=dword:00000001
+"SortState"=dword:00000001
+
+[HKEY_CURRENT_USER\Software\SIEMENS\ACOM PC\V4.0\DEVBUI\BUI\JoinedList\Name]
+"SortOrder"=dword:00000002
+"SortState"=dword:00000000
+"Width"=dword:000000e5
+
+[HKEY_CURRENT_USER\Software\SIEMENS\ACOM PC\V4.0\DEVBUI\BUI\JoinedList\PatientID]
+"SortOrder"=dword:00000003
+"SortState"=dword:00000000
+"Width"=dword:000000b3
+
+[HKEY_CURRENT_USER\Software\SIEMENS\ACOM PC\V4.0\DEVBUI\BUI\JoinedList\ReferringPhysician]
+"Width"=dword:0000006c
+"SortOrder"=dword:00000000
+"SortState"=dword:00000000
+
+[HKEY_CURRENT_USER\Software\SIEMENS\ACOM PC\V4.0\DEVBUI\BUI\PatientList]
+
+[HKEY_CURRENT_USER\Software\SIEMENS\ACOM PC\V4.0\DEVBUI\BUI\PatientList\BirthDate]
+"Width"=dword:00000065
+"SortOrder"=dword:00000000
+"SortState"=dword:00000000
+
+[HKEY_CURRENT_USER\Software\SIEMENS\ACOM PC\V4.0\DEVBUI\BUI\PatientList\Comments]
+"Width"=dword:00000082
+"SortOrder"=dword:00000000
+"SortState"=dword:00000000
+
+[HKEY_CURRENT_USER\Software\SIEMENS\ACOM PC\V4.0\DEVBUI\BUI\PatientList\Name]
+"SortOrder"=dword:00000001
+"SortState"=dword:00000000
+"Width"=dword:00000144
+
+[HKEY_CURRENT_USER\Software\SIEMENS\ACOM PC\V4.0\DEVBUI\BUI\PatientList\PatientID]
+"SortOrder"=dword:00000002
+"SortState"=dword:00000000
+"Width"=dword:00000079
+
+[HKEY_CURRENT_USER\Software\SIEMENS\ACOM PC\V4.0\DEVBUI\DICOM1]
+"DicomSelectedServer"="DICOM1"
+
+[HKEY_CURRENT_USER\Software\SIEMENS\ACOM PC\V4.0\DEVBUI\DICOM2]
+"DicomSelectedServer"="DICOM2"
+
+[HKEY_CURRENT_USER\Software\SIEMENS\ACOM PC\V4.0\DEVBUI\DICOM3]
+"DicomSelectedServer"="DICOM3"
+
+[HKEY_CURRENT_USER\Software\SIEMENS\ACOM PC\V4.0\DEVBUI\LOCAL]
+"LocalNWName"="Local"
+"LocalNWDynaview"=dword:00000000
+"LocalNWDisableDelete"=dword:00000000
+
+[HKEY_CURRENT_USER\Software\SIEMENS\ACOM PC\V4.0\DEVBUI\NET]
+"AcomNetName"="ACOM.net"
+
+[HKEY_CURRENT_USER\Software\SIEMENS\ACOM PC\V4.0\DEVBUI\NETWORK]
+"LocalNWName"="Network"
+"NWPath"="C:\\Local"
+"LocalNWDynaview"=dword:00000000
+"NWThreshold"=dword:00000032
+"LocalNWDisableDelete"=dword:00000000
+
+[HKEY_CURRENT_USER\Software\SIEMENS\ACOM PC\V4.0\DEVBUI\SERVF]
+"AcomNetName"="All ACOM.net"
+
+[HKEY_CURRENT_USER\Software\SIEMENS\ACOM PC\V4.0\DEVBUI\UserSearch]
+"Pg1_SearchStudyDate"=dword:00000001
+"Pg1_ButtonDayNumber"=dword:00000001
+"Pg1_DisplayUsrButton"=dword:00000000
+"Pg1_UserButtonCaption"="Custom"
+"Pg1_QuickSearchType"=dword:00000000
+"ShowOnlyRequestedExams"=dword:00000000
+"SearchDateValue"="20040708-20040708"
+"SearchDateType"=dword:00000000
+"PatientDateOfBirth"="*"
+"DayNumber"=dword:00000001
+"SearchMode"=dword:00000000
+"PatientName"="*"
+"PhysicianName"="*"
+"PatientID"="*"
+"StudyID"="*"
+"AccessionNumber"="*"
+"PatientSex"="*"
+"StudyDescription"="*"
+"InstitutionName"="*"
+"AcomNetDontArchiveFlag"=dword:00000002
+"AcomNetKeepOnlineFlag"=dword:00000002
+"Modality"="*"
+"MppsID"="*"
+"SearchBarEnabled"=dword:00000000
+
+[HKEY_CURRENT_USER\Software\SIEMENS\ACOM PC\V4.0\DEVBUI\UserSearch\CustomSearch]
+"SearchDateValue"=""
+"SearchDateType"=dword:00000000
+"PatientDateOfBirth"="*"
+"DayNumber"=dword:00000001
+"SearchMode"=dword:00000001
+"PatientName"="*"
+"PhysicianName"="*"
+"PatientID"="*"
+"StudyID"="*"
+"AccessionNumber"="*"
+"PatientSex"="*"
+"StudyDescription"="*"
+"InstitutionName"="*"
+"AcomNetKeepOnlineFlag"=dword:00000002
+"AcomNetDontArchiveFlag"=dword:00000002
+
+[HKEY_CURRENT_USER\Software\SIEMENS\ACOM PC\V4.0\DEVBUI\UserSearch\SingleSearch]
+"SearchDateValue"=""
+"SearchDateType"=dword:00000000
+"PatientDateOfBirth"="*"
+"DayNumber"=dword:00000001
+"SearchMode"=dword:00000000
+"PatientName"="*"
+"PhysicianName"="*"
+"PatientID"="*"
+"StudyID"="*"
+"AccessionNumber"="*"
+"PatientSex"="*"
+"StudyDescription"="*"
+"InstitutionName"="*"
+"AcomNetDontArchiveFlag"=dword:00000002
+"AcomNetKeepOnlineFlag"=dword:00000002
+"Modality"="*"
+"MppsID"="*"
+
+[HKEY_CURRENT_USER\Software\SIEMENS\ACOM PC\V4.0\VIEWER]
+"Export Node"=""
+"LVA App Path"=""
+"LVA Img Path"=""
+"QCA App Path"=""
+"QCA Img Path"=""
+"Export Path"=""
+"AVI Export Path"="C:\\"
+"Export Extension"=""
+"QCA"=dword:00000000
+"LVA"=dword:00000000
+"Quantcor_Version"=dword:00000001
+"AppWinPosX"=dword:00000197
+"AppWinPosY"=dword:00000023
+"AppWinHeight"=dword:000002d0
+"AppWinWidth"=dword:00000320
+"AppWinState"=dword:00000001
+"Display Dynaview"=dword:00000000
+"Display ECG"=dword:00000001
+"Autoplay Enabled"=dword:00000001
+"Image with Text"=dword:00000001
+"Fit to Window"=dword:00000001
+"Skip Frame in First Pass"=dword:00000000
+"Use Filtering"=dword:00000001
+"Override Filter"=dword:00000000
+"Dinaview Filter"="00000"
+"DICOM Filter"="00000"
+"Start in Pres Mode"=dword:00000000
+"Start View"="00000"
+"Tool Bar Visible"=dword:00000001
+"Status Bar Visible"=dword:00000001
+"Auto Windowing"=dword:00000000
+"Display Sutructed"=dword:00000000
+"Apply Mod LUT for native"=dword:00000001
+"Gamma"="1.0"
+"Viewer2WinPosX"=dword:00000064
+"Viewer2WinPosY"=dword:00000064
+"Viewer2WinHeight"=dword:000002d0
+"Viewer2WinWidth"=dword:00000320
+"Viewer2WinState"=dword:00000001
+
+[HKEY_CURRENT_USER\Software\SIEMENS\ACOM PC\V4.0\VIEWER\viewer]
+
+[HKEY_CURRENT_USER\Software\SIEMENS\ACOM PC\V4.0\VIEWER\viewer\Settings]
+
+[HKEY_CURRENT_USER\Software\SIEMENS\ACOM_GC]
+"InstallLanguage"="US"
+"LocalPath"=""
+"LocalThreshold"=dword:00000032
+"ModalityEnum"="XA,US,NM,IVUS,OT,EPS,DD,CD,RF"
+"RootUID"="1.3.12.2.1107.5.4.9.412345"
+"AcomPCIsInstalled"=dword:00000001
+
+[HKEY_CURRENT_USER\Software\SIEMENS\ACOM_GC\AcnClient]
+"AcomNetClientTypeID"=""
+"AcomNetClientVersion"=""
+"AcomNetClientDescription"=""
+
+[HKEY_CURRENT_USER\Software\SIEMENS\ACOM_GC\DicomNodes]
+
+[HKEY_CURRENT_USER\Software\SIEMENS\ACOM_GC\Security]
+"Active"=dword:00000000
+
+[HKEY_CURRENT_USER\Software\SIEMENS\ACOM_GC\Security\Audit]
+

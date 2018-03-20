@@ -1,0 +1,1 @@
+document.write('<a target="_blank" href="http://ad.doubleclick.net/click;h=v8/3ab7/0/0/%2a/i;223425839;0-0;1;45771178;2321-160/600;36023404/36041309/1;;~sscs=%3fhttp://www.mayoclinicproceedings.com/cgi/alerts"><img src="http://s0.2mdn.net/viewad/2620161/160x600MCPHouse_3.20.10.jpg" border=0 alt="eAlert"></a>');

@@ -1,0 +1,1 @@
+var OTE_CONFIG = {net:'e'};

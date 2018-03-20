@@ -1,0 +1,1190 @@
+        
+    /*max-device-width
+        
+    @media only screen and (-webkit-min-device-pixel-ratio: 1.3) and (max-device-width : 800px), only screen and (min-device-pixel-ratio: 1.3) and (max-device-width : 800px), only screen and (max-device-width : 480px), , only screen and (max-width : 480px) {
+        
+    */
+	@media only screen and (device-width:768px) and (orientation:portrait){
+	
+		html{
+		
+			zoom: 0.76;
+		} 
+		body {
+		
+			max-width: 990px;
+		} 
+	}
+	
+	
+	
+    @media screen and (max-device-width: 640px), screen and (max-width: 640px){
+    
+        body {width: 100%;-webkit-text-size-adjust: none;}
+        .RichTextIntLink a:visited {text-decoration: underline;color: #006487;}   
+        a:hover {text-decoration: none;}
+        #logo {width:120px;left:14px;}
+        #content p {font-size: 16px;-webkit-text-size-adjust: none;}
+        #content h3 {margin: 0 0px 9px;font-weight:bold !important;}
+         #content h1 {margin: 0 0px 9px;font-size: 20px;font-weight:bold !important;}
+        #wrapperFooter, #branding, #toolbarWrap {width:100%;height:80px;}
+        #wrapperFooter ul#siteInfo {width: auto;margin-left:20px;padding-bottom: 30px;margin-top: 20px;}
+        #wrapperFooter ul#siteInfo li a {text-decoration: underline;}
+        #toolbar {width: auto;}
+        #header {width: auto;height:79px;border-bottom: 1px solid white;border-right-width: 0px;-moz-box-shadow: 0 3px 10px #999;-webkit-box-shadow: 0 3px 10px #999;box-shadow: 0 3px 10px #999;}
+        #headerClaim {width: auto;min-height: auto;}
+        #claim {height: auto;display:none;}
+        #content ol {padding-left: 26px;}
+        #wrapperHeader ul#navPrimary, #wrapperHeader ul#navPrimary7 {height: auto !important;}
+        .picture {width: auto !important;text-align:center;}
+        .picture img {max-width: 100%;}
+        p.left, p.linksOhne {text-align:center;}
+        #content .left, #content .left img, #content .right img {float:none !important;}
+        .homepage #wrapperHeader #branding {min-height: 79px;height:79px;}
+        #wrapperHeader {position:relative;border-bottom: 1px solid #fff;}
+        #wrapperHeader img {display:none;}
+        #branding {background:url(_images/logo130.png) no-repeat 14px 0px;background-color: #879baa;}
+        #content #mediasearchfilter {background: none !important;}
+        img {max-width: 100%;}
+        #anfang {display: block;width: 120px;height: 65px;position: absolute;left: 14px;z-index: 1000;}
+        form p.formHandle {margin-left:0px !important;border-top: 1px solid #999 !important;}
+        .lightbox.Basepage, .searchNode,.notMobile, #premiumStageB2B, #premiumStageB2C, .navToTop, #header img, #headerClaimPremiumStage, .lupe.lightbox {display:none;}
+        #content #wrapperColumnA {float:none !important;width:auto !important;}
+        
+        .notDesktop {display:block;}
+        #premiumStageMobile img {max-width:100%;}
+        
+        #division {
+            position: absolute;
+            top: 9px;
+            right: 15px;
+            color: #fff;
+            font-weight: bold;
+            font-size: 12px;
+        }
+        
+        h3 {font-size: 16px !important;}
+        h2 {font-size: 18px;}
+        h1 {font-size: 20px;}
+        
+        
+        #chapter {	display: inline-block;
+    	padding: 8px 10px 10px;
+    	border-radius: 0 0 6px 6px;
+    	color: #FFF;
+    	text-decoration: none;
+    	background-color: #738796; /* Old browsers */
+    	background-image:    -moz-linear-gradient(top, #9BAFBE 40%, #738796 60%); /* FF3.6+ */
+    	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(40%, #9BAFBE), color-stop(60%, #738796)); /* Chrome,Safari4+ */
+    	background-image: -webkit-linear-gradient(top, #9BAFBE 40%, #738796 60%); /* Chrome10+,Safari5.1+ */
+    	background-image:      -o-linear-gradient(top, #9BAFBE 40%, #738796 60%); /* Opera11.10+ */
+    	background-image:         linear-gradient(top, #9BAFBE 40%, #738796 60%); /* W3C */
+    	
+    	/* Remove the following lines to allow more than one line for the headline */
+    	   -moz-box-sizing: border-box;
+    	-webkit-box-sizing: border-box;
+    	        box-sizing: border-box;
+    	max-width: 100%;
+    	overflow: hidden;
+    	text-overflow: ellipsis;
+    	white-space: nowrap;
+    	margin-left:14px;
+    }
+        #chapter a {
+    	font-size:14px;
+    	font-weight: bold;color:white;}
+        
+        /*Header/ Footer menu*/
+        #wrapperFooter #footerNavigation div.teaser ul li strong {
+            color: #fff;
+    background: none;
+    font-size: 11px;
+    margin: 0;
+    padding: 0;
+        }
+        #footerNavigation .teaser {
+            padding: 5px 14px;margin-left: 0px !important;
+        }
+        #wrapperHeader nav.meta li,
+        #footerNavigation .teaser li {
+        	border: 1px solid #374B5A;
+        	border-left-width: 0;
+        	background-color: #879BAA; /* Old browsers */
+        	background-image:    -moz-linear-gradient(top, #879BAA 40%, #647887 60%); /* FF3.6+ */
+        	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(40%, #879BAA), color-stop(60%, #647887)); /* Chrome,Safari4+ */
+        	background-image: -webkit-linear-gradient(top, #879BAA 40%, #647887 60%); /* Chrome10+,Safari5.1+ */
+        	background-image:      -o-linear-gradient(top, #879BAA 40%, #647887 60%); /* Opera11.10+ */
+        	background-image:         linear-gradient(top, #879BAA 40%, #647887 60%); /* W3C */
+        }
+        #wrapperHeader  nav.meta li:first-child,
+        #footerNavigation .teaser li:first-child {
+        	border-left-width: 1px;
+        	border-top-left-radius: 6px;
+        	border-bottom-left-radius: 6px;
+        }
+        #wrapperHeader  nav.meta li:last-child,
+        #footerNavigation .teaser li:last-child {
+        	border-top-right-radius: 6px;
+        	border-bottom-right-radius: 6px;
+        }
+        #wrapperHeader  nav.meta li.active,
+        #footerNavigation .teaser li.active {
+        	background-color: #374B5A; /* Old browsers */
+        	background-image:    -moz-linear-gradient(top, #374B5A 40%, #647887 60%); /* FF3.6+ */
+        	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(40%, #374B5A), color-stop(60%, #647887)); /* Chrome,Safari4+ */
+        	background-image: -webkit-linear-gradient(top, #374B5A 40%, #647887 60%); /* Chrome10+,Safari5.1+ */
+        	background-image:      -o-linear-gradient(top, #374B5A 40%, #647887 60%); /* Opera11.10+ */
+        	background-image:         linear-gradient(top, #374B5A 40%, #647887 60%); /* W3C */
+        }
+        #footerNavigation .teaser a {color:#fff !important;font-weight:bold !important;margin:0 !important;}
+        #wrapperFooter #footerNavigation div.teaser ul li {
+    line-height: 0.9em;
+    }
+        #wrapperHeader  nav.meta li a, #wrapperFooter #footerNavigation div.teaser ul li > a, #wrapperFooter #footerNavigation div.teaser ul li strong {
+            display: inline-block;
+        	font-size: 11px;
+        	font-weight: bold;
+        	text-align: center;
+        	text-decoration: none;
+        	color: #fff;
+        	padding: 28px 4px 0;
+        	background: url("_images/nav-sprite.png") no-repeat 0 0;
+        }
+        #wrapperHeader  nav.meta li a {
+            padding: 15px 4px 0;
+        }
+        #footerNavigation .teaser li.regionSelection a {
+            background-position: center -240px !important;
+        }
+        #footerNavigation .teaser li.testimonials a {
+            background: url("_images/testimonial-icon.png") no-repeat 24px 0px !important;
+
+        }
+        #footerNavigation .teaser li.contact a {
+            background-position: center -341px !important;
+        }
+        
+        #footerNavigation .teaser li.apps a {
+            background-position: center -539px !important;
+        }
+        #catalogueSelectProduct {width:100%;font-size:1em;}
+        
+     /*   #wrapperFooter #footerNavigation div.teaser ul li a {
+            background-position: center -240px;
+        }
+         #wrapperFooter #footerNavigation div.teaser ul li:first-child a {
+            background-position: center -341px;
+        }
+        #wrapperFooter #footerNavigation div.teaser ul li:last-child a {
+            background-position: center -39px;
+        }
+        */
+        
+        
+        #footerNavigation .teaser li {
+        display: table-cell;
+    width: 72px;
+    height: 62px;
+    text-align: center;
+    vertical-align: middle;
+    }
+        #wrapperHeader nav.meta li.menu div {
+    	padding-top: 14px;
+    	font-size: 9px;
+    	text-transform: lowercase;
+    	color: #fff;
+    	text-align:center;
+    	cursor:pointer;
+    	}
+        #wrapperHeader nav.meta li.menu .icon {
+        	top: 4px;
+        	height: 11px;
+        	background-position: -29px -45px;
+        }
+        #wrapperHeader nav.meta li.menu.active div {
+        	padding-top: 17px;
+        }
+        #wrapperHeader nav.meta li.menu.active .icon {
+        	top: 7px;
+        }
+         #wrapperHeader nav.meta li.search div {
+    	overflow: hidden;
+    	text-indent: -9999em;
+    }
+     #wrapperHeader nav.meta li.search .icon {
+    	top: 4px;
+    	height: 19px;
+    	background-position: -31px -140px;
+    }
+    
+    #wrapperHeader nav.meta li.search {
+    	position: relative;
+    	cursor:pointer;
+    }
+     #wrapperHeader nav.meta li.search.active .icon {
+    	top: 7px;
+    }
+            #wrapperHeader nav.meta {
+        	position: absolute;
+        	top:29px;
+        	right: 0px;
+        	margin: 0 14px 14px;
+        }
+        #wrapperHeader nav.meta ul {
+        	width: 100%;
+        }
+        #wrapperHeader nav.meta li {
+        	display: block;
+        	float: left;
+        	width: 42px;
+        	height: 33px;
+        }
+        #wrapperHeader nav.meta li .icon {
+        	display: block;
+        	position: absolute;
+        	width: 100%;
+        	background: url("_images/nav-sprite.png") no-repeat 0 0;
+        }
+       #wrapperHeader nav.meta li a {
+        	display: block;
+        	position: relative;
+        	   -moz-box-sizing: border-box;
+        	-webkit-box-sizing: border-box;
+        	        box-sizing: border-box;
+        	height: 100%;
+        }
+        #wrapperHeader nav.meta li a .arrow, #wrapperHeader nav.meta li div .arrow {
+        	display: block;
+        	position: absolute;
+        	bottom: 2px;
+        	left: 0;
+        	width: 44px;
+        	height: 5px;
+        	background: url("_images/nav-sprite.png") no-repeat center -848px;
+        }
+        #wrapperHeader nav.meta li.active a .arrow {
+        	display: none;
+        }
+        /*end header menu*/
+            /* toolbar*/
+        #toolbarWrap:before {content: ' ';height: 5px;position: absolute;width: 10px;border: 0.5em solid transparent;top: 65px;right: 25px;background: url("_images/nav-sprite.png") no-repeat center -701px;}
+        #navPrimary:before, #navPrimary7:before {
+    content: ' ';
+    height: 5px;
+    position: absolute;
+    width: 10px;
+    border: 0.5em solid transparent;
+    top: -15px;
+    right: 68px;
+    background: url("_images/nav-sprite.png") no-repeat center -703px;
+    }
+        #navPrimary, #navPrimary7 {display:none;}
+        #toolbarWrap {height:auto;display:none;border: 0px;margin-bottom:0px !important;}
+        #toolbar fieldset p {
+    	clear: both;
+    	margin-top: 10px;
+    	border: 1px solid #374B5A;
+    	border-bottom-color: #999;
+    	border-radius: 6px 6px 6px 6px;
+    	padding: 10px 10px 30px 10px;
+    	background-color: #879BAA; /* Old browsers */
+    	background-image:    -moz-linear-gradient(top, #ADBECB 40%, #879BAA 60%); /* FF3.6+ */
+    	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(40%, #ADBECB), color-stop(60%, #879BAA)); /* Chrome,Safari4+ */
+    	background-image: -webkit-linear-gradient(top, #ADBECB 40%, #DFE6ED 60%); /* Chrome10+,Safari5.1+ */
+    	background-image:      -o-linear-gradient(top, #ADBECB 40%, #879BAA 60%); /* Opera11.10+ */
+    	background-image:         linear-gradient(top, #ADBECB 40%, #879BAA 60%); /* W3C */  
+    	height: 41px;
+}
+    	#toolbar fieldset p .formField .image {
+    	   width:80px;
+    	}
+    
+        .flag, #toolbar .contact, #accessibility {display:none !important;}
+       #toolbar input[type="text"] {
+           	   -moz-box-sizing: border-box;
+    	-webkit-box-sizing: border-box;
+    	        box-sizing: border-box;
+    	width: 100%;
+    	margin-bottom: 6px;
+    	border: 1px solid #CCC;
+    	border-radius: 6px;
+    	padding: 8px 8px 6px;
+    	font-size: 16px;
+    	background: #FFF;
+    	height: auto;
+       }
+       #toolbar li {width: 100%;height:auto;margin-right: 0px !important;}
+       #toolbar ul {height: auto;}
+       #toolbar {margin: 0;padding:30px 15px 15px 15px;height: auto;background-color: #BECDD7;}
+        /*end  toolbar*/
+        
+        .pageFAQResultListing .toggle {width:auto !important;}
+        
+        
+        
+        /*primary navigation*/
+        #navPrimary, #navPrimary7 {width: auto;
+    padding: 35px 14px 15px;
+    float: none;
+    border: 0;
+    margin: 0;
+    background-color: #BECDD7;
+    border-bottom: 1px solid #fff;
+    position: relative;}
+    #navPrimary li, #navPrimary7 li {padding-left: 10px;}
+        .homeNode *, #navPrimary li > *, #navPrimary7 li > * {width: auto;height: auto;border:0;}
+        #navPrimary li:first-child, #navPrimary7 li:first-child, #navPrimary li, #navPrimary7 li {
+            float: none;border:0;
+        	position: relative;
+        	overflow: hidden;
+        	border: 1px solid #374B5A;
+        	border-top-width: 0;
+        	background-color: #879BAA; /* Old browsers */
+        	background-image:    -moz-linear-gradient(top, #ADBECB 40%, #879BAA 60%); /* FF3.6+ */
+        	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(40%, #ADBECB), color-stop(60%, #879BAA)); /* Chrome,Safari4+ */
+        	background-image: -webkit-linear-gradient(top, #ADBECB 40%, #879BAA 60%); /* Chrome10+,Safari5.1+ */
+        	background-image:      -o-linear-gradient(top, #ADBECB 40%, #879BAA 60%); /* Opera11.10+ */
+        	background-image:         linear-gradient(top, #ADBECB 40%, #879BAA 60%); /* W3C */
+        }
+        #navPrimary li strong, #navPrimary7 li strong, #navPrimary li em, #navPrimary7 li em {
+            background: none;height:auto;padding: 15px 0px 2px 10px;
+        }
+        #navPrimary li strong, #navPrimary7 li strong, #navPrimary li em a, #navPrimary7 li em a {
+            background: none !important;padding-left: 0;padding-top: 4px;
+        }
+        #navPrimary li:first-child, #navPrimary7 li:first-child {
+            border-top-width: 1px;
+            border-top-left-radius: 6px;
+            border-top-right-radius: 6px;
+        }
+        #navPrimary li:last-child, #navPrimary7 li:last-child {
+            border-bottom-right-radius: 6px;
+            border-bottom-left-radius: 6px;
+        }
+        #navPrimary li a, #navPrimary7 li a, #navPrimary7 li strong, #navPrimary li strong {
+            display: block;
+            position: relative;
+            padding: 13px 29px 10px 10px;
+            color: #FFF;
+            font-size: 18px;
+            font-weight: bold;
+            text-decoration: none;
+            height: auto;
+        }
+        #navPrimary li a:hover, #navPrimary7 li a:hover {
+            height: auto;
+            background-color: none;
+        }
+        .homepage #navPrimary li strong, #navPrimary li:first-child a, .homepage #navPrimary7 li strong, #navPrimary7 li:first-child a {
+            background: url("_images/icons-sprite.png") no-repeat 9px -288px !important;padding-left: 35px;
+        }
+        .homepage.professional #navPrimary li strong, #navPrimary li:first-child strong, .homepage.professional #navPrimary7 li strong, #navPrimary7 li:first-child strong {
+            background: none !important;padding-left: 35px;padding-left: 10px;
+        }
+        .homepage #navPrimary li strong, .homepage #navPrimary7 li strong {
+        background: url("_images/icons-sprite.png") no-repeat 9px -288px !important;
+padding-left: 35px;
+}
+        
+        
+        #navPrimary li a:after, #navPrimary7 li a:after {
+        content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 9px;
+    width: 13px;
+    height: 15px;
+    margin-top: -8px;
+    text-indent: -9999em;
+    background: url("_images/arrows-sprite.png") no-repeat 0 0;
+    }
+        
+        #navPrimary li:before, #navPrimary7 li:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 9px;
+    height: 100%;
+    background-color: #DFE6ED;
+    background-image: -moz-linear-gradient(top, #FFF 40%, #DFE6ED 60%) !important;
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(40%, #FFF), color-stop(60%, #DFE6ED)) !important;
+    background-image: -webkit-linear-gradient(top, #FFF 40%, #DFE6ED 60%) !important;
+    background-image: -o-linear-gradient(top, #FFF 40%, #DFE6ED 60%) !important;
+    background-image: linear-gradient(top, #FFF 40%, #DFE6ED 60%) !important;
+    
+    }
+        
+        .homeNode strong, .homeNode em, .homeNode a:hover, #navPrimary li strong, #navPrimary li em, #navPrimary li > a:hover, #navPrimary7 li strong, #navPrimary7 li em, #navPrimary7 li > a:hover {border: 0;background:none;}
+        #siteShare {display: none;}
+        /*end primary navigation*/
+        #navSecondary, .professional #navSecondary {display:none !important;}
+        
+        
+        
+        
+        
+        
+        /*find a hearing care professional */
+        .homepage #navSecondary {display:block;float:none;width: 100% !important;}
+        .homepage #navSecondary h2.aural, .homepage #navSecondary #stepsToBox h3, .homepage #navSecondary #stepsToBox a, .homepage #navSecondary #stepsToBox li:first-child {display:none;}
+        .homepage #navSecondary #stepsToBox {margin-bottom: 15px;}
+        .homepage #navSecondary #stepsToBox a { display:none;text-decoration: none;}
+        .homepage #navSecondary #stepsToBox a{ text-decoration: none;}
+        .homepage #navSecondary #stepsToBox a#find { display:block;height:auto !important;}
+        .homepage #navSecondary #stepsToBox a#find span {font-size:16px;width:auto;padding: 0 !important;}
+        .homepage #stepsToBox ul li.stbContent {height:auto !important;width:100%;}
+        .homepage #navSecondary #stepsToBox .stbContent a#find {	display: none;
+    	position: relative;
+    	overflow: hidden;
+    	padding: 9px 10px;
+    	border: 1px solid #999;
+    	border-radius: 6px;
+    	font-weight: bold;
+    	text-decoration: none;
+    	background-color: #DFE6ED; /* Old browsers */
+    	background-image:    -moz-linear-gradient(top, #FFF 40%, #DFE6ED 60%) !important; /* FF3.6+ */
+    	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(40%, #FFF), color-stop(60%, #DFE6ED)) !important; /* Chrome,Safari4+ */
+    	background-image: -webkit-linear-gradient(top, #FFF 40%, #DFE6ED 60%) !important; /* Chrome10+,Safari5.1+ */
+    	background-image:      -o-linear-gradient(top, #FFF 40%, #DFE6ED 60%) !important; /* Opera11.10+ */
+    	background-image:         linear-gradient(top, #FFF 40%, #DFE6ED 60%) !important; /* W3C */}
+    	.homepage #navSecondary #stepsToBox .stbContent a#find:after {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 50%;
+        right: 9px;
+        width: 13px;
+        height: 15px;
+        margin-top: -8px;
+        text-indent: -9999em;
+        background: url("_images/arrows-sprite.png") no-repeat 0 -15px;
+        }
+        /* end find a hearing care professional */
+        
+        
+        
+        
+        #navServiceMeta {display:none;}
+        
+        
+        
+        
+        
+        /*Navigation Close Button*/
+        #navigationCloseButton {
+            position: absolute;
+            display: none;
+            top: 80px;
+            right: 14px;
+            z-index: 99;
+            cursor: pointer;
+            width: 42px;
+            height: 23px;
+            overflow: hidden;
+            margin: 0 0 10px;
+            border: 1px solid #374B5A;
+            border-top-width: 0;
+            border-radius: 0 0 6px 6px;
+            background-color: #879BAA;
+            background-image: -moz-linear-gradient(top, #ADBECB 40%, #879BAA 60%);
+            background-image: -webkit-gradient(linear, left top, left bottom, color-stop(40%, #ADBECB), color-stop(60%, #879BAA));
+            background-image: -webkit-linear-gradient(top, #ADBECB 40%, #879BAA 60%);
+            background-image: -o-linear-gradient(top, #ADBECB 40%, #879BAA 60%);
+            background-image: linear-gradient(top, #ADBECB 40%, #879BAA 60%);
+        }
+        #navigationCloseButton span {
+            display: block;
+            height: 100%;
+            text-indent: -9999em;
+            background: transparent url("_images/nav-sprite.png") no-repeat center -639px;
+        }
+        /*End Navigation Close Button*/
+        
+        
+        
+        
+        /*TEASER*/
+        #wrapperContent {margin: 0;width: 100%;}
+        #headerClaim {margin-left: 0px;}
+        
+        #wrapperTeaser {}
+        #wrapperDivisions #wrapperContent #content .flowbox {width: 100%;margin-right:0px !important;margin-top:0px !important;}
+        
+        #wrapperDivisions #wrapperContent #content .flowbox div.teaser {float:none !important;width:auto !important;font-size: 14px;color: #666;position:relative;
+            	background-color: #DFE6ED; /* Old browsers */
+    	background-image:    -moz-linear-gradient(top, #FFF 40%, #DFE6ED 60%); /* FF3.6+ */
+    	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(40%, #FFF), color-stop(60%, #DFE6ED)); /* Chrome,Safari4+ */
+    	background-image: -webkit-linear-gradient(top, #FFF 40%, #DFE6ED 60%); /* Chrome10+,Safari5.1+ */
+    	background-image:      -o-linear-gradient(top, #FFF 40%, #DFE6ED 60%); /* Opera11.10+ */
+    	background-image:         linear-gradient(top, #FFF 40%, #DFE6ED 60%); /* W3C */
+        }
+        #wrapperDivisions #wrapperContent #content .flowbox div.teaser {margin-right: 0px !important;}
+        #wrapperDivisions #wrapperContent #content .flowbox div.teaser:after {
+        content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 9px;
+    width: 13px;
+    height: 15px;
+    margin-top: -8px;
+    text-indent: -9999em;
+    background: url("_images/arrows-sprite.png") no-repeat 0 -30px;
+        }
+        #wrapperDivisions #wrapperContent #content .flowbox div.teaser:first-child {margin-right: 0px !important;}
+        #content .teaser {margin: 0 !important;float:left;clear:none;}
+        #content .teaser a {float:left;clear:none;}
+        #content .teaser a img {padding: 5px 0 5px 10px;width:80px;position:absolute;left:0px;top:14px;}
+        
+        #content .teaser p {color: #666;padding-right: 30px;color: #666;
+    padding-right: 30px;
+    font-size: 14px;
+    margin-top: 26px;padding-left:100px;}
+    
+    #content .teaser p
+    {
+    margin-bottom:2em;
+    }
+        #content .teaser a.more {position: absolute;
+    top: 0px;
+    left: 0px;
+    text-indent: -999px;
+    background: none;
+    width: 100%;
+    height: 100%;}
+        #wrapperDivisions {width: auto;margin: 0;padding: 15px 15px 0;}
+        #wrapperDivisions #wrapperContent #content .flowbox .teaser h3.Tree, #wrapperDivisions #wrapperContent #content .flowbox .teaser h3.locked {display:block;
+        padding: 9px 10px;
+    	position: relative;
+    	color: #FFF;
+    	z-index: 10;
+    	text-decoration: none;font-size:20px;
+    	}
+    	#wrapperDivisions #wrapperContent #content .flowbox .teaser h3.locked {
+    	   /*background: url(_images/icon_schloss.png) no-repeat 11px 4px;*/
+    	   background: none;
+    	}
+    	#wrapperDivisions .teaser h3.Tree a, #wrapperDivisions .teaser h3.locked a {color: #333;font-size:16px;margin-top: 6px;
+    position: relative;padding-left:90px;}
+        .professional #wrapperDivisions .teaser h3.locked a {padding-left:0px;}
+    	
+    	
+    	#wrapperDivisions #wrapperContent #content .flowbox div[class=teaser] {border: 1px solid #999;border-width: 1px 1px 0px 1px;}
+
+    	#wrapperDivisions #wrapperContent #content .flowbox:last-child div[class=teaser]:last-child {border-bottom-left-radius: 6px;border-bottom-right-radius: 6px;
+    	 border-top-width: 0px;border-width:1px 1px 1px 1px;}
+    	#wrapperDivisions #wrapperContent #content .flowbox:first-child div[class=teaser]:first-child {border-top-left-radius: 6px;border-top-right-radius: 6px;border-left-width: 1px;border-right-width: 1px;border-top-width: 1px;
+    	}
+    	
+    	
+    	.homepage #wrapperDivisions #wrapperContent #content .flowbox:last-child .teaser:last-child {border-radius: 6px;}
+    
+    	.homepage #wrapperDivisions .teaser h3.Tree a {padding-left:0px;}
+    	.homepage #content .teaser p {padding-left:0px;margin-top:7px;}
+    	.homepage #content .teaser a img {padding: 5px 0 5px 10px;width:80px;position:relative;left:0px;top:0px;}
+    	#wrapperTeaser {border: 1px solid #999; border-radius: 6px; }
+		#wrapperTeaser li div a img{width: 240px;}
+		#wrapperDivisions #wrapperContent #wrapperTeaser {border-top: 1px solid #999;}
+    	#wrapperDivisions ul#wrapperTeaser, #wrapperDivisions #wrapperContent ul#wrapperTeaser{padding: 0; margin: 0; background: none;}
+        #wrapperDivisions #wrapperContent:after, #wrapperDivisions #wrapperContent .GenericTable:before{margin: 20px 0 20px 0; height: 1px; display:block; content: ""; background-image:url(http://media.hearing.siemens.com/includes/css/_images/line_dotted_grau.png?__blob=normal)}		
+    	#wrapperDivisions ul#wrapperTeaser li {
+			width: 100%; 
+			padding: 10px; 
+			background-color: #DFE6ED;
+			background-image: -moz-linear-gradient(top, #FFF 40%, #DFE6ED 60%);
+			background-image: -webkit-gradient(linear, left top, left bottom, color-stop(40%, #FFF), color-stop(60%, #DFE6ED));
+			background-image: -webkit-linear-gradient(top, #FFF 40%, #DFE6ED 60%);
+			background-image: -o-linear-gradient(top, #FFF 40%, #DFE6ED 60%);
+			background-image: linear-gradient(top, #FFF 40%, #DFE6ED 60%);			
+			border-top: 1px solid #999
+		}
+    	#wrapperDivisions ul#wrapperTeaser li p{width:95%;}		
+    	#wrapperDivisions ul#wrapperTeaser li:first-child {border: none;}	
+    	#wrapperDivisions ul#wrapperTeaser li.last{margin: 0px; float:none;}	
+		#wrapperDivisions ul#wrapperTeaser li div{position: relative;}
+    	#wrapperDivisions ul#wrapperTeaser li div:after{
+			
+			content: "";
+			display:block;
+			position:absolute;
+			top: 50%;
+			right: 18px;
+			width: 13px;
+			height: 15px;
+			margin-top: -8px;
+			text-indent: -9999em;			
+			background-image: url('http://media.hearing.siemens.com/includes/css/_images/arrows-sprite.png'); 
+			background-repeat: no-repeat;
+			background-position-y: -45px;
+			
+		
+		}
+		#wrapperDivisions ul#wrapperTeaser li div a.more{
+			position: absolute;
+			z-index: 8;
+			top: 0px;
+			left: 0px;
+			width: 100%;
+			height: 100%;	
+			text-indent: -999px;
+			background: none;
+		}		
+        .homepage #wrapperDivisions #wrapperContent #content .flowbox {width: 100%;}
+        .homepage #wrapperDivisions #wrapperContent #content .flowbox div.teaser {float:none !important;width:auto !important;font-size: 14px;color: #666;position:relative;
+            	background-color: #DFE6ED; /* Old browsers */
+    	background-image:    -moz-linear-gradient(top, #FFF 40%, #DFE6ED 60%); /* FF3.6+ */
+    	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(40%, #FFF), color-stop(60%, #DFE6ED)); /* Chrome,Safari4+ */
+    	background-image: -webkit-linear-gradient(top, #FFF 40%, #DFE6ED 60%); /* Chrome10+,Safari5.1+ */
+    	background-image:      -o-linear-gradient(top, #FFF 40%, #DFE6ED 60%); /* Opera11.10+ */
+    	background-image:         linear-gradient(top, #FFF 40%, #DFE6ED 60%); /* W3C */
+        }
+        .homepage #wrapperDivisions #wrapperContent #content .flowbox div.teaser:first-child {margin: 0 0 20px 0 !important;}
+        .homepage #wrapperDivisions #wrapperContent #content .flowbox div.teaser {margin: 0 0 20px 0 !important;}
+        .homepage #wrapperDivisions #wrapperContent #content .flowbox:first-child .teaser:first-child {
+            border-bottom-width: 1px;
+            border-radius: 6px;
+        }
+        .homepage #content .teaser a {margin-top: 19px;float:none;}
+        .homepage #content .teaser a img {padding: 0  0 10px 10px;margin-top:0px;}
+        .homepage #content .teaser a.more {position: absolute;z-index:8;top:0px;left:0px;width:100%;height:100%;}
+        .homepage #wrapperDivisions {width: auto;margin: 0;padding: 15px 15px 0;}
+        .homepage #wrapperDivisions .teaser h3.Tree, .homepage #wrapperDivisions .teaser h3.locked {text-indent:0px !important;border-top-left-radius: 5px;border-top-right-radius: 5px;position: relative;background-color: #738796;display:block;
+        padding: 9px 10px !important;
+    	position: relative;
+    	color: #FFF;
+    	z-index: 10;
+    	height:auto !important;
+    	text-decoration: none;
+    	background-color: #738796; /* Old browsers */
+    	background-image:    -moz-linear-gradient(top, #9BAFBE 40%, #738796 60%); /* FF3.6+ */
+    	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(40%, #9BAFBE), color-stop(60%, #738796)); /* Chrome,Safari4+ */
+    	background-image: -webkit-linear-gradient(top, #9BAFBE 40%, #738796 60%); /* Chrome10+,Safari5.1+ */
+    	background-image:      -o-linear-gradient(top, #9BAFBE 40%, #738796 60%); /* Opera11.10+ */
+    	background-image:         linear-gradient(top, #9BAFBE 40%, #738796 60%); /* W3C */}
+    	.professional #wrapperDivisions .teaser h3.locked {text-indent:0px !important;border-top-left-radius: 5px;border-top-right-radius: 5px;position: relative;background-color: #738796;display:block;
+        background: url(_images/icon_schloss.png) no-repeat 0 0px;
+        padding: 9px 10px !important;
+    	position: relative;
+    	color: #FFF;
+    	z-index: 10;
+    	height:auto !important;
+    	text-decoration: none;
+    	background-color: #738796 !important; /* Old browsers */
+    	background-image:    -moz-linear-gradient(top, #9BAFBE 40%, #738796 60%) !important; /* FF3.6+ */
+    	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(40%, #9BAFBE), color-stop(60%, #738796)) !important; /* Chrome,Safari4+ */
+    	background-image: -webkit-linear-gradient(top, #9BAFBE 40%, #738796 60%) !important; /* Chrome10+,Safari5.1+ */
+    	background-image:      -o-linear-gradient(top, #9BAFBE 40%, #738796 60%) !important; /* Opera11.10+ */
+    	background-image:         linear-gradient(top, #9BAFBE 40%, #738796 60%) !important; /* W3C */}
+    	.homepage #wrapperDivisions .teaser h3.Tree a, .homepage #wrapperDivisions .teaser h3.locked a {color: #fff;font-size:20px;position: relative;margin-top: 0px;}
+    	.homepage #wrapperDivisions .teaser h3.Tree:after, .homepage #wrapperDivisions .teaser h3.locked:after {
+    	content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 9px;
+    width: 13px;
+    height: 15px;
+    margin-top: -8px;
+    text-indent: -9999em;
+    background: url("_images/arrows-sprite.png") no-repeat 0 0;
+    }
+    .homepage #wrapperDivisions #wrapperContent #content .flowbox div.teaser:after {
+    background: none !important;    
+    }
+    	.homepage #wrapperDivisions #wrapperContent #content .flowbox div.teaser {border: 1px solid #999;border-radius: 6px;}
+    	/*END TEASER*/
+    	
+    	
+    	
+    	/*CONTENT*/
+    	#content .altGrid ul li, #sb-body ul li {
+        	font-size:16px;background-position: 0px 6px;
+    	}
+    	.altGrid img {max-width:100%;margin: 10px 0 10px 0;}
+    	 .altGrid .siemensglobalContent img {max-width:100%;margin: 0px !important;}
+    	#content #wrapperColumnB {float:none;width: auto;}
+    	#content .altGrid ul li, #sb-body ul li { background-position: 0px 6px;}
+    	.bp.IMGObject p.picture.right {margin:5px 0px 5px 0px !important;text-align:center;width:auto;border-radius:4px 4px 0px 0px;width:100%;float:none !important;}
+    	.bp.IMGObject + h2 {border-radius: 0px !important;}
+    	#content .right, #content .left {float:none !important;text-align:center;}
+    	.wrapperContentLeft {font-size:16px;}
+    	#content .left img, #content .right img {margin: 0px !important;}
+    	/*END CONTENT*/
+    	
+    	
+    	
+    	/*search results*/
+    	.searchResultWebsite > p, .searchResultVideos > p {display:none;}
+    	#content .searchResultWebsite {margin-top: 0px;}
+    	#wrapperContent #content .altGrid h2 {
+            border-radius: 6px 6px 0 0;
+            padding: 9px 0px;
+            color: #000;
+            font-size: 18px;
+            margin-bottom:0;
+            }
+        #wrapperContent #content {float:none;width: auto;}
+        #content .searchResultWebsite ul li, #content .searchResultVideos ul li{
+            float:none;
+            padding: 10px;
+            margin-bottom: 0 !important;
+            border: 1px solid #999;
+            border-width: 0px 1px 1px 1px;
+        	background-color: #DFE6ED; /* Old browsers */
+        	background-image:    -moz-linear-gradient(top, #FFF 40%, #DFE6ED 60%); /* FF3.6+ */
+        	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(40%, #FFF), color-stop(60%, #DFE6ED)); /* Chrome,Safari4+ */
+        	background-image: -webkit-linear-gradient(top, #FFF 40%, #DFE6ED 60%); /* Chrome10+,Safari5.1+ */
+        	background-image:      -o-linear-gradient(top, #FFF 40%, #DFE6ED 60%); /* Opera11.10+ */
+        	background-image:         linear-gradient(top, #FFF 40%, #DFE6ED 60%); /* W3C */
+        	}
+        	#content .searchResultWebsite ul li:first-child {
+            	border-width: 1px 1px 1px 1px;
+        	}
+        	.showAllResults {
+            	border: 1px solid #999;
+            border-width: 0px 1px 1px 1px;
+        	background-color: #DFE6ED; /* Old browsers */
+        	background-image:    -moz-linear-gradient(top, #FFF 40%, #DFE6ED 60%); /* FF3.6+ */
+        	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(40%, #FFF), color-stop(60%, #DFE6ED)); /* Chrome,Safari4+ */
+        	background-image: -webkit-linear-gradient(top, #FFF 40%, #DFE6ED 60%); /* Chrome10+,Safari5.1+ */
+        	background-image:      -o-linear-gradient(top, #FFF 40%, #DFE6ED 60%); /* Opera11.10+ */
+        	background-image:  
+        	}
+        #content .searchResultWebsite ul li:after {
+            content: "";
+            display: block;
+            position: absolute;
+            top: 50%;
+            right: 9px;
+            width: 13px;
+            height: 15px;
+            margin-top: -8px;
+            text-indent: -9999em;
+            background: url("_images/arrows-sprite.png") no-repeat -16px -50px;
+            }
+        #content .searchResultWebsite ul, #content .searchResultVideos ul {
+            padding:0 !important;margin-bottom: 0px;
+        }
+        #content .searchResultWebsite ul li a{
+            display:block;width:100%;height: 100%;font-size:16px;color:#333;font-weight:bold;
+        }
+        #content .searchResultWebsite ul li div {
+            color: #666;font-size: 14px;
+        }
+        .showAllResults {
+            display: inline-block;
+            padding: 7px 10px 8px;
+            color: #900;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 0 0 6px 6px;
+            font-size: 14px;
+        }
+        .showAllResults:hover {
+            display: inline-block;
+            padding: 7px 10px 8px;
+            color: #900;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 0 0 6px 6px;
+        }
+        .noResult {
+            padding: 10px;font-size:14px;color:#666;border-radius: 6px 6px 6px 6px;
+            border: 1px solid #999;
+            border-width: 1px 1px 1px 1px;
+        	background-color: #DFE6ED; /* Old browsers */
+        	background-image:    -moz-linear-gradient(top, #FFF 40%, #DFE6ED 60%); /* FF3.6+ */
+        	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(40%, #FFF), color-stop(60%, #DFE6ED)); /* Chrome,Safari4+ */
+        	background-image: -webkit-linear-gradient(top, #FFF 40%, #DFE6ED 60%); /* Chrome10+,Safari5.1+ */
+        	background-image:      -o-linear-gradient(top, #FFF 40%, #DFE6ED 60%); /* Opera11.10+ */
+        	background-image: 
+        }
+        #content .searchResultVideos {
+            margin-top: 0px;
+        }
+        
+        #content .searchResultVideos img.inlineLeft {
+            float:none;
+        }
+    	
+    	.pageSearchResultListing h4 a {
+        	color: #827F6E;font-size: 14px;
+    	}
+    	#content .altGrid ul li, #sb-body ul li {
+        	background-position: 0px 6px;
+        	margin-left: 18px;
+    	}
+    	.searchResultWebsite ul li {
+        	background-position: 0px 0px !important;
+    	}
+    	/*END SEARCH RESULTS*/
+    	
+    	/*OMM Form */
+    	form[name="ShoppingCartSuche"] select {
+    	   width: 100%;
+    	   font-size: 1em;
+        }
+        form[name="ShoppingCartSuche"] .formLabel {
+    	   width: 100% !important;
+    	   height: auto !important;
+        }
+    	
+    	
+    	
+    	
+    	/*Contact Form*/
+    	form[name="KontaktformularForm"] .email .formLabel {
+        	margin-left:0px !important;
+    	}
+    	form[name="KontaktformularForm"] .textfield .formLabel {
+        	margin-left:0px !important;
+    	}
+    	
+    	.HTMLFormEnt .singleview form, form[name="LoginForm"] {
+        	background-color: #DFE6ED;
+            background-image: -moz-linear-gradient(top, #FFF 40%, #DFE6ED 60%);
+            background-image: -webkit-gradient(linear, left top, left bottom, color-stop(40%, #FFF), color-stop(60%, #DFE6ED));
+            background-image: -webkit-linear-gradient(top, #FFF 40%, #DFE6ED 60%);
+            background-image: -o-linear-gradient(top, #FFF 40%, #DFE6ED 60%);
+            background-image: linear-gradient(top, #FFF 40%, #DFE6ED 60%);
+            border: 1px solid #999;
+            border-radius: 6px;
+    	}
+    	
+    	.HTMLFormEnt .singleview form fieldset, form[name="LoginForm"] fieldset {
+    	   padding:14px;
+    
+    	}
+    	
+    	form[name="KontaktformularForm"] textarea {
+        	border: 1px solid #CCC !important;
+            border-radius: 6px !important;
+            padding: 8px 3px 6px !important;
+            font-size: 16px !important;
+            background: #FFF !important;
+            width:102% !important;
+    	}
+    	
+    	form[name="KontaktformularForm"]  .select span label, form[name="LoginForm"]  .select span label{
+        	display: none;
+    	}
+    	
+    	form[name="KontaktformularForm"]  .select select, form[name="LoginForm"]  .select select, .formField select {
+        	width: 100%;
+    	}
+    	
+    	.formField select {
+        	font-size: 1em;
+    	}
+    	
+    	
+    	
+    	form[name="KontaktformularForm"] .select .formLabel, form[name="LoginForm"] .select .formLabel  {
+        	height:0px;width:0px;
+    	}
+    	form[name="LoginForm"] .addtionalLogin p {
+        	padding: 14px;
+    	}
+    	form[name="LoginForm"] .addtionalLogin .formHandle {
+        	padding: 0px !important;
+    	}
+    	#content form
+    	{
+        	padding: 0px 0px !important;
+    	}
+    	#content form input[type=submit] {
+        	padding:14px;
+        	width: 100%;
+        	font-size: 1em;
+        	box-shadow: 0px 0px 0px !important;
+        	/*margin-top: -20px;*/
+
+    	}
+    	#content form[name="KontaktformularForm"] input[type=submit] {
+        	padding:4px !important;
+    	}
+    	form[name="KontaktformularForm"] fieldset {
+        	width:90% !important;
+        	margin:0 auto;
+    	}
+    	form[name="KontaktformularForm"] .formField input, form[name="LoginForm"] .formField input  {
+        	margin: 0px 0px 6px 0px !important;
+            border: 1px solid #CCC !important;
+            border-radius: 6px !important;
+            padding: 8px 3px 6px !important;
+            padding: 8px 0px 6px 5px !important;
+            font-size: 16px !important;
+            background: #FFF !important;
+            width:98% !important;
+            }
+        form[name="KontaktformularForm"] .formField input.radio {
+            float:left;width: auto !important;margin: 3px 0px 0px 0px !important;
+        }
+        form[name="KontaktformularForm"] .formField input.radio + label {
+            margin-left:5px;
+        }
+        form[name="KontaktformularForm"] .email, form[name="KontaktformularForm"] .phone {
+            padding: 0 !important;
+            
+        }
+        form[name="KontaktformularForm"] .email .formLabel, form[name="KontaktformularForm"] .phone .formLabel {
+            margin-left: 20px !important;
+            
+        }
+        form[name="KontaktformularForm"] .email .formField {
+            margin-left: 0px !important;
+            
+        }
+        
+        #content .altGrid .formField span {
+            margin-left: 0px !important;
+        }
+        
+    	#content form[name="KontaktformularForm"] .formLabel label, #content form[name="KontaktformularForm"] .formLabel, #content form[name="LoginForm"] .formLabel {
+        	width: auto;
+        	float:none;
+        	height: auto;
+    	}
+    	.formNote {padding: 0px 14px 14px 14px;border: 0px !important;margin:0px !important;}
+    	.formHandle {background-color: #DFE6ED;padding:7px 14px 19px 14px;
+    background-image: -moz-linear-gradient(top, #FFF 40%, #DFE6ED 60%);
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(40%, #FFF), color-stop(60%, #DFE6ED));
+    background-image: -webkit-linear-gradient(top, #FFF 40%, #DFE6ED 60%);
+    background-image: -o-linear-gradient(top, #FFF 40%, #DFE6ED 60%);
+    background-image: linear-gradient(top, #FFF 40%, #DFE6ED 60%);border-top:1px solid #999;}
+    .formHandle input, #toolbar input[type=submit] {
+        float: right;
+    background: transparent !important;
+    color: #900 !important;
+    font-weight: bold;
+    font-size: 16px !important;
+    width: 100%;
+    height: auto;
+    
+        border: 0;
+        padding: 0;
+        margin: 0;
+        line-height: 1;
+        display: block;
+        height: 20px;
+        clear: both;
+}
+    	
+    	/*End Contact FOrm */
+    	
+    	
+    	/*Select Country */
+    	.selectCountry ul li {background-position: 0px 0px !important;}
+    	.selectCountry ul li img {margin: 0 !important;}
+    	.siemensglobalButton, .siemensglobalClose {display:none !important;}
+    	.GenericTable {font-size:16px;}
+    	#content .selectCountry ul {margin-bottom: 0px !important;margin-top: -5px !important;}
+    	#content .siemensglobalContent .header li, #content .selectCountry li {
+            padding: 10px !important;font-size:16px !important;
+            background-position: 0px 0px;
+            background-color: #DFE6ED;padding:7px 14px 19px 14px;
+    background-image: -moz-linear-gradient(top, #FFF 40%, #DFE6ED 60%);
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(40%, #FFF), color-stop(60%, #DFE6ED));
+    background-image: -webkit-linear-gradient(top, #FFF 40%, #DFE6ED 60%);
+    background-image: -o-linear-gradient(top, #FFF 40%, #DFE6ED 60%);
+    background-image: linear-gradient(top, #FFF 40%, #DFE6ED 60%);
+    border:1px solid #999;margin-top: 10px;border-radius:6px;
+    	}
+    	/*End Select Country*/
+    	
+    	
+    	
+    	/* Classic Website*/
+    	.classic {
+        	padding: 8px 14px;
+        	background-color: #879BAA;
+        	margin: 0;
+            padding-top: 6px;
+            padding-bottom: 10px;
+            padding-left: 15px;
+            font-size: 14px;
+            margin-top:1px;
+        }
+        .classic a {
+            color:#fff !important;
+        }
+    	
+    	/* End Classic Website*/
+    	
+    	
+    	
+    	
+    	/*FOOTER*/
+    	#wrapperFooter #breakCrumb {display:none;}
+    	#wrapperFooter {padding-top: 20px;}
+    	#wrapperTop {display:none;}
+    	
+    	#footerNavigation {background: #879baa !important;height: 50px;}
+    	/*END FOOTER*/
+    	
+    	.videoWrapper {
+            position: relative;
+            padding-bottom: 56.25%;
+            padding-top: 40px; height: 0; overflow: hidden;
+            }
+        .discoverWrapper {
+            position: relative;
+            padding-bottom: 100%;
+            padding-top: 40px; height: 0; overflow: hidden;
+            }
+    
+        .videoWrapper iframe,
+        .videoWrapper object,
+        .videoWrapper embed {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        
+        .discoverWrapper iframe,
+        .discoverWrapper object,
+        .discoverWrapper embed {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    	
+    	
+        .mapsWrapper {
+        position: relative;
+        padding-bottom: 56.25%;
+        padding-top: 30px;
+        height: 0;
+        overflow: hidden;
+    }
+    
+    .mapsWrapper iframe,   
+    .mapsWrapper object,  
+    .mapsWrapper embed {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+    
+    
+    .mapssWrapper {
+        display: inline-block;
+        position: relative;
+        width: 50%;
+    }
+    .dummy {
+        padding-top: 75%; /* 4:3 aspect ratio */
+    }
+    .theMap {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: silver /* show me! */
+    }
+    
+    
+    
+    
+    	
+    }
+    
+    @media screen and (min-width: 641px) {
+        #navPrimary, #toolbarWrap, #navPrimary7 {
+            display: block !important;
+        }
+        #navigationCloseButton {
+            display: none !important;
+        }
+    }
+    
+    
+   @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
+   
+        #wrapperHeader nav.meta li .icon {
+            background: url(http://media.hearing.siemens.com/includes/css/_images/nav-spriteR.png?__blob=normal);
+            background-size: 100px 900px;
+        }
+
+        #wrapperHeader nav.meta li a .arrow, #wrapperHeader nav.meta li div .arrow {
+            background: url(http://media.hearing.siemens.com/includes/css/_images/nav-spriteR.png?__blob=normal) no-repeat center -848px;
+            background-size: 100px 900px;
+        }
+        
+        #navigationCloseButton span {
+            background: url(http://media.hearing.siemens.com/includes/css/_images/nav-spriteR.png?__blob=normal) no-repeat -30px -641px;
+            background-size: 100px 900px;
+        }
+        
+        #footerNavigation .teaser li.apps a {
+            background: url(http://media.hearing.siemens.com/includes/css/_images/nav-spriteR.png?__blob=normal) no-repeat -32px -540px !important;
+            background-size: 100px 900px !important;
+        }
+        
+        #footerNavigation .teaser li.contact a {
+            background: url(http://media.hearing.siemens.com/includes/css/_images/nav-spriteR.png) no-repeat -26px -340px !important;
+            background-size: 100px 900px !important;
+        }
+        
+        #footerNavigation .teaser li.regionSelection a {
+            background: url(http://media.hearing.siemens.com/includes/css/_images/nav-spriteR.png?__blob=normal) no-repeat -17px -236px !important;
+            background-size: 100px 900px !important;
+        }
+        
+        .homepage #navPrimary li strong, #navPrimary li:first-child a, .homepage #navPrimary7 li strong, #navPrimary7 li:first-child a {
+            /*background: url(http://media.hearing.siemens.com/includes/css/_images/icons-spriteR.png) no-repeat 10px -288px !important;*/
+            background-size: 50px 900px !important;
+        }
+        
+        #footerNavigation .teaser li.testimonials a {
+            background: url(http://media.hearing.siemens.com/includes/css/_images/testimonial-iconR.png) no-repeat 28px 6px !important;
+            background-size: 16px 16px !important;
+            }
+            
+        #navPrimary li a:after, #navPrimary7 li a:after {
+            background: url(http://media.hearing.siemens.com/includes/css/_images/arrows-spriteR.png) no-repeat 0 -3px;
+            background-size: 13px 160px;
+        }
+        
+        .homepage #wrapperDivisions .teaser h3.Tree:after, .homepage #wrapperDivisions .teaser h3.locked:after {
+            background: url(http://media.hearing.siemens.com/includes/css/_images/arrows-spriteR.png) no-repeat 0 -3px !important;
+            background-size: 13px 160px !important;
+
+        }
+        
+        #wrapperDivisions #wrapperContent #content .flowbox div.teaser:after {
+            background: url(http://media.hearing.siemens.com/includes/css/_images/arrows-spriteR.png) no-repeat 0 -37px;
+            background-size: 13px 160px;
+        }
+        
+        
+       
+    }
+    
+    
+    
+    @media only screen and (-webkit-min-device-pixel-ratio: 2) {
+        /* Put your iPhone 4g styles in here */ 
+    }
+    
+    @media only screen and (-webkit-device-pixel-ratio:1.5){
+        /* Put CSS for high density (hdpi) Android layouts in here */
+    }
+    
+    @media only screen and (-webkit-device-pixel-ratio:1){
+        /* Put CSS for medium density (mdpi) Android layouts in here */
+    }
+    
+    @media only screen and (-webkit-device-pixel-ratio:.75){
+        /* Put CSS for low density (ldpi) Android layouts in here */
+    }
